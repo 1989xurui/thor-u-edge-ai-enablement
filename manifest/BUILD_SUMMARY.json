@@ -1,5 +1,5 @@
 {
-  "status": "DOC_UPDATE_STAGING_NOT_YET_PUBLISHED",
+  "status": "PUBLISHED_PRIVATE_VERIFIED",
   "file_count": 118,
   "bytes": 1488451,
   "mebibytes": 1.419,
@@ -8,13 +8,14 @@
   "sha_manifest": "manifest/SHA256SUMS.txt",
   "source_index": "manifest/SOURCE_FILES.json",
   "privacy_review": "manifest/REVIEW_REQUIRED.json",
-  "published": false,
+  "published": true,
   "publication": {
     "repository": "1989xurui/thor-u-edge-ai-enablement",
     "visibility": "private",
     "branch": "main",
     "github_commit_verified": true,
-    "fresh_clone_sha256": "PASS_114_OF_114",
+    "verified_content_commit": "e0bc32a0f25a06234bb750de7ae0b1c0e28ab2d9",
+    "fresh_clone_sha256": "PASS_118_OF_118",
     "fresh_clone_clean": true,
     "bash_preflight_syntax": "PASS",
     "device_kernel_installed_by_this_task": false,
@@ -22,12 +23,18 @@
   },
   "documentation_update": {
     "date": "2026-10-15",
-    "scope": "preserve 6.1 + 6.8 RAM historical vs nonimplemented independent 6.8 persistent boot, Mermaid architecture diagrams",
+    "scope": "Preserve original 6.1 Golden; historical 6.8 RAM kexec; future independent 6.8 cold boot blocked",
     "architecture": "docs/ARCHITECTURE.md",
     "additive_61_68": "docs/BOOT_6_1_TO_6_8.md",
+    "installation": "docs/INSTALL_ON_THOR.md",
+    "readme_mermaid_count": 1,
+    "architecture_mermaid_count": 3,
+    "installation_mermaid_count": 1,
+    "diagram_syntax_check": "PASS_5",
     "gates": "manifest/BOOT_6_1_TO_6_8_GATES.json",
     "readiness_checker": "tools/check_dual_boot_readiness.py",
+    "readiness_exit_code": 2,
     "current_persistent_boot_gate": "NOT_IMPLEMENTED_NO_GO",
-    "publication_state": "PENDING"
+    "publication_state": "PUBLISHED_AND_FRESH_CLONE_VERIFIED"
   }
 }
