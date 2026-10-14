@@ -1,0 +1,63 @@
+{
+  "status": "GO_SCOPED_TREE_ALIGNED_CACHE_FULL8K_COLD_WARM_SINGLE_FIXTURE",
+  "timestamp": "2026-10-14T12:38:59.981132+08:00",
+  "target_checkpoint_unchanged": true,
+  "engine_dir": "/zeekr_map/nvidia-native-ai-v2/engines/native-tree-mtp8-top2-node16-c1-8k",
+  "base_engine_sha256": "edec09c66e97718719260dc6e94761a141df3bbd068e96cbdf381f91b31e2daf",
+  "draft_engine_sha256": "f9812b259aaae8fd8ad30da1d96e49f6f31df26a0e1f404f9c742ab88fd5b0d2",
+  "policy_library_sha256": "3aaf2df16653992750ff5bfcef65ad6c4250d0d3a7bf4a1a388ed6186ee91c68",
+  "actual_code": "tools/thor_perf/treePrefixPolicy.cpp;ARM compiled integer stable-boundary alignment;native request adapter;no kernel/weight rebuild",
+  "strict368outputIDs": true,
+  "cold_Decode_tok_s": 59.06427534123049,
+  "warm_Decode_tok_s": 59.129744884106046,
+  "cold_TTFT_s": 4.164313287001278,
+  "warm_TTFT_s": 0.13368668800103478,
+  "cold_Prefill_tok_s": 2099.602665839538,
+  "warm_actual_new_tokens": 15,
+  "warm_reused_tokens": 8192,
+  "warm_base_Prefill_GPU_ms": 103.023071,
+  "cold_request_wall_s": 10.379457333001483,
+  "warm_request_wall_s": 6.341768083999341,
+  "saved_K7_comparison": {
+    "scope": "Saved full368K7/SM14 versus new Tree8/top2/node16 aligned cache;both use cache but stable boundary differs8192versus8203;not simultaneous matched A/B;official40percent not applied",
+    "cases": [
+      {
+        "mode": "COLD_CACHE_EMPTY",
+        "old_Decode_tok_s": 55.44382335153146,
+        "new_Decode_tok_s": 59.06427534123049,
+        "Decode_delta_percent": 6.529946477075033,
+        "old_TTFT_s": 4.2916637170055765,
+        "new_TTFT_s": 4.164313287001278
+      },
+      {
+        "mode": "WARM_SAME_PREFIX",
+        "old_Decode_tok_s": 55.50407780038923,
+        "new_Decode_tok_s": 59.129744884106046,
+        "Decode_delta_percent": 6.53225353415634,
+        "old_TTFT_s": 0.13855193700146629,
+        "new_TTFT_s": 0.13368668800103478
+      }
+    ]
+  },
+  "prefix_alignment_policy": {
+    "minimum_native_volatile_tail": 4,
+    "replay_tail": 15,
+    "stable_predecessor": 8192,
+    "alignment": 128,
+    "all8207input_tokens_processed": true,
+    "partial_KV_snapshot_not_required_at_page_boundary": true
+  },
+  "baseline_K7_default_retained": true,
+  "decode61_target": "NOT_REACHED",
+  "Agent_E2E": "NOT_TESTED",
+  "full_quality": "NOT_TESTED",
+  "C2_C4": "NOT_TESTED",
+  "long_context": "NOT_TESTED_FOR_THIS_ENGINE",
+  "source_commit": "95515c2f87fba8982db5a519f9022277667b3cc9",
+  "installed_wheel_commit": "74f8732a7e8d1377e34471ad2652988346f18813",
+  "source_matches_wheel": false,
+  "minimum_available_RAM_GiB": 30.45132827758789,
+  "minimum_GPU_free_GiB": 30.107807159423828,
+  "observed_maximum_Tj_C": 60.812,
+  "next_unique_action": "Implement PDL-preserving region profiling without breaking native programmatic edges;validate capture only before any new generation;keep qualified aligned Tree and K7 unchanged"
+}

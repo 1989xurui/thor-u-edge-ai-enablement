@@ -1,0 +1,20 @@
+item	evidence_level	evidence	remaining_condition
+GB10B/2B00	POSITIVE_STATIC	Actual AArch64 nvgpu.ko PCI table has vendor 10de/device 2b00, generic driver_data=5; logs/compiled-pci-verification.json.	GPU initialization and CUDA compute NOT_RUN
+Kernel identity	POSITIVE_STATIC	Frozen G35 config reproduced; all 13,943 kernel symbols match recovered complete historical Module.symvers, no missing/added/conflicting entries.	Current vehicle session not queried; original and G35 configs are distinct despite identical UTS
+nvsched	POSITIVE_STATIC	Makefile includes nvsched/Makefile.sources and links sources into nvgpu.ko.	No standalone nvsched.ko is defined by this release
+host1x/mc-utils/nvmap/ivc-cdev	POSITIVE_STATIC	NvGPU plus seven transitive dependencies built; all 1,066 imported CRCs resolved with no mismatch.	Host-service and hardware behavior under DRIVE HV not established
+Module signature	MATCH_FROZEN_G35_POLICY	G35 already has MODULE_SIG_FORCE disabled. The exact frozen configuration was reproduced; original forced-signature Image remains a separately recorded NO_GO target.	No vehicle policy or original artifact was changed; current cmdline enforcement not queried
+Firmware package layout	POSITIVE_STATIC	firmware-nvgpu is documentation only. Common firmware package contains 25 GB10B files plus GA10B ACR-GSP files; hashes in logs/static-contract.json.	Package presence does not prove target security-key acceptance
+GSP/FMC/SEC2	NO_EVIDENCE	common/acr/acr_sw_gb10b.c:366-375 defers silicon GSP bootstrap to SEC2 and then waits for ACR completion.	DRIVE secure-domain ownership and R39 firmware acceptance not established; no firmware mixing
+Non-silicon debug firmware	CONDITIONAL_NOT_MISSING_FOR_SILICON	acr_gsp_gb10b_pwm.bin absent, but referenced by non-silicon DMA PWM branch.	Not classified as mandatory silicon firmware without proof
+SIM FECS/GPCCS bootplugins	CONDITIONAL_NOT_MISSING_FOR_SILICON	g_rv_boot_plugin_* absence belongs to CONFIG_NVGPU_SIM emulation branch; silicon uses packaged NETA/NETD descriptors.	Not used as a false hard blocker
+BPMP/power/quiesce	NO_EVIDENCE	PCI GB10B glue uses tegra_bpmp_transfer and GPU power/clock requests; historical quiesce err=-110.	Protocol, power and recovery contract under current DRIVE HV unknown
+IVC/nvhost	NO_EVIDENCE	Historical DRIVE baseline contains nvhost_server_native; source and static dependencies are available.	R39 userspace/driver against DRIVE host service has not been validated
+SMMU/DMA/ITS	NO_EVIDENCE	Target config contains SMMUv3/PCI/IVC/HV; historical ITS/LPI problems remain admission issues.	No current ownership/handoff/recovery evidence; not claimed as 0x83d root cause
+CUDA userspace ELF	POSITIVE_STATIC	595.78 libcuda plus ten-library AArch64 closure; NVIDIA dependencies located in same-batch packages.	Target loader/libc mapping and proprietary ioctl negotiation UNKNOWN
+CUDA 13.2 Update 2	NO_EVIDENCE	Official release requires paired driver >=595.71.05; 595.78 satisfies the numeric threshold only.	Full U2 target stack missing; cuInit/context/kernel/copy/sync NOT_RUN
+Current R4 recovery	NO_EVIDENCE	P39 history and its restore guard were rehashed, but current vehicle was not contacted.	R4_GOLDEN unchanged; restoration and current boot_id NOT_VERIFIED
+Independent 6.8 cold boot	NO_EVIDENCE	Historical 6.8 entry was kexec from 6.1.	INDEPENDENT_6P8_COLD_BOOT=NOT_PROVEN
+
+LIVE_WARM_COMPUTE	DRIVE original gb10b/prod_test_nsr five-file group, RO RAM mapping	PASS_BASIC_OBSERVED	No independent cold bootstrap evidence; public R39 package lacks group
+LIVE_HV_ABI	HV storage, host1x DRM, NvGPU INTx, R39 UMD + CUDA U2	PASS_BASIC_OBSERVED	ITS/MSI and autonomous cold boot remain unqualified

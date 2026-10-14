@@ -1,0 +1,61 @@
+{
+  "status": "PASS_NATIVE_CUDA_13_2_U2_BASIC_COMPUTE_ONLY",
+  "kernel": "6.8.12-prod-g78272943bba3",
+  "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+  "boot_method": "kexec_RAM_initrd; original root mounted read-only",
+  "device": "Thor GB10B 10de:2b00 SM110",
+  "nvcc": "13.2.86; official CUDA 13.2 Update2 redistrib_13.2.2",
+  "driver_api_version": 13020,
+  "runtime_api_version": 13020,
+  "driver": "R39.2.1 NvGPU libcuda595.78",
+  "runtime_file": "libcudart.so.13.2.86",
+  "checks": [
+    "cuInit",
+    "driver and runtime device count=1",
+    "SM11.0",
+    "cuCtxCreate_v2",
+    "cuMemAlloc_v2",
+    "HtoD copy",
+    "CUDA13.2.86 nvcc sm_110 cubin load",
+    "cuLaunchKernel",
+    "cuCtxSynchronize",
+    "DtoH copy",
+    "65536 integers equal input+17",
+    "module unload, memory free, context destroy",
+    "actual mapped libraries recorded"
+  ],
+  "exit_code": 0,
+  "full_trace_lines": 853,
+  "ioctl_records": 597,
+  "repairs": [
+    "Add SHA-verified same-batch nvidia-l4t-cuda/libnvcucompat.so; DT_NEEDED alone missed dlopen dependency",
+    "Add matched tegra-drm + DRM/nvhwpm closure; all1547 imported CRCs resolved",
+    "Set RAM firmware_class search path to /lib/firmware/nvidia and map exact original DRIVE prod_test_nsr 5file group read-only; no file renaming or signature modification"
+  ],
+  "kernel_transitions": 1,
+  "nvgpu_module_loads": 1,
+  "cuda_probe_processes": 5,
+  "probe_results_in_order": [
+    "999 missing libnvcucompat",
+    "999 traced diagnosis, no GPU ioctl",
+    "801 missing host1x DRM",
+    "100 missing board NSR netlist",
+    "0 actual numeric compute PASS"
+  ],
+  "interrupt_path": "documented NvGPU INTx fallback; RAM pci bridge msi_bus=0; GICv3 SPI187 IRQ211",
+  "limitations": [
+    "ITS/LPI warnings remain; MSI not qualified",
+    "Independent cold boot not proven; firmware/GSP state inherited across kexec possible",
+    "No persistent installation or autonomous startup",
+    "No cuBLAS/NVFP4, graphs, long-run, 27B or 200K acceptance"
+  ],
+  "A1": "GO_BASIC_NATIVE_RAM / NO_GO_PRODUCTION_COLD_BOOT",
+  "A2": "DEFERRED_BY_USER_NOT_AUDITED",
+  "current_state": "KEEP_6_8_RAM_PER_USER; R4 production services intentionally stopped; exclusive host lease retained",
+  "firmware_contract": "Board original prod_test_nsr firmware accepted for this warm native compute; public R39 firmware-only configuration failed missing required board group",
+  "DRIVE_HV_contract": "HV/IVC storage read-only mount, host1x DRM, NvGPU bind, GIC INTx and bounded native compute observed; cold GSP/ACR bootstrap and ITS ownership unproven",
+  "CUDA_userspace_ABI": "PASS_FOR_OBSERVED_BASIC_COMPUTE_ONLY; all NVIDIA UMD libraries from R39.2.1, U2 cudart; no CUDA12 mapped",
+  "golden": "No writes to Golden, model, original firmware or boot configuration",
+  "evidence_archive_sha256": "6ae5d1671154365fc6b3796e4931c66660a101b0cef85e5daa0fcd2e803db4f1",
+  "next_action": "Read-only audit of an independently bootable and recoverable Kernel6.8 path preserving Golden; no further repetitive CUDA smoke tests"
+}

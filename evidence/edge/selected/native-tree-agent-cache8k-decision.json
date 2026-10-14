@@ -1,0 +1,565 @@
+{
+  "status": "SCOPED_GO_OBSERVED_AGENT_PAIR_OFFLINE_ADJUDICATION",
+  "source_raw_status": "RUNNING_AGENT_CACHE_AB",
+  "raw_guard_exit_code": 1,
+  "raw_guard_failure": "Post-task assertion on disabled optional performance counters;not inference/tool/GPU failure",
+  "adjudication": "Six saved turn outputs,wall times,input hashes,original native reuse logs and clocks cross-validated offline;no rerun",
+  "raw_files_preserved": true,
+  "fixture_sha256": "de5b7315e4f9a45b43d95106c9ce3bb76f278c72773ee73e16842c30b66be1d8",
+  "arms": [
+    {
+      "name": "A_TREE_CACHE_BYPASS",
+      "turns": [
+        {
+          "step": 0,
+          "prompt_tokens": 8205,
+          "messages_sha256": "d3632fd5c599f6af8c26162c1b94e543435805ba081d008dd6472da03573d482",
+          "output_ids": [
+            4754,
+            13766,
+            3147,
+            851,
+            35899,
+            2129,
+            15889,
+            21624,
+            2267,
+            3147,
+            7667,
+            10893,
+            29958,
+            248046
+          ],
+          "output": "{\"tool\":\"read_orders\",\"arguments\":{\"path\":\"orders.csv\"}}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 4.401407340999867,
+          "TTFT_s": 3.9116008790006163,
+          "effective_Decode_tok_s": 26.541095327606925,
+          "replay_tail": 13,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 94.769,
+          "graph_counts": {
+            "attempts": 17,
+            "successes": 17,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 31709164,
+          "min_GPU_free_bytes": 32370487296,
+          "max_Tj_mC": 59687,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 8205,
+          "native_reused_tokens": 0,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        },
+        {
+          "step": 1,
+          "prompt_tokens": 8340,
+          "messages_sha256": "58e4d01f48916aa688d3003dfbf7e7c10503f7c25c716e8a1758cf429af3a473",
+          "output_ids": [
+            4754,
+            13766,
+            3147,
+            1200,
+            35899,
+            2129,
+            15889,
+            21624,
+            2267,
+            3147,
+            7667,
+            10893,
+            29958,
+            248046
+          ],
+          "output": "{\"tool\":\"sum_orders\",\"arguments\":{\"path\":\"orders.csv\"}}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 4.442651842997293,
+          "TTFT_s": 3.9507947499951115,
+          "effective_Decode_tok_s": 26.430441250020444,
+          "replay_tail": 20,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 119.102,
+          "graph_counts": {
+            "attempts": 17,
+            "successes": 17,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 31733552,
+          "min_GPU_free_bytes": 32412192768,
+          "max_Tj_mC": 62156,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 8340,
+          "native_reused_tokens": 0,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        },
+        {
+          "step": 2,
+          "prompt_tokens": 8394,
+          "messages_sha256": "70cb12f6e25f3e6367d4b45fc49c29e505508d1503bfd0685cec26baefd358e0",
+          "output_ids": [
+            4754,
+            13132,
+            763,
+            16,
+            15,
+            1288,
+            5856,
+            763,
+            16,
+            19,
+            16,
+            13,
+            20,
+            92,
+            248046
+          ],
+          "output": "{\"quantity\":10,\"amount\":141.5}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 4.598947489997954,
+          "TTFT_s": 3.965405852999538,
+          "effective_Decode_tok_s": 22.097995115725922,
+          "replay_tail": 74,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 107.797,
+          "graph_counts": {
+            "attempts": 26,
+            "successes": 26,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 31754740,
+          "min_GPU_free_bytes": 32429678592,
+          "max_Tj_mC": 60250,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 8394,
+          "native_reused_tokens": 0,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        }
+      ],
+      "tool_wall_s": 0.0004171109976596199,
+      "initialization_excluded": true,
+      "task_success": true,
+      "task_wall_s": 13.478787821994047
+    },
+    {
+      "name": "B_TREE_CACHE_USE",
+      "turns": [
+        {
+          "step": 0,
+          "prompt_tokens": 8205,
+          "messages_sha256": "d3632fd5c599f6af8c26162c1b94e543435805ba081d008dd6472da03573d482",
+          "output_ids": [
+            4754,
+            13766,
+            3147,
+            851,
+            35899,
+            2129,
+            15889,
+            21624,
+            2267,
+            3147,
+            7667,
+            10893,
+            29958,
+            248046
+          ],
+          "output": "{\"tool\":\"read_orders\",\"arguments\":{\"path\":\"orders.csv\"}}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 4.64786792799714,
+          "TTFT_s": 4.346807629997784,
+          "effective_Decode_tok_s": 43.18071856830419,
+          "replay_tail": 13,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 112.936,
+          "graph_counts": {
+            "attempts": 17,
+            "successes": 17,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 24349988,
+          "min_GPU_free_bytes": 24642797568,
+          "max_Tj_mC": 58906,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 8205,
+          "native_reused_tokens": 0,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        },
+        {
+          "step": 1,
+          "prompt_tokens": 8340,
+          "messages_sha256": "58e4d01f48916aa688d3003dfbf7e7c10503f7c25c716e8a1758cf429af3a473",
+          "output_ids": [
+            4754,
+            13766,
+            3147,
+            1200,
+            35899,
+            2129,
+            15889,
+            21624,
+            2267,
+            3147,
+            7667,
+            10893,
+            29958,
+            248046
+          ],
+          "output": "{\"tool\":\"sum_orders\",\"arguments\":{\"path\":\"orders.csv\"}}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 0.562850956004695,
+          "TTFT_s": 0.26159622100385604,
+          "effective_Decode_tok_s": 43.152848701162476,
+          "replay_tail": 20,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 118.028,
+          "graph_counts": {
+            "attempts": 17,
+            "successes": 17,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 24349312,
+          "min_GPU_free_bytes": 24642105344,
+          "max_Tj_mC": 56281,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 148,
+          "native_reused_tokens": 8192,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        },
+        {
+          "step": 2,
+          "prompt_tokens": 8394,
+          "messages_sha256": "70cb12f6e25f3e6367d4b45fc49c29e505508d1503bfd0685cec26baefd358e0",
+          "output_ids": [
+            4754,
+            13132,
+            763,
+            16,
+            15,
+            1288,
+            5856,
+            763,
+            16,
+            19,
+            16,
+            13,
+            20,
+            92,
+            248046
+          ],
+          "output": "{\"quantity\":10,\"amount\":141.5}",
+          "natural_EOS": true,
+          "strict_action_or_final": true,
+          "wall_s": 0.5873506349962554,
+          "TTFT_s": 0.1455416629978572,
+          "effective_Decode_tok_s": 31.68790334129013,
+          "replay_tail": 74,
+          "native_spec_counter_deltas": {
+            "total_iterations": 0,
+            "total_generated_tokens": 0,
+            "total_accepted_draft_tokens": 0,
+            "total_proposed_draft_tokens": 0
+          },
+          "cache_plan_us": 111.5,
+          "graph_counts": {
+            "attempts": 26,
+            "successes": 26,
+            "failures": 0,
+            "resolve_failures": 0
+          },
+          "clock_samples": [
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            },
+            {
+              "gpu-gpc-0": 1530000000,
+              "gpu-nvd-0": 1566000000
+            }
+          ],
+          "min_RAM_KiB": 24349324,
+          "min_GPU_free_bytes": 24642117632,
+          "max_Tj_mC": 56187,
+          "optional_profiling_counter_computed_tokens_original": 0,
+          "optional_profiling_counter_reused_tokens_original": 0,
+          "native_computed_tokens": 74,
+          "native_reused_tokens": 8320,
+          "token_count_source": "Actual contextCacheCoordinator beginRequest log;not optional disabled profiling counters"
+        }
+      ],
+      "tool_wall_s": 0.001642593000724446,
+      "initialization_excluded": true,
+      "task_success": true,
+      "task_wall_s": 7.762798087998817
+    }
+  ],
+  "actual_tools_per_arm": 2,
+  "strict_per_turn_output_ID_equivalence": true,
+  "A_task_s": 13.478787821994047,
+  "B_task_s": 7.762798087998817,
+  "task_wall_reduction_pct": 42.40729811525149,
+  "tool_execution_wall_s": [
+    0.0004171109976596199,
+    0.001642593000724446
+  ],
+  "GPU_clock_pairs_Hz": [
+    [
+      1530000000,
+      1566000000
+    ]
+  ],
+  "minimum_RAM_GiB": 5.201351165771484,
+  "minimum_GPU_free_GiB": 4.951194763183594,
+  "maximum_Tj_C": 61.406,
+  "additional_residency_risk": "Second runtime initialization approached RAM guard;process isolation/residency lifecycle still needs audit",
+  "qualification_limit": "One bounded JSON-command Agent pair;not native API Tool Calling,production Harness,fullThinking/longcontext/sessionisolation/stability",
+  "repaired_collector_source": "Host source reads operative context-cache reused_tokens delta;AST/diff checked;not rerun or deployed",
+  "performance_admission": "Single observed task latency only;raw run exit remains1;no blanket PASS or production admission",
+  "new_kernel_or_engine": false,
+  "default_K7_unchanged": true
+}

@@ -1,0 +1,46 @@
+{
+  "manifest": "MASTER_ARTIFACT_MANIFEST",
+  "project": "THOR-U R39.2.1 GOS BOOT GATE (G0-G3)",
+  "date": "2026-10-06",
+  "target": "nvidia@192.0.2.222 (Tegra264 / p3960-0010, DRIVE OS 7.0.3 GOS, kernel 6.1.119-rt45-prod-rt-tegra)",
+  "gates": {"G0": "PASS", "G1": "PASS", "G2": "PASS", "G3": "PASS"},
+  "key_artifacts": [
+    {"path": "00_live_baseline/G0_LIVE_BASELINE.json", "role": "system identity + evidence index (2025 files)"},
+    {"path": "00_live_baseline/G0_MODULE_MANIFEST.tsv", "role": "11 frozen modules: sha256/readelf/modinfo/depends"},
+    {"path": "00_live_baseline/G0_VBLK_MAP.json", "role": "19 vblk devices <-> DT storage nodes + cmdline roles"},
+    {"path": "00_live_baseline/G0_RECOVERY_READINESS.md", "role": "kexec config PASS + RCMBOOT-R note + safety statement"},
+    {"path": "00_live_baseline/G0_DEVICE_TREE/", "role": "fdt.raw + live-p3960.dts + devicetree_base.tar.gz + DT_VERIFY_CHECKLIST.txt"},
+    {"path": "01_sources/G1_SOURCE_LOCK.json", "role": "exact repos/branches/commits for kernel+nv-oot+t264-dts"},
+    {"path": "01_sources/G1_HV_VBLK_SOURCE_AUDIT.md", "role": "HV_SOURCE=FOUND / VBLK_SOURCE=FOUND / T264=YES"},
+    {"path": "01_sources/G1_TOOLCHAIN_REPORT.md", "role": "production Buildroot gcc13.2 vs chosen Ubuntu gcc13"},
+    {"path": "03_kernel68/artifacts/Image-6.8.12-prod", "sha256": "587cd14c5bb6a4a0d412cb9ff15db0da3cdca71d874fb98d8e19918d63af240a", "role": "built Kernel 6.8.12 image"},
+    {"path": "03_kernel68/artifacts/modules/", "role": "8 OOT modules (incl tegra_vblk.ko sha256 739e0fb0...)"},
+    {"path": "03_kernel68/G2_ARTIFACT_SHA256SUMS.txt", "role": "artifact hashes"},
+    {"path": "03_kernel68/G2_MODULE_DEPENDENCY.json", "role": "module deps/aliases/vermagic"},
+    {"path": "03_kernel68/G2_CONFIG_DELTA.diff", "role": "tegra_prod_defconfig -> GOS config delta"},
+    {"path": "03_kernel68/G2_KERNEL_BUILD_REPORT.md", "role": "G2 report incl conftest fix knowledge"},
+    {"path": "04_hv_vblk/G2_HV_PROTOCOL_MATRIX.md", "role": "static protocol compatibility matrix vs live DT"},
+    {"path": "05_initrd/out/initrd-minimal.img", "sha256": "e1caed96070e0298993ac265a6950e280294ed5c7ced265d6325869c9e94049e"},
+    {"path": "05_initrd/out/initrd-debug.img", "sha256": "435aae3ee51b8d4ef30281b3daa64148253272e37a7898bbc80541b154c1b11e"},
+    {"path": "05_initrd/G3_INITRD_MANIFEST.md", "role": "G3 report"},
+    {"path": "05_initrd/G3_INITRD_DEPENDENCIES.json", "role": "dependency resolution evidence"},
+    {"path": "05_initrd/G3_KEXEC_PACKAGE_MANIFEST.json", "role": "G4 package manifest (kexec NOT executed)"},
+    {"path": "05_initrd/G3_BOOT_CMDLINE_DRAFT.txt", "role": "candidate A/B cmdlines"},
+    {"path": "07_reports/G0_G3_FINAL_GATE_REPORT.md", "role": "the single total gate report required by the plan"}
+  ],
+  "raw_evidence": [
+    {"path": "00_live_baseline/g0_bundle.tar", "sha256": "6a03cd77eb6c108f50244ce51eb47b5a62d6ac7b4da8244ab6d1fb384563e11c"},
+    {"path": "00_live_baseline/g0_bundle2.tar", "sha256": "a9ea3c661473f16621aff38e7dbc43df51a1507bd883699b82f9561de50bd3d8"},
+    {"path": "00_live_baseline/g0_out/", "role": "identity/DT/mounts evidence (2025 files indexed)"},
+    {"path": "00_live_baseline/g0_out2/", "role": "sudo re-freeze: modules closure + vblk + DT storage nodes"},
+    {"path": "00_live_baseline/G0_MODULE_READELF/", "role": "readelf -h/-d + sections for 11 modules"}
+  ],
+  "build_env": {
+    "host": "WSL2 Ubuntu 24.04.4 (distro 'Ubuntu', user xurui), ext4 ~/THOR_R39",
+    "toolchain": "aarch64-linux-gnu-gcc 13.x (Ubuntu)",
+    "kernel_clone": "~/THOR_R39/kernel-6.8.0-1021.21 (depth-1, branch l4t/l4t-r39.2.1-Ubuntu-nvidia-tegra-6.8.0-1021.21)",
+    "nvoot_clone": "~/THOR_R39/linux-nv-oot (depth-1, branch l4t/l4t-r39.2.1)",
+    "dts_clone": "~/THOR_R39/t264-public-dts (depth-1, branch l4t/l4t-r39.2.1)",
+    "kbuild_out": "~/THOR_R39/kbuild"
+  }
+}

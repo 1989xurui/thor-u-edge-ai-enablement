@@ -1,0 +1,71 @@
+{
+  "status": "GO_SCOPED_NATIVE_MTP_K7_SM14_REAL27B_8K_SINGLE_FIXTURE",
+  "timestamp": "2026-10-14T09:07:25.571627+08:00",
+  "production": "NO_GO_PENDING_OTHER_GATES",
+  "selected_K": 7,
+  "verify_positions": 8,
+  "base_target_recompiled": false,
+  "base_target_hardlinked": true,
+  "new_draft_bytes": 718924164,
+  "new_draft_sha256": "04f98d4744d0b2c52986a872fa296d5ef4f708543352276498e1ab8d0fd6be14",
+  "base_engine_sha256": "1f0b6ad1d839222aee3436fad3ac3facbe9a57e146c0b9ebc5c540eb893b8081",
+  "same736_output_IDs": true,
+  "original_K6_and_GDN_fallbacks_preserved": true,
+  "cold_Decode_tok_s": 55.44382335153146,
+  "warm_Decode_tok_s": 55.50407780038923,
+  "cold_TTFT_s": 4.2916637170055765,
+  "warm_TTFT_s": 0.13855193700146629,
+  "cold_Prefill_GPU_tok_s": 2036.9674951824088,
+  "cold_Prefill_GPU_ms": 4029.0284549999997,
+  "cold_whole_request_output_tok_s": 33.72266092835052,
+  "warm_whole_request_output_tok_s": 54.501773094983456,
+  "warm_reused_tokens": 8203,
+  "warm_computed_tokens": 4,
+  "saved_reference_comparison": {
+    "scope": "Saved K6/SM14-GDN8K run versus new K7/profile8;not a simultaneous matched full-model A/B",
+    "cases": [
+      {
+        "mode": "COLD_CACHE_EMPTY",
+        "old_Decode_tok_s": 51.96194727040808,
+        "new_Decode_tok_s": 55.44382335153146,
+        "Decode_delta_percent": 6.700819087867926,
+        "old_TTFT_s": 4.25486459700187,
+        "new_TTFT_s": 4.2916637170055765
+      },
+      {
+        "mode": "WARM_SAME_PREFIX",
+        "old_Decode_tok_s": 52.014371912265524,
+        "new_Decode_tok_s": 55.50407780038923,
+        "Decode_delta_percent": 6.709118575938811,
+        "old_TTFT_s": 0.1383014750026632,
+        "new_TTFT_s": 0.13855193700146629
+      }
+    ]
+  },
+  "native_spec_counts": {
+    "total_iterations": 48,
+    "total_generated_tokens": 368,
+    "total_accepted_draft_tokens": 320,
+    "total_proposed_draft_tokens": 336
+  },
+  "prior_K6_native_spec_counts": {
+    "total_iterations": 54,
+    "total_generated_tokens": 368,
+    "total_accepted_draft_tokens": 314,
+    "total_proposed_draft_tokens": 324
+  },
+  "acceptance_ratio": 0.9523809523809523,
+  "prior_K6_acceptance_ratio": 0.9691358024691358,
+  "target_verification_round_change_percent": -11.111111111111116,
+  "actual_Graph_replays_per_response": 383,
+  "captured_local_GDN_nodes": 48,
+  "maximum_Tj_C": 62.437,
+  "minimum_MemAvailable_GiB": 31.849586486816406,
+  "minimum_GPU_free_GiB": 31.817729949951172,
+  "direct_target_GPU_cost": "SHORT64_MEASURED_FULL368_UNMEASURED",
+  "selection_reason": "Acceptance ratio lower,but fewer target verification rounds and higher actual delivered-token Decode;retain measured K7 gain",
+  "next_unique_action": "Repair the native Tree HybridMTP split-Prefill/PrefixCache interaction with targeted component state/logit comparison;preserve qualified bypass8K and K7 without rerunning their accepted fixtures",
+  "short64_GPU_cost_evidence": "native-mtp-spec-cost-result.json",
+  "short64_K7_acceleration": "NO_GO_EXTRA_DRAFT_WITHOUT_FEWER_TARGET_ROUNDS",
+  "length_scope": "Short64 stops at generation budget;qualified fixture has budget512 and natural END_ID at368;raw acceptance counters are workload dependent"
+}

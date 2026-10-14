@@ -1,0 +1,144 @@
+{
+  "operation": "private IPv4 -> RFC5737 documentation addresses; exported paths are not deployment-ready configs",
+  "timestamp": "2026-10-14T23:38:08.237069+00:00",
+  "redacted_files": [
+    {
+      "origin": "boot/06_manifests\\MASTER_ARTIFACT_MANIFEST.json",
+      "dest": "evidence/kernel/MASTER_ARTIFACT_MANIFEST.json",
+      "bytes": 3870,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "boot/07_reports\\G0_G3_FINAL_GATE_REPORT.md",
+      "dest": "docs/kernel/history/G0_G3_FINAL_GATE_REPORT.md",
+      "bytes": 6045,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "boot/07_reports\\G3_5_PRE_G4_HARDENING_REPORT.md",
+      "dest": "docs/kernel/history/G3_5_PRE_G4_HARDENING_REPORT.md",
+      "bytes": 7813,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "boot/07_reports\\G4A_G4B_RUNTIME_GATE_REPORT.md",
+      "dest": "docs/kernel/history/G4A_G4B_RUNTIME_GATE_REPORT.md",
+      "bytes": 7639,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/TOTAL_REPORT.md",
+      "dest": "docs/edge/TECHNICAL_REPORT.md",
+      "bytes": 25590,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/RUN_STATE.json",
+      "dest": "evidence/edge/RUN_STATE.json",
+      "bytes": 188167,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/CANDIDATE_VERDICT.json",
+      "dest": "evidence/edge/CANDIDATE_VERDICT.json",
+      "bytes": 142986,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\build-native-tree-draft16.py",
+      "dest": "src/edge-llm/build-native-tree-draft16.py",
+      "bytes": 4685,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\build-native-tree-full8k.py",
+      "dest": "src/edge-llm/build-native-tree-full8k.py",
+      "bytes": 6987,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\build-native-tree-mini4.py",
+      "dest": "src/edge-llm/build-native-tree-mini4.py",
+      "bytes": 6334,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\build-native-shared200k-mtp-v2.py",
+      "dest": "src/edge-llm/build-native-shared200k-mtp-v2.py",
+      "bytes": 8339,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\closeout-native-tree-state.py",
+      "dest": "src/edge-llm/closeout-native-tree-state.py",
+      "bytes": 3929,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/scripts\\build-s1-k7-shared200k-target-v1.py",
+      "dest": "src/edge-llm/build-s1-k7-shared200k-target-v1.py",
+      "bytes": 9619,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-mtp-k7-8k-result.json",
+      "dest": "evidence/edge/selected/native-mtp-k7-8k-result.json",
+      "bytes": 59598,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-mtp-sm14-gdn8k-result.json",
+      "dest": "evidence/edge/selected/native-mtp-sm14-gdn8k-result.json",
+      "bytes": 61682,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-mtp-prefix8k-v2-result.json",
+      "dest": "evidence/edge/selected/native-mtp-prefix8k-v2-result.json",
+      "bytes": 60019,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-tree-full8k-result.json",
+      "dest": "evidence/edge/selected/native-tree-full8k-result.json",
+      "bytes": 29443,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-tree-bypass8k-result.json",
+      "dest": "evidence/edge/selected/native-tree-bypass8k-result.json",
+      "bytes": 30751,
+      "python_ast_or_json_validation": "PASS"
+    },
+    {
+      "origin": "edge/evidence\\native-tree-aligned8k-result.json",
+      "dest": "evidence/edge/selected/native-tree-aligned8k-result.json",
+      "bytes": 58482,
+      "python_ast_or_json_validation": "PASS"
+    }
+  ],
+  "still_excluded": [
+    {
+      "origin": "edge/scripts\\build-tree-prefix-policy.py",
+      "reason": "review_required",
+      "flags": [
+        "vendor_copyright_review"
+      ]
+    },
+    {
+      "origin": "edge/scripts\\build-native-mtp-bounded-state.py",
+      "reason": "missing"
+    },
+    {
+      "origin": "edge/artifacts\\native-tree-replay-v1.cu",
+      "reason": "review_required",
+      "flags": [
+        "vendor_copyright_review"
+      ]
+    },
+    {
+      "origin": "edge/artifacts\\native-tree-replay-v1-tested.cu",
+      "reason": "missing"
+    }
+  ]
+}

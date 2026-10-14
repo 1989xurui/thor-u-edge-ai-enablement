@@ -1,0 +1,31 @@
+{
+  "status": "PASS_PROCESS_EXIT_ONLY",
+  "pid": 13791,
+  "before": {
+    "uptime_s": 48597.0,
+    "MemAvailable_KiB": 51773780,
+    "GPU_free_bytes": 52444803072,
+    "persistent_free_bytes": 13601247232,
+    "Tj_mC": 50500
+  },
+  "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+  "returncode": 0,
+  "failure": null,
+  "elapsed_s": 21.007806263995008,
+  "minimum": {
+    "uptime_s": 48597.0,
+    "MemAvailable_KiB": 32037140,
+    "GPU_free_bytes": 32338534400,
+    "persistent_free_bytes": 13599895552,
+    "Tj_mC": 50500
+  },
+  "maximum_Tj_mC": 58000,
+  "observed_peak_RSS_KiB": 27599432,
+  "after": {
+    "uptime_s": 48618.01,
+    "MemAvailable_KiB": 51788772,
+    "GPU_free_bytes": 52478787584,
+    "persistent_free_bytes": 13599895552,
+    "Tj_mC": 52531
+  }
+}

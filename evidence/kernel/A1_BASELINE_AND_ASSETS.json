@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-13 Asia/Shanghai",
+  "historical_baseline": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006",
+  "workspace": "D:\\Thor64G\\THOR_U_A1_NVGPU_R39_20261013",
+  "source_provenance": "PASS",
+  "kernel_commit": "78272943bba3a47e633b28963b0cda60de503500",
+  "kernel_tree": "4bc6b7d68853f74a6c7466b46f98f70df6821738",
+  "source_recovery": "All tracked code and modes match the frozen commit; 335 omitted Git metadata files restored; five extra perf build outputs are untracked and not used.",
+  "target": {
+    "label": "Frozen historical G35 Image; exact existing configuration, not a newly disabled signature policy",
+    "kernelrelease": "6.8.12-prod-g78272943bba3",
+    "config_sha256": "3df259fa1f0be026af15e15e5133eb609a1e3e47f663313bc01b20afafe5b50b",
+    "config_matches_frozen_g35": true,
+    "signature_force": false,
+    "frozen_kernel_symbols": 13943,
+    "frozen_crc_conflicts": 0,
+    "frozen_missing": 0
+  },
+  "assets": [
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\03_kernel68\\artifacts\\Image-6.8.12-prod",
+      "size": 22692352,
+      "sha256": "587cd14c5bb6a4a0d412cb9ff15db0da3cdca71d874fb98d8e19918d63af240a"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\03_kernel68\\artifacts\\kernel-6.8.12-prod.config",
+      "size": 179259,
+      "sha256": "70a2296c1c3aa9af0c4f6d08dd75bae19fb659ab8b36662437519c0bcf436b5d"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\03_kernel68\\artifacts_g35\\Image-6.8.12-prod-g35",
+      "size": 23446016,
+      "sha256": "482a7c419b6903fce27ea3a05c2a1eeb801e4f4b95c9b409b33d439db8b81f19"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\03_kernel68\\artifacts_g35\\kernel-6.8.12-prod-g35.config",
+      "size": 185960,
+      "sha256": "3df259fa1f0be026af15e15e5133eb609a1e3e47f663313bc01b20afafe5b50b"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\15_g5_openrm\\payload_fix\\initrd\\Module.symvers",
+      "size": 845679,
+      "sha256": "e112a1bf5586ae650faa41430bba917bbefe0da5add7d8b354fa86748f2f54af"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\15_g5_openrm\\downloads\\public_sources.tbz2",
+      "size": 309583176,
+      "sha256": "8346f0371649a92c42293b2d4a7bf3d69e4dd1de23009e1463ea910994a81371"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\15_g5_openrm\\downloads\\nvgpu_src\\drivers\\gpu\\nvgpu\\os\\linux\\pci_gb10b_tegra.h",
+      "size": 685,
+      "sha256": "33bcca8284768d9dd5f0cb2233d7363e6652b0537e0b4fdc138f1c70303144e1"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\15_g5_openrm\\downloads\\nvgpu_src\\drivers\\gpu\\nvgpu\\Makefile",
+      "size": 37017,
+      "sha256": "76cbd1ed3fdf42101ff4899e613754dc11daad2597d7c4fff9240a190a21c9f8"
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\15_g5_openrm\\P39_LIBOS_LOGCHANNEL_20261008\\EXECUTION_JOURNAL.md",
+      "size": 3709,
+      "sha256": "167cccc2e3b09d1b23a3cc0b2adef32d7ab325ff27b1ba0eeece7b3dfb437f62"
+    }
+  ],
+  "evidence_sha": {
+    "checked": 82,
+    "mismatches": []
+  },
+  "packages": [
+    {
+      "file": "nvidia-l4t-3d-core_39.2.1-20260806224157_arm64.deb",
+      "sha256": "77fcb6c2c11ed67403f8e7697aab9d6ef11a2acbde86dd38a062a8945d5d8631",
+      "official_sha256": "77fcb6c2c11ed67403f8e7697aab9d6ef11a2acbde86dd38a062a8945d5d8631",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-bsp-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "4e83df2cfdd9dfade5d48900d6e3d2f36d33949c2a944d02b58a52d7a4dbde6b",
+      "official_sha256": "4e83df2cfdd9dfade5d48900d6e3d2f36d33949c2a944d02b58a52d7a4dbde6b",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-bsp_39.2.1-20260806224157_arm64.deb",
+      "sha256": "8e96bb4a6a4343f02bbb434c79673aa8da8a269c67e05dd17298ea39ddfa35e2",
+      "official_sha256": "8e96bb4a6a4343f02bbb434c79673aa8da8a269c67e05dd17298ea39ddfa35e2",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-core_39.2.1-20260806224157_arm64.deb",
+      "sha256": "277a6fb25f2c06cc2dee6d352bef3abb15929739f396fea1cee70d1dea83008b",
+      "official_sha256": "277a6fb25f2c06cc2dee6d352bef3abb15929739f396fea1cee70d1dea83008b",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-cuda-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "a70b1a731eaaf8a528428f1f8fe882ba5b06d670d8ffe28c338342fd195eb302",
+      "official_sha256": "a70b1a731eaaf8a528428f1f8fe882ba5b06d670d8ffe28c338342fd195eb302",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-firmware-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "c219f18c2e352d02e0c0e3d2233ab1e208b16da6b19be1e7a2b8cd43ed136770",
+      "official_sha256": "c219f18c2e352d02e0c0e3d2233ab1e208b16da6b19be1e7a2b8cd43ed136770",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-firmware_39.2.1-20260806224157_arm64.deb",
+      "sha256": "ab95bcddebe7e49accb1a951a32052ec4cf3bb5e54c13407c9f0a89894f58178",
+      "official_sha256": "ab95bcddebe7e49accb1a951a32052ec4cf3bb5e54c13407c9f0a89894f58178",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-init-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "5013d568110041c17e0f785f4212bd24019d57e432505e8d5266163d12bf2bd7",
+      "official_sha256": "5013d568110041c17e0f785f4212bd24019d57e432505e8d5266163d12bf2bd7",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-init_39.2.1-20260806224157_arm64.deb",
+      "sha256": "26cfc6b244ba3d3bbf424732a1ffe0d9e21faa0298eaacc911b7466b5bd76b93",
+      "official_sha256": "26cfc6b244ba3d3bbf424732a1ffe0d9e21faa0298eaacc911b7466b5bd76b93",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-kernel-headers_6.8.12-tegra-39.2.1-20260806224157_arm64.deb",
+      "sha256": "e1c2bf37109913197b31293ce53ca642608fdb7f6d5859bfb372893fd721a17d",
+      "official_sha256": "e1c2bf37109913197b31293ce53ca642608fdb7f6d5859bfb372893fd721a17d",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-kernel-module-configs_6.8.12-tegra-39.2.1-20260806224157_arm64.deb",
+      "sha256": "f8dc87bc50da83d3d69e64db2c1a306c2618fe0f51a069d131522305d12a2729",
+      "official_sha256": "f8dc87bc50da83d3d69e64db2c1a306c2618fe0f51a069d131522305d12a2729",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-kernel-nvgpu_6.8.12-tegra-39.2.1-20260806224157_arm64.deb",
+      "sha256": "33f322d0ac248f315a5385f35146c84007d05fabdd5569ea5dd07862b53a1cb8",
+      "official_sha256": "33f322d0ac248f315a5385f35146c84007d05fabdd5569ea5dd07862b53a1cb8",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-kernel-oot-headers_6.8.12-tegra-39.2.1-20260806224157_arm64.deb",
+      "sha256": "e8fb55e923bc4dfdda04c3ebb62f5f486f164321d5c4d08844a76218eba35740",
+      "official_sha256": "e8fb55e923bc4dfdda04c3ebb62f5f486f164321d5c4d08844a76218eba35740",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-kernel-oot-modules_6.8.12-tegra-39.2.1-20260806224157_arm64.deb",
+      "sha256": "636577601b61612d254db45e2034c10263d899d766a9699c7827a7ca82ce409d",
+      "official_sha256": "636577601b61612d254db45e2034c10263d899d766a9699c7827a7ca82ce409d",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-multimedia-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "b55df254f1a5e185170b3d7c1a92fe6e3d812e30d849c7141e11647a7dbd55d4",
+      "official_sha256": "b55df254f1a5e185170b3d7c1a92fe6e3d812e30d849c7141e11647a7dbd55d4",
+      "match": true
+    },
+    {
+      "file": "nvidia-l4t-vulkan-sc-nvgpu_39.2.1-20260806224157_arm64.deb",
+      "sha256": "ab64c4b940ebf9af164964c2e32fb18ebeaff7623557f66a7798d85e2ce3a7d6",
+      "official_sha256": "ab64c4b940ebf9af164964c2e32fb18ebeaff7623557f66a7798d85e2ce3a7d6",
+      "match": true
+    }
+  ],
+  "environment": {
+    "distribution": "Thor-A1-R39-20261013",
+    "vhdx_host_volume": "D:",
+    "rootfs": "Ubuntu Base 24.04.5 amd64",
+    "rootfs_sha256": "e77b6f10c2590cef872b33ee9f635a0e3fd1f57fb074c0e52b5c7f56147a0c86",
+    "gcc": "13.3.0-6ubuntu2~24.04.1",
+    "binutils": "2.42",
+    "pahole": "1.25",
+    "damaged_Ubuntu_reused": false,
+    "old_ThorBuild": "Brief health probe only; stopped after confirming its VHDX is on E:",
+    "E_volume": "Dirty; historical reads only during build; no repair or migration performed"
+  },
+  "current_vehicle": {
+    "boot_id": "UNKNOWN_NOT_QUERIED",
+    "kernel": "UNKNOWN_NOT_QUERIED",
+    "production_R4_state": "UNKNOWN_NOT_QUERIED",
+    "historical_success_driver_api": 12080
+  },
+  "safety": {
+    "vehicle_operations": 0,
+    "vehicle_connections": 0,
+    "golden_writes": 0,
+    "firmware_partition_writes": 0,
+    "GPU_INITIALIZATION": "NOT_RUN",
+    "CUDA_13_2_U2_NATIVE": "NOT_RUN",
+    "R4_GOLDEN": "UNCHANGED",
+    "R4_RESTORED_CURRENT": "NOT_VERIFIED",
+    "INDEPENDENT_6P8_COLD_BOOT": "NOT_PROVEN"
+  },
+  "A2_readonly_audit": "DEFERRED_BY_USER; no technical verdict",
+  "missing": [
+    "R39 NvGPU firmware keys, SEC2/GSP ownership and BPMP/IVC/nvhost protocol acceptance under this DRIVE Hypervisor are not established.",
+    "Complete target CUDA 13.2 Update 2 compiler/runtime/library closure and actual CUDA ioctl/compute acceptance are not established.",
+    "Current production recovery state, ITS/LPI handoff and independent 6.8 cold boot are not verified."
+  ],
+  "official_sources": [
+    "https://repo.download.nvidia.com/jetson",
+    "https://docs.nvidia.com/jetson/archives/r39.2.1/DeveloperGuide/SD/Kernel/DisplayConfigurationAndBringUp/NvLoadDisplayModulesService.html",
+    "https://docs.nvidia.com/cuda/archive/13.2.2/cuda-toolkit-release-notes/index.html"
+  ],
+  "original_target": {
+    "config_sha256": "70a2296c1c3aa9af0c4f6d08dd75bae19fb659ab8b36662437519c0bcf436b5d",
+    "module_link_and_crc": "PASS",
+    "signature_force": true,
+    "signature_admission": "NO_GO_UNSIGNED; original artifacts retained"
+  },
+  "compiled_pci": {
+    "path": "/mnt/d/Thor64G/THOR_U_A1_NVGPU_R39_20261013/artifacts/g35/nvgpu.ko",
+    "sha256": "a09deb9b37b8294c0b2a58239df14832eb15f8ead96aa0baa00543998befdf04",
+    "aarch64": true,
+    "table_entries": [
+      {
+        "vendor": "0x10de",
+        "device": "0x2b00",
+        "subvendor": "0x10de",
+        "subdevice": "0x1",
+        "pci_class": "0x30000",
+        "class_mask": "0xff0000",
+        "driver_data": 4,
+        "override_only": 0
+      },
+      {
+        "vendor": "0x10de",
+        "device": "0x2b00",
+        "subvendor": "0xffffffff",
+        "subdevice": "0xffffffff",
+        "pci_class": "0x30000",
+        "class_mask": "0xff0000",
+        "driver_data": 5,
+        "override_only": 0
+      }
+    ]
+  },
+  "identity_and_dtb_hashes": [
+    {
+      "path": "D:\\Thor64G\\Thor_CUDA13_Class_Runtime_20260916\\g0\\driver_identity_evidence.json",
+      "sha256": "c0dba5209eb632b44bed266f87d4c6244d04454301088a9da2b13d5fb03e8102",
+      "size": 880
+    },
+    {
+      "path": "D:\\Thor64G\\Thor_CUDA13_Class_Runtime_20260916\\g0\\thor_hardware_capabilities.json",
+      "sha256": "5b0fb177f67c855ab6a0ff3e94320e705c735c8e672b75b3df62ca825df68a44",
+      "size": 4062
+    },
+    {
+      "path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\05_initrd\\out\\g4_package_g35\\p3960-live.dtb",
+      "sha256": "ca2f914bbfdbc62201012c91df4d5b5e50be9993228fa4cc87c319d352fcd1a2",
+      "size": 240612
+    }
+  ],
+  "current_golden_R4_hash": "UNKNOWN_NOT_QUERIED; no files on the vehicle were changed",
+  "historical_original_libcuda_sha256": "b8e50a5070266752b1e574a796df752e6a1d3827b10be9f96b2c4f50e3d02c33",
+  "firmware_hash_manifest": "logs/static-contract.json; archived DRIVE raw firmware bytes are not present for a full signed-file SHA comparison",
+  "last_valid_historical_boot": {
+    "date": "2026-10-08 22:56 Asia/Shanghai",
+    "kernel": "6.1.119-rt45-prod-rt-tegra",
+    "boot_id": "7d4cf91b-b4ff-4041-9012-f58efaefc277",
+    "source": "P39_LIBOS_LOGCHANNEL_20261008/run_p39/p39_recover61.log; this is historical, not current"
+  },
+  "current_runtime_result": "A1_NATIVE_RUNTIME_RESULT.json",
+  "additional_common_cuda_package": {
+    "url": "https://repo.download.nvidia.com/jetson/som/pool/main/n/nvidia-l4t-cuda/nvidia-l4t-cuda_39.2.1-20260806224157_arm64.deb",
+    "sha256": "a8f65b17c3dc9cae34d77e3a3481b809a49443d83241d85d5fea36525af6ab51",
+    "official_sha_match": true,
+    "files": [
+      "/work/a1/stage/nvidia-l4t-cuda_39.2.1-20260806224157_arm64/usr/lib/aarch64-linux-gnu/libnvcucompat.so",
+      "/work/a1/stage/nvidia-l4t-cuda_39.2.1-20260806224157_arm64/usr/lib/aarch64-linux-gnu/nvidia/libnvcucompat.so"
+    ]
+  },
+  "CUDA_U2_components": [
+    {
+      "component": "cuda_nvcc",
+      "arch": "linux-x86_64",
+      "version": "13.2.86",
+      "sha256": "b04e5ca5b41f8b5629ce5f16930920e6af437f32c9777fcb67e0361f732b6f43",
+      "size": 31085360
+    },
+    {
+      "component": "libnvvm",
+      "arch": "linux-x86_64",
+      "version": "13.2.86",
+      "sha256": "029fc2a43904a2208a83dfd5834c4c343394d1117279f849863ae94208a88b8a",
+      "size": 45460688
+    },
+    {
+      "component": "cuda_cudart",
+      "arch": "linux-x86_64",
+      "version": "13.2.86",
+      "sha256": "d6be2b3546fa93e5dec9e3d118d31f9540d0b7af5319ee3c6726f202dfc5b5d4",
+      "size": 1558760
+    },
+    {
+      "component": "cuda_cccl",
+      "arch": "linux-x86_64",
+      "version": "13.2.86",
+      "sha256": "a14f52d5cc8a00a22bccd6c0ab6b1427c7dde7e8251adf321e768a7fc47bb2a5",
+      "size": 1207024
+    },
+    {
+      "component": "cuda_crt",
+      "arch": "linux-x86_64",
+      "version": "13.2.86",
+      "sha256": "174ad29ab90c9301bd25f32f935345e65f19fbb0f39c15788daae25b0e924892",
+      "size": 80220
+    },
+    {
+      "component": "cuda_cudart",
+      "arch": "linux-sbsa",
+      "version": "13.2.86",
+      "sha256": "30d07b79d832b517cedced78a9e1aa63ebfaa8d71e4df6d1943cdf33fe563400",
+      "size": 1554900
+    }
+  ],
+  "vehicle_preflight": "logs/vehicle-root-preflight.json and logs/vehicle-final-read.json",
+  "scope_update": "User explicitly authorized exclusive vehicle operations and repairs; requested no restore until final abandonment; original document offline-only scope superseded by direct user requests"
+}

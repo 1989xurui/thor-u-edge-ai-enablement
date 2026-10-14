@@ -1,0 +1,12 @@
+{
+  "status": "STAGING_COMPLETE_NOT_PUBLISHED",
+  "file_count": 114,
+  "bytes": 1465124,
+  "mebibytes": 1.397,
+  "max_file_bytes": 219522,
+  "large_file_violations": 0,
+  "sha_manifest": "manifest/SHA256SUMS.txt",
+  "source_index": "manifest/SOURCE_FILES.json",
+  "privacy_review": "manifest/REVIEW_REQUIRED.json",
+  "published": false
+}

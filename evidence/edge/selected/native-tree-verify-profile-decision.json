@@ -1,0 +1,18 @@
+{
+  "status": "NO_GO_CURRENT_SINGLE_NODE_PROFILER_NATIVE_PDL_EDGES_UNSUPPORTED",
+  "raw_evidence": [
+    "native-tree-verify-node-profile-result.json",
+    "native-tree-verify-node-profile-guard-result.json",
+    "native-tree-profile-capture-diagnostic-result.json",
+    "native-tree-profile-capture-diagnostic.log"
+  ],
+  "verified_failure": "THOR_NODE_PROFILE_FAIL: unsupported_edge index=2 from_port=1 to_port=0 type=1",
+  "synthetic_cuda_error999": "Profiler deliberately rejected unsupported edge;not proof of native driver crash",
+  "first64_output_IDs_match": true,
+  "valid_Verify_Top3": false,
+  "tiny_graph_unit": "PASS_V1_64BYTES_ONLY",
+  "source_v1_SHA256": "6f81576e01fba119840d4fa3d42890a6cdc622816390fa8ccb3735304ae276d3",
+  "binary_v1_SHA256": "24d39c75cff7ec01526c103c89759a0a34a190ab0758a00ca6a9f27e916f757f",
+  "qualified_aligned_Tree_unchanged": true,
+  "next_unique_action": "Implement PDL-preserving region profiling without breaking native programmatic edges;validate capture only before any new generation;keep qualified aligned Tree and K7 unchanged"
+}

@@ -1,0 +1,86 @@
+{
+  "gate": "G2_MODULE_DEPENDENCY",
+  "kernelrelease": "6.8.12-prod-g78272943bba3",
+  "modules": {
+    "ivc-cdev": {
+      "size": 84760,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL",
+      "description": "",
+      "aliases": []
+    },
+    "tegra_hv": {
+      "size": 26880,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL v2",
+      "description": "   Tegra HV Dummy Driver",
+      "aliases": []
+    },
+    "tegra_hv_mtd": {
+      "size": 88952,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL v2",
+      "description": "   VIRT MTD driver",
+      "aliases": [
+        "         of:N*T*Cnvidia,tegra-virt-mtd-storageC*",
+        "         of:N*T*Cnvidia,tegra-virt-mtd-storage"
+      ]
+    },
+    "tegra_hv_pm_ctl": {
+      "size": 105912,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL",
+      "description": "   Nvidia hypervisor PM control driver",
+      "aliases": [
+        "         of:N*T*Cnvidia,tegra-hv-pm-ctlC*",
+        "         of:N*T*Cnvidia,tegra-hv-pm-ctl"
+      ]
+    },
+    "tegra_hv_vblk_oops": {
+      "size": 92232,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL",
+      "description": "   Virtual OOPS storage device over Tegra Hypervisor IVC channel",
+      "aliases": [
+        "         of:N*T*Cnvidia,tegra-hv-oops-storageC*",
+        "         of:N*T*Cnvidia,tegra-hv-oops-storage"
+      ]
+    },
+    "tegra_hv_vcpu_yield": {
+      "size": 79600,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL v2",
+      "description": "   Timed VCPU Yield driver",
+      "aliases": [
+        "         of:N*T*Cnvidia,tegra-hv-vcpu-yieldC*",
+        "         of:N*T*Cnvidia,tegra-hv-vcpu-yield"
+      ]
+    },
+    "tegra_vblk": {
+      "size": 342872,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL v2",
+      "description": "   Virtual storage device over Tegra Hypervisor IVC channel",
+      "aliases": [
+        "         of:N*T*Cnvidia,tegra-hv-storageC*",
+        "         of:N*T*Cnvidia,tegra-hv-storage"
+      ]
+    },
+    "userspace_ivc_mempool": {
+      "size": 72376,
+      "depends": "       ",
+      "vermagic": "      6.8.12-prod-g78272943bba3 SMP preempt mod_unload modversions aarch64",
+      "license": "       GPL",
+      "description": "",
+      "aliases": []
+    }
+  },
+  "note": "depends empty => symbol deps resolved by builtin kernel exports (tegra_hv builtin, CONFIG_TEGRA_HV_DRIVER=y)"
+}

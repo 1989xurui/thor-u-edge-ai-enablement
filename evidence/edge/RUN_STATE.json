@@ -1,0 +1,4545 @@
+{
+  "plan_version": "2.4",
+  "updated_at_utc": "2026-10-14T23:32:46.300325+00:00",
+  "previous_goal_turn": "PROGRESS_ORIGINAL_TREE_FIRST_VERIFY_AND_FULL8K_OWN_TARGET",
+  "current_gate": "GO_SCOPED_TREE_RECALL_AND_D256_OPERATOR_NUMERICS;PACKED_SWITCH_NO_GO;NO_NEW_MODEL_GAIN;FULL_QUALITY_PRODUCTION_NO_GO",
+  "device_boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+  "source_commit": "95515c2f87fba8982db5a519f9022277667b3cc9",
+  "installed_wheel_commit": "74f8732a7e8d1377e34471ad2652988346f18813",
+  "source_matches_installed_wheel": false,
+  "target_checkpoint": "nvidia/Qwen3.8-27B-NVFP4",
+  "checkpoint_revision": "fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+  "target_weight_SHAs": [
+    {
+      "name": "model-00001-of-00003.safetensors",
+      "size": 9965652544,
+      "sha256": "7d0fd155118901373eb0fd13ed3aae68f95be747bc205be72ebc41739c25ee80"
+    },
+    {
+      "name": "model-00002-of-00003.safetensors",
+      "size": 9985757064,
+      "sha256": "98a7e9486baa860c792c9463a770cb9d017696bdd17606300a5b9334149f4c27"
+    },
+    {
+      "name": "model-00003-of-00003.safetensors",
+      "size": 1970287672,
+      "sha256": "0506ad35dc21469708e7813bd76c592cef08bd0317b4a1fe899745ebe2435271"
+    }
+  ],
+  "tokenizer_SHA": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+  "tree_session": {
+    "status": "ORIGINAL_TREE_SCOPED_QUALITY_GO_NO_ACTIVE_GPU_JOB",
+    "last_qualified_run": "native-tree-aligned8k",
+    "candidate_id": "TREE_STABLE_PREFIX_ALIGN128",
+    "pid": null,
+    "work_dir": "/work/native-v2/worktrees/perf-v21-prefix-state",
+    "log_dir": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence",
+    "current_gate": "GO_SCOPED_TREE_8K64K200K_RECALL_IDS;FIRST_VERIFY_FLOAT_DIFFERENCES_RECORDED;FULL_QUALITY_AND_PRODUCTION_NO_GO",
+    "gpu_lock_owner": "Existing THOR_U_A1_20261013 maintenance window generation364;no second global lock",
+    "GPU_observation": [],
+    "latest_experimental_run": "S1-runtime-v1-204800"
+  },
+  "gates": {
+    "G0": "SCOPED_LIVE_HOST_MAINTENANCE;DEVICE_BINDING_OLD_BOOT;PRODUCTION_HEALTH_UNPROVEN",
+    "G1": "S8_REUSED_HISTORICAL_CLOCK_UNMATCHED;ONE_SAME_TREE_AGENT_PAIR_INPUT_AND_GPU_CLOCK_VERIFIED",
+    "G2": "INDEPENDENT_W0_W1_W2_DECISIONS_AND_FULL_CHAIN_SCOPED_BOUNDS_RECORDED",
+    "G3": "CURRENT_CUTE_NO_GO;AGENT_CACHE_SINGLE_PAIR_SCOPED_OBSERVATION;RAW_HARNESS_EXIT1_PRESERVED",
+    "G4": "PRODUCTION_HARNESS_NATIVE_TOOL_API_THINKING_SESSION_ISOLATION_PENDING",
+    "G5": "NOT_STARTED_PER_ENGINE_EVIDENCE_REQUIRED",
+    "G6": "NOT_STARTED_FULL_QUALITY_MISSING"
+  },
+  "active_gpu_candidate_id": "V24_C1_HQ24_HKV4_SM14_AOT",
+  "original_root": [
+    "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+  ],
+  "production_API": "INTENTIONALLY_STOPPED_IN_PREEXISTING_USER_EXCLUSIVE_RAM_BOOT",
+  "production_health": "NOT_PROVEN;still preexisting user-exclusive RAM maintenance",
+  "production_unchanged": "NO_PRODUCTION_ASSET_OR_ROUTE_WRITES_IN_THIS_TASK;restore_not_attempted",
+  "Golden_status": "RESTORE_RUNTIME_NOT_VERIFIED",
+  "L3_release_admission": false,
+  "system_changes": false,
+  "next_action": "Admit an isolated host CUTLASS4.7 AOT compiler and compile one C1/Hq24/Hkv4/D256/SM14 FP16 causal candidate;inspect generated register/local-memory code before a justified numeric/coreA/B.Original Engine/Runtime/plugin retained.",
+  "storage_maintenance": {
+    "status": "PASS",
+    "repair_receipt": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\E-volume-repair-authorized-20261014-attempt3.json",
+    "migration_receipt": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\D-to-E-unused-transfer-cache-result.json",
+    "files": 7,
+    "D_free_after_bytes": 22153084928,
+    "D_reclaimed_bytes": 9515917312,
+    "archive": "E:/Thor64G_AI/HostArchive/20261014_NVFP4_transfer_cache",
+    "E_mount_restored": true,
+    "preexisting_corruption_repaired": "CHKDSK reported XY_AG_20260913/v120_priority_atlas directory and volume bitmap corruption;Windows corrected filesystem",
+    "other_E_file_content_integrity": "NOT_FULLY_VERIFIED;volume health is not full content validation"
+  },
+  "profiler_candidate": {
+    "version": 3,
+    "status": "GPU_UNIT_AND_FROZEN_FIRST64_IDS_PASS",
+    "source_sha256": "1c249c1f2823305efdb78ada2cf0cdbd6a9b20c6ae5edd5ba846ad9e1984886a",
+    "region_header_sha256": "b0165e05bdc638d526f2632c4f11e01f1e2270347d99cee799b561a09d763173",
+    "artifact_sha256": "d00498673a1a289276df38bf123478e773a6aad5088a562d3c26d75dbc831ee8",
+    "preserves_PDL": true,
+    "actual_hotspots_measured": "INSTRUMENTED_PDL_REGIONS_ONLY",
+    "package_script": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\scripts\\package-tree-region-profile-v3.py",
+    "trace": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-region-profile-v3-trace.json",
+    "decision": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-region-profiler-v3-decision.json",
+    "hotspot_shape_audit": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-nvfp4-hotspot-shape-audit.json"
+  },
+  "G0_current": {
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "GPU_FD_owners": 0,
+    "GPU_clock_Hz": 1530000000,
+    "host_lease": "Livegeneration364PID15",
+    "device_lease": "Oldbootmetadata;notfullyboundcurrentboot",
+    "production": "StoppedinpreexistingRAMwindow;nothealthPASS",
+    "Golden_R4": "Noassets/routeschanged;restoreruntimeunverified",
+    "model_SHA": "ReuseverifieddeploymentSHA;currentshardsizesmatch;notrehash",
+    "original_root_RO": true
+  },
+  "G1_frozen_comparison": {
+    "checkpoint_revision": "fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+    "tokenizer_SHA": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+    "target_weight_SHAs": [
+      {
+        "name": "model-00001-of-00003.safetensors",
+        "size": 9965652544,
+        "sha256": "7d0fd155118901373eb0fd13ed3aae68f95be747bc205be72ebc41739c25ee80"
+      },
+      {
+        "name": "model-00002-of-00003.safetensors",
+        "size": 9985757064,
+        "sha256": "98a7e9486baa860c792c9463a770cb9d017696bdd17606300a5b9334149f4c27"
+      },
+      {
+        "name": "model-00003-of-00003.safetensors",
+        "size": 1970287672,
+        "sha256": "0506ad35dc21469708e7813bd76c592cef08bd0317b4a1fe899745ebe2435271"
+      }
+    ],
+    "thinking": false,
+    "sampling": "temperature0/top_k1/top_p1/seed7785123",
+    "Graph": "Enabledandactualreplayobserved",
+    "saved_S8": "8207input/368EOSoutput;coldwarm;K7Treeclockhistorymissingandstableboundarydifferent",
+    "Agent_fixture_SHA": "de5b7315e4f9a45b43d95106c9ce3bb76f278c72773ee73e16842c30b66be1d8",
+    "Agent_input_tokens": [
+      8205,
+      8340,
+      8394
+    ],
+    "Agent_AB": "SameTreeengine/cachepools/align128/input/outputIDs;BYPASSvsUSE_CACHE;observedGPUclocks1.530/1.566GHz",
+    "CPU_clock_limit": "Performancegovernorpre/post;per-turnCPUfrequencyhistorynotcaptured",
+    "long_context": "Do not transfer historicalR4 evidence to nativeTree engine;max tested8207 S8/8394 Agent"
+  },
+  "G2_benefit_bounds": {
+    "same_prompt_observed_cache_wall_reduction_pct": 38.900774091187884,
+    "cold_TTFT_share_pct": 40.12072262931169,
+    "warm_TTFT_share_pct": 2.108034955398862,
+    "cold_base_prefill_ideal_elimination_wall_reduction_pct": 37.65933700186676,
+    "Tree_mean_committed_tokens_per_verify": 8.363636363636363,
+    "K7_mean_committed_tokens_per_verify": 7.666666666666667,
+    "conditional_ideal9tokens_fixed_round_cost_Decode_uplift_pct": 7.608695652173925,
+    "conditional_acceptance_bound_limit": "Arithmetic assuming at most9committedtokens and unchanged round cost;not measured improvement or independent engine guarantee",
+    "native_Tree_draft_verify_split": "UNMEASURED;do not transfer K7short64 or instrumented node costs",
+    "no_whole_model_Amdahl_from_instrumented_regions": true
+  },
+  "G2_full_chain_ranking": [
+    {
+      "priority": 1,
+      "component": "Prefill/GDN/Prefix cross-tool reuse",
+      "status": "SCOPED_GO",
+      "evidence": "native-tree-agent-cache8k-decision.json",
+      "reason": "Highest directly observed reducible work;single Agent wall reduction measured"
+    },
+    {
+      "priority": 2,
+      "component": "Target Verify NVFP4 GEMM",
+      "status": "NO_GO_EVIDENCED_FOR_CURRENT_CUTE_SUBSTITUTION",
+      "evidence": "native-nvfp4-m16-final-decision.json",
+      "reason": "Instrumented large families;family-aligned operator gain mixed"
+    },
+    {
+      "priority": 3,
+      "component": "Draft/acceptance/Verify tradeoff",
+      "status": "NEEDS_EVIDENCE",
+      "evidence": "native-tree-aligned8k-result.json",
+      "reason": "44Tree versus48K7rounds;exact Tree native draft/verify GPU split missing"
+    },
+    {
+      "priority": 4,
+      "component": "CUDA Graph/Launch/CPU scheduling",
+      "status": "NEEDS_EVIDENCE",
+      "evidence": "native-tree-aligned8k-result.json",
+      "reason": "395actualsuccessfulGraphreplays;stable141msstreamrounds;no measured native CPU-gap split"
+    },
+    {
+      "priority": 5,
+      "component": "GDN kernel/attention",
+      "status": "NEEDS_EVIDENCE_FOR_NEW_KERNEL",
+      "evidence": "native-tree-region-profiler-v3-decision.json",
+      "reason": "GDNtree regions total1.174656ms and attention7.5127ms diagnostic only;no exact native critical-path shares"
+    },
+    {
+      "priority": 6,
+      "component": "UMA bandwidth/residency",
+      "status": "NEEDS_EVIDENCE",
+      "evidence": "native-tree-agent-cache8k-guard-result.json",
+      "reason": "No OOM;Agent two-runtime transition near5GiB guard;bandwidth not measured;RAMfree is not bandwidth proof"
+    }
+  ],
+  "native_M16_candidate": {
+    "status": "NO_GO_WHOLE_TREE_CUTE_SUBSTITUTION",
+    "operator_numerical_tolerance": "PASS_NOT_BITWISE",
+    "baseline": "Observed128x64kernel family;original Tree tactic hash/CGA unknown",
+    "comparisons": [
+      {
+        "projection": "up_gate_shape",
+        "M": 16,
+        "N": 17408,
+        "K": 5120,
+        "TRT_GPU_ms": 0.2069759964942932,
+        "CuTe_GPU_ms": 0.20659850537776947,
+        "CuTe_operator_rate_change_pct": 0.18271725433516295
+      },
+      {
+        "projection": "down_shape",
+        "M": 16,
+        "N": 5120,
+        "K": 17408,
+        "TRT_GPU_ms": 0.21354350447654724,
+        "CuTe_GPU_ms": 0.21396049857139587,
+        "CuTe_operator_rate_change_pct": -0.1948930282144934
+      }
+    ],
+    "raw_legacy_status_warning": "Raw EXACT_TREE_TACTIC label is too broad;only kernel-family alignment is proven",
+    "build_exit_code": 0,
+    "source_sha256": "7fca4652e3e124052f863a699bf9bab152f4ff2d5539b52a2c9d3ab09fab6954",
+    "artifact_sha256": "ef8fc11a88f07a5ffb6df906a1f681eafef6e91ed7e387194f8e4bd4a6b0e2a8",
+    "full_model_quality": "NOT_TESTED_FOR_CUTE",
+    "whole_model_gain": "NOT_CLAIMED",
+    "default_changed": false,
+    "reason": "Mixed+0.18/-0.19percent isolated operator result;no consistent material benefit;retain artifacts without full engine rebuild"
+  },
+  "Agent_E2E": {
+    "status": "SCOPED_GO_OBSERVED_AGENT_PAIR_OFFLINE_ADJUDICATION",
+    "source_raw_status": "RUNNING_AGENT_CACHE_AB",
+    "raw_guard_exit_code": 1,
+    "raw_guard_failure": "Post-task assertion on disabled optional performance counters;not inference/tool/GPU failure",
+    "adjudication": "Six saved turn outputs,wall times,input hashes,original native reuse logs and clocks cross-validated offline;no rerun",
+    "raw_files_preserved": true,
+    "fixture_sha256": "de5b7315e4f9a45b43d95106c9ce3bb76f278c72773ee73e16842c30b66be1d8",
+    "actual_tools_per_arm": 2,
+    "strict_per_turn_output_ID_equivalence": true,
+    "A_task_s": 13.478787821994047,
+    "B_task_s": 7.762798087998817,
+    "task_wall_reduction_pct": 42.40729811525149,
+    "tool_execution_wall_s": [
+      0.0004171109976596199,
+      0.001642593000724446
+    ],
+    "GPU_clock_pairs_Hz": [
+      [
+        1530000000,
+        1566000000
+      ]
+    ],
+    "minimum_RAM_GiB": 5.201351165771484,
+    "minimum_GPU_free_GiB": 4.951194763183594,
+    "maximum_Tj_C": 61.406,
+    "additional_residency_risk": "Second runtime initialization approached RAM guard;process isolation/residency lifecycle still needs audit",
+    "qualification_limit": "One bounded JSON-command Agent pair;not native API Tool Calling,production Harness,fullThinking/longcontext/sessionisolation/stability",
+    "repaired_collector_source": "Host source reads operative context-cache reused_tokens delta;AST/diff checked;not rerun or deployed",
+    "performance_admission": "Single observed task latency only;raw run exit remains1;no blanket PASS or production admission",
+    "new_kernel_or_engine": false,
+    "default_K7_unchanged": true
+  },
+  "P2_engine_scope": {
+    "active_engine": "TensorRT Edge-LLM",
+    "full_engine_challenges_cancelled": [
+      "vLLM",
+      "SGLang",
+      "llama.cpp"
+    ],
+    "retain": "Existingllama.cppR4200KGolden",
+    "permitted_reference": [
+      "SGLang",
+      "vLLM",
+      "FlashInfer algorithms/Kernels"
+    ],
+    "draft_priority": [
+      "DFlash2",
+      "DSpark"
+    ],
+    "offline_admission_required": true,
+    "canceled_engine_scope_status": "NOT_APPLICABLE_WITH_REASON_USER_V22_CHANGE;nottechnicalNO_GO",
+    "other_P0_P1_P2_and_G0_G6_preserved": true
+  },
+  "workpackages": {
+    "W0": {
+      "id": "W0",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "SCOPED_GO",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-decision.json"
+      ],
+      "hotspot_or_issue": "Single8K368IDsTree59.06/59.13;61notreached;K7defaultretained",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "Tree-MTP/K7"
+    },
+    "W1": {
+      "id": "W1",
+      "name": "Long-context MTP decline attribution",
+      "priority": "P0",
+      "status": "NEEDS_EXTENDED_PROFILE_AND_SAME_VERSION_LONG_DECAY_EVIDENCE",
+      "next_action": "Finish the one200K pairedEngine build;inspect actual max/opt/min profiles and activation memory;then64K correctness/cold-warm performance and200K resource admission,without recompiling for64K.",
+      "hotspot_or_issue": "No same-version32K-128K K7/Tree decay decomposition;do not substitute legacyvLLM diagnostic",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\S1-native-engine-profile-limits.json",
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\S1-long-context-profile-admission.json"
+      ]
+    },
+    "W2": {
+      "id": "W2",
+      "name": "DFlash2 matched challenge",
+      "priority": "P0",
+      "status": "FULL_SOURCE_SHA81_TENSOR_LAYOUT_AND_CONV_NUMERICS_PASS;SELECTOR_ENGINE_AND_LONG_CHALLENGE_PENDING",
+      "next_action": "Finish the one200K pairedEngine build;inspect actual max/opt/min profiles and activation memory;then64K correctness/cold-warm performance and200K resource admission,without recompiling for64K.",
+      "hotspot_or_issue": "Pinned fullDraft partial retained;selector/fullengine/longKV/UMA/storage admission pending",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\DFlash2-full-source-layout-result.json",
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-dflash2-conv-sm110-result.json"
+      ]
+    },
+    "W3": {
+      "id": "W3",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-nvfp4-m16-final-decision.json"
+      ],
+      "hotspot_or_issue": "CurrentCuTeNO_GO;instrumentedTop3available;nativecritical-pathsplitmissing",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "Target Verify Top3"
+    },
+    "W4": {
+      "id": "W4",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "SCOPED_GO",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-agent-cache8k-decision.json"
+      ],
+      "hotspot_or_issue": "Onecross-toolPrefix/GDNreusepair;notgeneralcache/isolationacceptance",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "Cold Prefill/GDN/Prefix"
+    },
+    "W5": {
+      "id": "W5",
+      "priority": "P1",
+      "gate": "G2/G3",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-result.json"
+      ],
+      "hotspot_or_issue": "ActualGraphreplays;nativeCPUlaunch/UMAbandwidthandresidencylifecyclepending",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "CUDA Graph/Launch"
+    },
+    "W6": {
+      "id": "W6",
+      "priority": "P1",
+      "gate": "G2/G3",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-result.json"
+      ],
+      "hotspot_or_issue": "ActualGraphreplays;nativeCPUlaunch/UMAbandwidthandresidencylifecyclepending",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "GPU/UMA scheduling"
+    },
+    "W7": {
+      "id": "W7",
+      "name": "CPU/GPU/SoC thermal stability",
+      "priority": "S0_FRONT_GATE_AND_P1_SUSTAINED_CLOSEOUT",
+      "status": "PASS_S0_BOUNDED_NATIVE_C1_8K_THERMAL_GATE_CURRENT_CONFIGURATION_ONLY",
+      "next_action": "Thermalmonitoring remainsmandatory onallnewGPUwork;changedcooling/longcontext/concurrency requiretheirownacceptance",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\S0-native-warm-window-acceptance.json",
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\S0-official-interface-adjudication.json"
+      ],
+      "hotspot_or_issue": "Initial heat state strongly implicated;no demonstrated kernel fault;warm sustained stability remains pending"
+    },
+    "W8": {
+      "id": "W8",
+      "priority": "P1",
+      "gate": "G2/G5",
+      "status": "METADATA_ONLY_NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-draft-P2-offline-admission.json"
+      ],
+      "hotspot_or_issue": "DSpark exact checkpoint pairing/selector/GPU/UMA remain untested;hybrid cache contract constrained",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "DSpark/optionalNgram"
+    },
+    "W9": {
+      "id": "W9",
+      "priority": "P1",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-result.json"
+      ],
+      "hotspot_or_issue": "R4 Golden retained;legacyvLLM195686token diagnostic is not Edge200K qualification",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "Edge200K/fullmodelquality"
+    },
+    "W10": {
+      "id": "W10",
+      "priority": "P2",
+      "gate": "G2/G3",
+      "status": "SINGLE_JSON_PAIR_SCOPED_ONLY_FULL_HARNESS_PENDING",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-agent-cache8k-decision.json"
+      ],
+      "hotspot_or_issue": "OneactualJSONtooltasktimed;productionHarness/nativeToolAPI/fullqualitypending",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "Agent fulltasks"
+    },
+    "W11": {
+      "id": "W11",
+      "priority": "P2",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-mtp8k-selected-runtime.json"
+      ],
+      "hotspot_or_issue": "C2-C4queue/cancel/isolationnotqualified",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "name": "C2-C4 concurrency"
+    },
+    "W12": {
+      "id": "W12",
+      "name": "API/Streaming/release",
+      "priority": "P2",
+      "status": "NEEDS_EVIDENCE",
+      "next_action": "Preserve prior scoped receipts;no automatic retest;follow S0-S7 order and independent gates",
+      "hotspot_or_issue": "Production API intentionally stopped in preexisting exclusive RAM boot;fullquality/recovery/release unqualified"
+    }
+  },
+  "source_diff_sha256": "80a808d37b8b4124f80bed642c10172d959213a6caf530467585efa5377b9574",
+  "P2_draft_offline_admission": {
+    "status": "NEEDS_EVIDENCE_NO_GPU_ADMISSION",
+    "timestamp_utc": "2026-10-14T14:21:01.038219+08:00",
+    "source_commit": "95515c2f87fba8982db5a519f9022277667b3cc9",
+    "installed_wheel_commit": "74f8732a7e8d1377e34471ad2652988346f18813",
+    "source_matches_binary": false,
+    "source_files": [
+      {
+        "path": "docs/source/user_guide/features/kv-cache-reuse.md",
+        "sha256": "f5f282198301093dc05fd0da15e18e94058e5193cd10919c541ef07ededff8d7"
+      },
+      {
+        "path": "docs/source/user_guide/getting_started/supported-models.md",
+        "sha256": "f50075db0982e2b129b7689d1d4a6cd828875c88844bb1e823bd5a9591c4b71f"
+      },
+      {
+        "path": "docs/source/user_guide/getting_started/direct-engine-builder.md",
+        "sha256": "2dfa7c79a8d97a34393d521d9ea9822c385539771a35ea8aefd706bd47c259bb"
+      },
+      {
+        "path": "cpp/runtime/state/contextCache/contextCacheDeployment.cpp",
+        "sha256": "87d76b0950750f13654be1cb9642e187323e2a4eef5effe0ec2c444a53cd1229"
+      },
+      {
+        "path": "experimental/builder/models/dflash2/configuration.py",
+        "sha256": "612fa30b65b20ae30abd730daa49374e312d7a5e6638ebe169651c2789083c08"
+      },
+      {
+        "path": "experimental/builder/models/dflash2/weights.py",
+        "sha256": "ba030efb99a6430f7dc6625571fe27cbc0f0a262fc0f4ad4efec5547408bbdbf"
+      },
+      {
+        "path": "experimental/builder/models/dflash2/modeling_dflash2_draft.py",
+        "sha256": "2ac3b53e7b7be690a02c60f4a2b92ba2e15a4eaa8c30cf453f2a32c55edb6b1e"
+      },
+      {
+        "path": "experimental/builder/models/dspark/configuration.py",
+        "sha256": "28fa817da503756f09633762f2ecc072eeab53fb7939e62a06a96c0de7b1184b"
+      }
+    ],
+    "immutable_original_checkpoint_revision": "fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+    "tokenizer_current_sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+    "original_tokenizer_mask_id_248070": [
+      {
+        "id": 248070,
+        "content": "<|audio_start|>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false,
+        "special": true
+      }
+    ],
+    "target_architecture": "64layers:48GDN+16attention;unchangedW4A4",
+    "candidates": [
+      {
+        "model_id": "z-lab/Qwen3.8-27B-DFlash2",
+        "revision": "50307d4c4cde6860d4eee73e2547cd786fe8e8a4",
+        "config_sha256": "873e3556509b0da06e29654ba00d4944888d4b5e8a33afde25f7eb27d321e980",
+        "metadata_shape_gate": "PASS_SCHEMA_ONLY_NOT_WEIGHT_QUALITY_OR_BINARY_COMPATIBILITY",
+        "hidden_size": 5120,
+        "vocab_size": 248320,
+        "draft_layers": 5,
+        "target_layer_ids": [
+          5,
+          19,
+          33,
+          47,
+          61
+        ],
+        "original_target_weights_unchanged": true,
+        "published_weight_files": [
+          {
+            "name": "model.safetensors",
+            "size": 3848817896,
+            "lfs": {
+              "sha256": "67fc76d68dc5a9415511a4f394ef744d67510cd20e93b37cc2cc7d28e4bab65c",
+              "size": 3848817896,
+              "pointerSize": 135
+            }
+          }
+        ],
+        "published_weight_bytes": 3848817896,
+        "local_weight_SHA": "NOT_DOWNLOADED_OR_VERIFIED",
+        "illustrative_8K_UMA_GiB": {
+          "published_BF16_weight_bytes": 3.584490992128849,
+          "full8448_draft_KV_FP16": 0.1611328125,
+          "full8448_selected_hidden_FP16": 0.40283203125,
+          "sum_of_terms": 4.148455835878849
+        },
+        "UMA_limit": "Planning terms only;not measured allocation or strict lower bound;sliding window,sharing,liveness,TRTpacking,workspace and verification-state budgets unresolved",
+        "SM110_Kernel": "NEEDS_EXACT_INSTALLED_BINARY_AND_OPERATOR_EVIDENCE",
+        "hot_cached_Agent_replacement": "NO_GO_CURRENT_SOURCE_HYBRID_CONTEXT_REUSE_CONTRACT",
+        "cold_or_code_specialist_mode": "NEEDS_EVIDENCE_NOT_REJECTED",
+        "DSpark_target_quantization_limit": null
+      },
+      {
+        "model_id": "RadixArk/Qwen3.8-27B-DSpark",
+        "revision": "b9a5dbdf03bc999c6c73c426b19c2d9041cea393",
+        "config_sha256": "dd65fb1b01c2adea69512ff2990a79d58eb7fe2c7ea97375aa66f657a29a5bfd",
+        "metadata_shape_gate": "PASS_SCHEMA_ONLY_NOT_WEIGHT_QUALITY_OR_BINARY_COMPATIBILITY",
+        "hidden_size": 5120,
+        "vocab_size": 248320,
+        "draft_layers": 5,
+        "target_layer_ids": [
+          5,
+          19,
+          33,
+          47,
+          61
+        ],
+        "original_target_weights_unchanged": true,
+        "published_weight_files": [
+          {
+            "name": "model.safetensors",
+            "size": 3714723322,
+            "lfs": {
+              "sha256": "2aff025f45823b40ebe726b9dfa40302f3512bd9a11c3a7347de32a567acd9a7",
+              "size": 3714723322,
+              "pointerSize": 135
+            }
+          }
+        ],
+        "published_weight_bytes": 3714723322,
+        "local_weight_SHA": "NOT_DOWNLOADED_OR_VERIFIED",
+        "illustrative_8K_UMA_GiB": {
+          "published_BF16_weight_bytes": 3.4596056882292032,
+          "full8448_draft_KV_FP16": 0.1611328125,
+          "full8448_selected_hidden_FP16": 0.40283203125,
+          "sum_of_terms": 4.023570531979203
+        },
+        "UMA_limit": "Planning terms only;not measured allocation or strict lower bound;sliding window,sharing,liveness,TRTpacking,workspace and verification-state budgets unresolved",
+        "SM110_Kernel": "NEEDS_EXACT_INSTALLED_BINARY_AND_OPERATOR_EVIDENCE",
+        "hot_cached_Agent_replacement": "NO_GO_CURRENT_SOURCE_HYBRID_CONTEXT_REUSE_CONTRACT",
+        "cold_or_code_specialist_mode": "NEEDS_EVIDENCE_NOT_REJECTED",
+        "DSpark_target_quantization_limit": "Published pairing is RadixArk target;compatibility with unchanged NVIDIA fed99d must be verified"
+      }
+    ],
+    "preference": [
+      "DFlash2",
+      "DSpark"
+    ],
+    "native_public_API": "dflash_block_size exposed;does not prove versionedDFlash2orSM110kernels",
+    "cache_contract": {
+      "path": "cpp/runtime/state/contextCache/contextCacheDeployment.cpp",
+      "line": 156,
+      "official_url": "https://github.com/NVIDIA/TensorRT-Edge-LLM/blob/95515c2f87fba8982db5a519f9022277667b3cc9/docs/source/user_guide/features/kv-cache-reuse.md",
+      "conclusion": "Current source rejects hybridDFlash/DSpark generalized context reuse;do not replace retained cachedTree/K7Agent"
+    },
+    "build_route": "Official checkpoint-native direct builder with spec-type=dflash forDFlash2;noDDTree;legacyONNXbuildrejected;Treebaseenginecannotbeassumedreusable",
+    "available_persistent_headroom_above_12GiB": {
+      "DATA_GiB": 0.32912445068359375,
+      "MAP_GiB": 1.0226936340332031
+    },
+    "engine_build_gate": "NOT_ADMITTED;newpairedfullbase/draftrequiresexplicitstorageandpeakUMAplan;currentpersistentheadroomcannotstagepublished3.6GiBDraftalone",
+    "weights_downloaded": false,
+    "engines_built": false,
+    "CUDA_invocations": false,
+    "critical_missing": [
+      "LocallyverifiedDraftweights/tensorcontract",
+      "ExactwheelversionedDFlash2support",
+      "SM110operatornumerics",
+      "PeakUMA/workspace/stateandpersistentstorageplan",
+      "Thinking/JSON/nativeToolCalling/longcontext/cross-sessionquality"
+    ],
+    "next_action": "Archive verified inactive task-owned diagnostics and cancelled challenger runtimes to healthy E,without touching Golden/K7/Tree/target;then close extended native profile storage/UMA/chunked-prefill admission",
+    "header_contract": "PASS_METADATA_HEADER_ONLY",
+    "installed_binary_contract": "PASS_DFLASH2_VERSIONED_CONFIG_AND_PLUGIN_REGISTRY_ONLY",
+    "conv_SM110": "PASS_ORIGINAL_DFLASH2_CONV_SM110_NUMERICS_ONLY",
+    "full_weights_download": {
+      "status": "PASS_PINNED_FULL_DRAFT_DOWNLOAD_AND_COLD_DISK_SHA",
+      "PID": 32128,
+      "model_id": "z-lab/Qwen3.8-27B-DFlash2",
+      "revision": "50307d4c4cde6860d4eee73e2547cd786fe8e8a4",
+      "target": "E:\\Thor64G_AI\\ModelStore\\Qwen3.8-27B_2026-09-09\\Drafts\\z-lab_Qwen3.8-27B-DFlash2_50307d4c\\model.safetensors",
+      "partial": null,
+      "expected_bytes": 3848817896,
+      "expected_sha256": "67fc76d68dc5a9415511a4f394ef744d67510cd20e93b37cc2cc7d28e4bab65c",
+      "bytes_received": 3848817896,
+      "started_utc": "2026-10-14T14:42:02.817231+08:00",
+      "source_scope": "Cold archive only;not active WSL/runtime;original target unchanged",
+      "volume_health_gate": "DFlash2-cold-source-volume-admission.json",
+      "elapsed_s": 904.9938704999513,
+      "bytes_on_disk": 3848817896,
+      "disk_sha256": "67fc76d68dc5a9415511a4f394ef744d67510cd20e93b37cc2cc7d28e4bab65c",
+      "resume_receipt": "DFlash2-cold-source-resume-result.json",
+      "finished_utc": "2026-10-14T15:34:30.162208+08:00",
+      "GPU_test": false,
+      "engine_built": false
+    },
+    "static_Draft_plus_duplicated_target_LMhead_GiB": 4.250528819859028,
+    "full_Draft_SHA_verified": true,
+    "full_Draft_engine_built": false,
+    "no_hybrid_cache_reuse_gate_closed": true,
+    "full_source_layout": {
+      "status": "PASS_AUTHENTICATED_FULL_DRAFT_SOURCE81_TENSOR_LAYOUT_ONLY",
+      "path": "E:\\Thor64G_AI\\ModelStore\\Qwen3.8-27B_2026-09-09\\Drafts\\z-lab_Qwen3.8-27B-DFlash2_50307d4c\\model.safetensors",
+      "revision": "50307d4c4cde6860d4eee73e2547cd786fe8e8a4",
+      "full_file_SHA256": "67fc76d68dc5a9415511a4f394ef744d67510cd20e93b37cc2cc7d28e4bab65c",
+      "fullSHA_provenance": "Reuse completed full on-disk verification;not rehashed",
+      "header_SHA256": "0c2c70601b30f8d1ca7d5794b817779ba2dcf1956cfc7d4f83e87091e1ab7c8c",
+      "all_tensor_shapes_match_official_config": true,
+      "tensor_count": 81,
+      "BF16_payload_bytes": 3848808960,
+      "exact_tested_conv_slice_matches_complete_source": true,
+      "Draft_plus_duplicated_target_head_static_bytes": 4563970568,
+      "Draft_plus_duplicated_target_head_static_GiB": 4.250528819859028,
+      "unverified": [
+        "All-tensor finite/numerical behavior",
+        "Full selector execution",
+        "Full pairedEngine",
+        "Quality/acceptance rate",
+        "PeakUMA/workspace/KV/storage budget"
+      ],
+      "no_requantization": true,
+      "no_original_target_modification": true
+    },
+    "selector_execution": "NOT_TESTED",
+    "full_model_quality": "NOT_TESTED",
+    "resource_admission": "NO_GO_CURRENT_SPACE_ABOVE12GiB_FLOORS;INACTIVE_PRIVATE_ARCHIVE_REQUIRED",
+    "target_plus_Draft_static_payload_GiB": 4.250528819859028
+  },
+  "new_GPU_experiment_admission": "Only bounded original-plugin FP16 D256 dispatch evidence;global CUDA interposer forbidden",
+  "execution_order": [
+    "S0 Thermal/clocks/power",
+    "S1 Tree-MTP/K7",
+    "S2 DFlash2 longcontext",
+    "S3 Verify/Graph/GPU/UMA",
+    "S4 Prefill/GDN/Cache",
+    "S5 DSpark/200K/quality",
+    "S6 Agent/concurrency/API",
+    "S7 Release"
+  ],
+  "S0_reproduction": {
+    "status": "COMPLETED_ONE_RUN",
+    "label": "native-s0-fa4-thermal-repro",
+    "user_authorized": "Reproduce transient high temperature once to distinguish software/load phase from cooling",
+    "no_performance_acceptance": true,
+    "governor_changes": false,
+    "wall_bound_s": 240,
+    "hard_guard_C": 95,
+    "analysis": "evidence/S0-one-reproduction-analysis.json",
+    "GPU_peak_C": 83.718,
+    "CPU_peak_C": 58.531,
+    "original_95C_reproduced": false,
+    "transient_temperature_reproduced": true,
+    "actual_input_tokens": 195686,
+    "quality": "PASS_FROZEN_CASE_ONLY",
+    "governors_unchanged": true,
+    "result": "PASS_NATIVE_27B_TEXT_QUALITY_ONLY"
+  },
+  "S0_short_attribution": {
+    "status": "COMPLETED_SINGLE_SHORT_ATTRIBUTION_NO_CODE_FAULT_PROVEN",
+    "user_confirmed": true,
+    "label": "native-s0-fa4-short-profile",
+    "full200K_repeated": false,
+    "profile_chunks": [
+      3,
+      4
+    ],
+    "input_tokens": 4096,
+    "CUPTI": "PRIOR_INSUFFICIENT_PRIVILEGES_35_NOT_RETRIED",
+    "CPU_wait_observer": "PUBLIC_CUDA_API_INTERPOSITION",
+    "GPU_timing": "MODULE_CUDA_EVENTS_INCLUDE_HOST_ENQUEUE_GAPS",
+    "analysis": "evidence/S0-short-attribution-analysis.json",
+    "GPU_runs": 1
+  },
+  "S0_thermal": {
+    "status": "PASS_S0_BOUNDED_NATIVE_C1_8K_THERMAL_GATE_CURRENT_CONFIGURATION_ONLY",
+    "actual_long_case_input_tokens": 195686,
+    "quality": "PASS_ONE_FROZEN_CASE_NATIVE_VLLM_FA4_DIAGNOSTIC_ONLY_NOT_EDGE_LONG_ACCEPTANCE",
+    "old_initial_Tj_C": 58.562,
+    "old_peak_Tj_C": 95.218,
+    "current_initial_Tj_C": 46.968,
+    "current_peak_Tj_C": 83.718,
+    "old_Tj_rise_C": 36.656,
+    "current_Tj_rise_C": 36.75,
+    "inference": "Nearly identical36.7C Tj excursions and11.6C different starting temperature support initial thermal state plus prefill hotspots;not proof of kernel fault or cooling hardware deficiency",
+    "transient_GPU_excursion_reproduced": true,
+    "original_95C_reproduced": false,
+    "CPU_peak_C": 58.531,
+    "software_kernel_fault": "NOT_DEMONSTRATED",
+    "CPU_busy_wait": "NOT_PROVEN_PARTIAL_API_COVERAGE",
+    "blind_blocking_sync_or_clock_change": "NO_GO_NO_EVIDENCED_BENEFIT",
+    "implemented_mitigation": "Experimental long-prefill start-headroom admission;Tj53C/GPU50C plus measured per-zone caps;no per-step sleeps or clock changes",
+    "mitigation_validation": "LIVE_READ_ONLY_GO;ACTUAL_HISTORICAL58.562C_START_REPLAY_NO_GO;NO_GPU_RETEST",
+    "current_GPU_FD_owners": [],
+    "governor_changes": false,
+    "Golden_or_firmware_changes": false,
+    "remaining": [
+      "Historical ambient and external-cooling state unknown",
+      "FanRPM/power/EMC telemetry unavailable",
+      "No exclusive per-kernel power attribution",
+      "Repeated warm-start and production sustained thermal stability not qualified"
+    ],
+    "evidence": [
+      "S0-one-reproduction-analysis.json",
+      "S0-short-attribution-analysis.json",
+      "S0-thermal-admission-live-check.json",
+      "S0-post-short-profile-g0.json"
+    ],
+    "native_warm_window": {
+      "status": "PASS_S0_BOUNDED_NATIVE_C1_8K_THERMAL_GATE_CURRENT_CONFIGURATION_ONLY",
+      "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+      "requests": 22,
+      "workload_elapsed_s": 230.0176488799989,
+      "sum_input_tokens": 180554,
+      "sum_output_tokens": 8096,
+      "all_full_outputs_equal_frozen368_IDs": true,
+      "graph_replays": 8690,
+      "full_job_peak_C": {
+        "cpu-thermal": 61.093,
+        "tj-thermal": 67.312,
+        "soc012-thermal": 57.968,
+        "gpu-thermal": 67.312,
+        "soc345-thermal": 64.812
+      },
+      "actual_request_window_peak_C": {
+        "cpu-thermal": 61.093,
+        "tj-thermal": 67.312,
+        "soc012-thermal": 57.968,
+        "gpu-thermal": 67.312,
+        "soc345-thermal": 64.812
+      },
+      "measured_GPU_devfreq_Hz": {
+        "gpu-gpc-0": [
+          1530000000
+        ],
+        "gpu-nvd-0": [
+          1566000000
+        ]
+      },
+      "measured_CPU_freq_kHz": {
+        "policy6": {
+          "min_kHz": 2598000,
+          "max_kHz": 2602000
+        },
+        "policy4": {
+          "min_kHz": 2598000,
+          "max_kHz": 2602000
+        },
+        "policy2": {
+          "min_kHz": 2597000,
+          "max_kHz": 2602000
+        },
+        "policy0": {
+          "min_kHz": 2598000,
+          "max_kHz": 2602000
+        },
+        "policy9": {
+          "min_kHz": 2598000,
+          "max_kHz": 2603000
+        },
+        "policy7": {
+          "min_kHz": 2598000,
+          "max_kHz": 2602000
+        },
+        "policy1": {
+          "min_kHz": 2598000,
+          "max_kHz": 2602000
+        }
+      },
+      "visible_cooling_states": {
+        "/sys/class/thermal/cooling_device1": [
+          0
+        ],
+        "/sys/class/thermal/cooling_device0": [
+          0
+        ]
+      },
+      "clock_or_governor_changes": false,
+      "plateau": {
+        "reached": true,
+        "final90s_zone_peak_envelopes": {
+          "cpu-thermal": {
+            "peaks_mC": [
+              54093,
+              54093,
+              54375
+            ],
+            "range_mC": 282,
+            "endpoint_rise_mC_per_min": 282
+          },
+          "tj-thermal": {
+            "peaks_mC": [
+              60531,
+              59718,
+              59875
+            ],
+            "range_mC": 813,
+            "endpoint_rise_mC_per_min": -656
+          },
+          "gpu-thermal": {
+            "peaks_mC": [
+              60531,
+              59718,
+              59875
+            ],
+            "range_mC": 813,
+            "endpoint_rise_mC_per_min": -656
+          },
+          "soc012-thermal": {
+            "peaks_mC": [
+              50750,
+              50812,
+              50875
+            ],
+            "range_mC": 125,
+            "endpoint_rise_mC_per_min": 125
+          },
+          "soc345-thermal": {
+            "peaks_mC": [
+              57343,
+              57281,
+              57375
+            ],
+            "range_mC": 94,
+            "endpoint_rise_mC_per_min": 32
+          }
+        }
+      },
+      "minimum_MemAvailable_GiB": 30.94617462158203,
+      "minimum_GPU_free_GiB": 30.91494369506836,
+      "first_to_last_RAM_available_delta_MiB": -39.40234375,
+      "first_to_last_GPU_free_delta_MiB": -39.39453125,
+      "GPU_kernel_error_candidates": [],
+      "new_kernel_messages": [],
+      "post_GPU_FD_owners": [],
+      "admission": "Current bounded C1/8K model engineering may continue under per-job live ownership,thermalheadroom and95C/memory/storage guards",
+      "unqualified": [
+        "Changed cooling hardware/settings or sustained longer intervals",
+        "C2-C4 or other power profiles",
+        "Edge64K-200K thermal behavior",
+        "Actual rail power/fanRPM/EMC telemetry",
+        "Hardware-internal throttling not exposed by devfreq/cooling interfaces"
+      ],
+      "performance_ranking": false,
+      "not_full_production_stability": true,
+      "production_Golden_firmware_or_defaults_modified": false,
+      "evidence_SHA256": {
+        "native-s0-tree8k-thermal-window-result.json": "cceb6cc381f25fa7c257de0457b7704b71f48148460d638f5c43896ff00f96d2",
+        "native-s0-tree8k-thermal-window-guard-result.json": "b87b9ab4df7cb4666c03c80df50fb0caf12ce3846588eadf30a73b217e8ecce1",
+        "native-s0-tree8k-thermal-window-telemetry.jsonl": "207829cc8dae651bc55c29f2dbaccfa10e265b1c13046c4cedc27baef333ef00",
+        "S0-post-native-warm-window-g0.json": "c9699ada9438275e2b049ce54ecdf6e7f9580bcf2d63552cc012f5e5dd627710"
+      }
+    },
+    "official_interface_receipt": "S0-official-interface-adjudication.json",
+    "front_gate_decision": "GO_CURRENT_BOUNDED_NATIVE8K_C1_WITH_EXISTING_GUARDS",
+    "full_long_context_or_production_acceptance": false,
+    "new_thermal_or_clock_software_fault": "NOT_DEMONSTRATED;NO_UNSUPPORTED_POWER_FAN_CLOCK_CHANGES"
+  },
+  "S0_launch_entrypoint": "/v2/launch-s0-checked.sh <long-prefill|bounded-8k> <launch-native-*-once.sh>",
+  "legacy_workpackages_v22": {
+    "W0": {
+      "id": "W0",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "SCOPED_GO",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-decision.json"
+      ],
+      "hotspot_or_issue": "Single8K368IDsTree59.06/59.13;61notreached;K7defaultretained",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W1": {
+      "id": "W1",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-nvfp4-m16-final-decision.json"
+      ],
+      "hotspot_or_issue": "CurrentCuTeNO_GO;instrumentedTop3available;nativecritical-pathsplitmissing",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W2": {
+      "id": "W2",
+      "priority": "P0",
+      "gate": "G2/G3",
+      "status": "SCOPED_GO",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-agent-cache8k-decision.json"
+      ],
+      "hotspot_or_issue": "Onecross-toolPrefix/GDNreusepair;notgeneralcache/isolationacceptance",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W3": {
+      "id": "W3",
+      "priority": "P1",
+      "gate": "G2/G3",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-result.json"
+      ],
+      "hotspot_or_issue": "ActualGraphreplays;nativeCPUlaunch/UMAbandwidthandresidencylifecyclepending",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W4": {
+      "id": "W4",
+      "priority": "P1",
+      "gate": "G2/G3",
+      "status": "SCOPED_GO",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-agent-cache8k-decision.json"
+      ],
+      "hotspot_or_issue": "OneactualJSONtooltasktimed;productionHarness/nativeToolAPI/fullqualitypending",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W5": {
+      "id": "W5",
+      "priority": "P2",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-tree-aligned8k-result.json"
+      ],
+      "hotspot_or_issue": "PreserveR4Golden;noEdge32K-200Kqualification",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W6": {
+      "id": "W6",
+      "priority": "P2",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-mtp8k-selected-runtime.json"
+      ],
+      "hotspot_or_issue": "C2-C4queue/cancel/isolationnotqualified",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Retainindependentpendinggate;noautomaticretest"
+    },
+    "W7": {
+      "id": "W7",
+      "priority": "P2",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\native-draft-P2-offline-admission.json"
+      ],
+      "hotspot_or_issue": "DFlash2/DSparkmetadatafixed;hybridcacheunsupportedincurrentsource;checkpoint/SM110/UMA/buildadmissionmissing",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "Resolve DFlash2 cold-mode exact-wheel/builder contract and peakUMA/storage budget offline before any Draft-weight staging or Engine build"
+    },
+    "W8": {
+      "id": "W8",
+      "priority": "P2",
+      "gate": "G2/G5",
+      "status": "NEEDS_EVIDENCE",
+      "evidence_refs": [
+        "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\V2.2-technical-P2-revision-result.json"
+      ],
+      "hotspot_or_issue": "OnlyEdgeinternalalgorithmandKernelreferenceallowed;nootherengineport/build/benchmark",
+      "quality_status": "SCOPED;FULL_SUITE_PENDING",
+      "safety_status": "NO_PRODUCTION_CHANGE",
+      "next_action": "ReferenceopensourceimplementationsonlyifspecificEdgebottleneckbenefitisproven",
+      "full_engine_challenge_status": "NOT_APPLICABLE_WITH_REASON_USER_CANCELED_V22"
+    }
+  },
+  "previous_goal_turn_classification": "PROGRESS:complete200KTreepubliclayerattribution changed nextcandidate selection",
+  "active_host_job": {
+    "status": "RUNNING_RECOVERED_HOST_MAINTENANCE_HEARTBEAT_ONLY",
+    "worker_pid": 12,
+    "process_starttime": "180",
+    "host_boot_id": "e8a510af-97c6-4473-8b60-dce4d3e7cdf8",
+    "generation": 365,
+    "previous_generation": 364,
+    "device_lock_bound": false,
+    "vehicle_service_changes": false,
+    "user_explicitly_approved_recovery": true,
+    "arbiter": "unified_arbiter_v2.py",
+    "heartbeat_at": "2026-10-14T23:32:42.606317+00:00",
+    "previous_archive": "/mnt/d/Thor64G/THOR_NVIDIA_PLATFORM/coord/leases/recovered/DEVICE_MAINTENANCE_EXCLUSIVE.A1_NVGPU_SINGLE_20261013.GEN364.RECOVERED_20261015T064058"
+  },
+  "S0_native_warm_window": {
+    "status": "PASS_S0_BOUNDED_NATIVE_C1_8K_THERMAL_GATE_CURRENT_CONFIGURATION_ONLY",
+    "label": "native-s0-tree8k-thermal-window",
+    "maximum_workload_s": 240,
+    "hard_guard_s": 330,
+    "engine_rebuilt": false,
+    "model_weights_changed": false,
+    "no_performance_ranking": true,
+    "full_natural_EOS": true,
+    "acceptance": "evidence/S0-native-warm-window-acceptance.json",
+    "GPU_process_terminal": true,
+    "post_GPU_FD_owners": []
+  },
+  "S1_long_context": {
+    "status": "GO_SCOPED_SHARED_ENGINE_NATIVE_TREE_64K_200K_SINGLE_FIXTURE",
+    "timestamp_utc": "2026-10-14T18:08:33.119077+08:00",
+    "required_tiers": [
+      65536,
+      204800
+    ],
+    "actual_prompt_tokens": [
+      65112,
+      195686
+    ],
+    "same_Target_Draft_Engine_binary_verified": true,
+    "original_engine_SHAs": {
+      "base": "69fcec117924780810ad464cf1fe975f4eda54180d2330c4e43dc27d5e1bab11",
+      "draft": "dbbe26b09b4893da17702f4e272665f3bbffc1e776ed27971031a53c420efcab"
+    },
+    "runtime_build": "PASS_ARM_SM110_RUNTIME_BUILD_ONLY",
+    "native_runtime_sha256": "bb83eafdc835bf03e27970cdaa082b53773230560f7fa9711818d10c665cae2e",
+    "native_source_revision": "95515c2f87fba8982db5a519f9022277667b3cc9",
+    "actual_native_CUDA": "13.2 Update2",
+    "TensorRT": "192.0.2.75",
+    "Kernel": "6.8.12-prod-g78272943bba3",
+    "original_fixed_KV_validation_issue": "RESOLVED_IN_ISOLATED_NATIVE_RUNTIME",
+    "full_wheel_source_match": false,
+    "plugin": "Original qualified native plugin retained with original SHA;public TensorRT V3 ABI",
+    "cases": {
+      "65536": [
+        {
+          "mode": "COLD_CHUNKED_PREFILL",
+          "input_tokens": 65112,
+          "output_tokens": 42,
+          "TTFT_s": 44.613915808004094,
+          "Decode_tok_s": 46.45893583172896,
+          "wall_s": 45.498043500003405,
+          "useful_cold_prefill_wall_tok_s": 1459.454944062955,
+          "physical_GPU_base_prefill_tok_s": 1555.4244967588747,
+          "reused_tokens": 57344,
+          "strict_oracle": true,
+          "natural_EOS": true,
+          "actual_Graph_replays": 44,
+          "committed_tokens_per_verify": 8.4
+        },
+        {
+          "mode": "WARM_SAME_PREFIX",
+          "input_tokens": 65112,
+          "output_tokens": 42,
+          "TTFT_s": 0.23974066899972968,
+          "Decode_tok_s": 39.1678939137406,
+          "wall_s": 1.2881215740053449,
+          "useful_cold_prefill_wall_tok_s": null,
+          "physical_GPU_base_prefill_tok_s": 538.6282415481533,
+          "reused_tokens": 65024,
+          "strict_oracle": true,
+          "natural_EOS": true,
+          "actual_Graph_replays": 53,
+          "committed_tokens_per_verify": 7.0
+        }
+      ],
+      "204800": [
+        {
+          "mode": "COLD_CHUNKED_PREFILL",
+          "input_tokens": 195686,
+          "output_tokens": 151,
+          "TTFT_s": 207.93473365799582,
+          "Decode_tok_s": 32.31491352354384,
+          "wall_s": 212.57881702198938,
+          "useful_cold_prefill_wall_tok_s": 941.0933736633816,
+          "physical_GPU_base_prefill_tok_s": 1009.4348345643,
+          "reused_tokens": 188416,
+          "strict_oracle": true,
+          "natural_EOS": true,
+          "actual_Graph_replays": 170,
+          "committed_tokens_per_verify": 7.947368421052632
+        },
+        {
+          "mode": "WARM_SAME_PREFIX",
+          "input_tokens": 195686,
+          "output_tokens": 151,
+          "TTFT_s": 0.43390328501118347,
+          "Decode_tok_s": 32.4563254740266,
+          "wall_s": 5.057771361010964,
+          "useful_cold_prefill_wall_tok_s": null,
+          "physical_GPU_base_prefill_tok_s": 372.00874470014736,
+          "reused_tokens": 195584,
+          "strict_oracle": true,
+          "natural_EOS": true,
+          "actual_Graph_replays": 170,
+          "committed_tokens_per_verify": 7.947368421052632
+        }
+      ]
+    },
+    "memory": {
+      "KV_64K_GiB": 4.31640625,
+      "KV_200K_GiB": 13.34765625,
+      "KV_saved_at64K_GiB": 9.03125,
+      "measured_after_Graph_free_GPU_difference_GiB": 9.589973449707031,
+      "measured_after_Graph_free_UMA_difference_GiB": 9.187786102294922,
+      "caveat": "Sequential same-engine capacity-view snapshots;includes non-KV allocation/cache variation;not a dedicated64K Engine A/B",
+      "tiers": {
+        "65536": {
+          "capacity": 66560,
+          "memory_before_runtime": {
+            "GPU_free_bytes": 53215756288,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 53269340160
+          },
+          "memory_after_runtime": {
+            "GPU_free_bytes": 28671602688,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 28904419328
+          },
+          "memory_after_Graph": {
+            "GPU_free_bytes": 28612456448,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 28703313920
+          },
+          "minimum": {
+            "MemAvailable_bytes": 28620468224,
+            "GPU_free_bytes": 28572819456,
+            "DATA_free_bytes": 18861920256,
+            "MAP_free_bytes": 13354864640
+          },
+          "peak_mC": {
+            "cpu-thermal": 47781,
+            "tj-thermal": 59281,
+            "soc012-thermal": 46906,
+            "gpu-thermal": 59281,
+            "soc345-thermal": 54812
+          }
+        },
+        "204800": {
+          "capacity": 205824,
+          "memory_before_runtime": {
+            "GPU_free_bytes": 52953018368,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 53174067200
+          },
+          "memory_after_runtime": {
+            "GPU_free_bytes": 18206715904,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 18750648320
+          },
+          "memory_after_Graph": {
+            "GPU_free_bytes": 18315300864,
+            "GPU_total_bytes": 62990389248,
+            "MemAvailable_bytes": 18838003712
+          },
+          "minimum": {
+            "MemAvailable_bytes": 18660057088,
+            "GPU_free_bytes": 18234691584,
+            "DATA_free_bytes": 18859413504,
+            "MAP_free_bytes": 13354864640
+          },
+          "peak_mC": {
+            "cpu-thermal": 51750,
+            "tj-thermal": 63125,
+            "soc012-thermal": 48843,
+            "gpu-thermal": 63125,
+            "soc345-thermal": 58843
+          }
+        }
+      }
+    },
+    "observed_devfreq_Hz": {
+      "65536": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      },
+      "204800": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      }
+    },
+    "requests_executed": 4,
+    "discarded_prefill_primers": 30,
+    "quality_scope": "One frozen three-anchor JSON fixture per tier;full natural EOS and exact cold/warm token-ID equality;not full quality suite",
+    "speed_penalty_vs_dedicated64K_Engine": "NOT_MEASURED;no separate64K compilation or repeated control test",
+    "K7_Tree_DFlash2_same_condition_comparison": "PENDING;historical8K scores cannot establish long-context advantage",
+    "CUDA13x_generic_pass": false,
+    "production_release": "NO_GO",
+    "Golden_changed": false,
+    "default_changed": false,
+    "system_changes": false,
+    "GPU_FD_owners_after": [],
+    "terminal_state": "S1-runtime-v1-terminal-state.json",
+    "next_unique_action": "先解决K7共享200K线性Target的存储准入缺口：按当前Target大小估算DATA还需10.85GiB；只考虑已验证非Golden冷归档，保留当前Tree和原K7，不重跑已通过样例。",
+    "next_K7_build_storage_admission": "NO_GO_CURRENT_PERSISTENT_SPACE"
+  },
+  "goal_scope_update": "Only64K/200K formal tiers;reuse8K Golden. One200K maximum profile per candidate with64K optimum;chunkedprefill;Agent/API/concurrency deferred.",
+  "max_required_context_tokens": 204800,
+  "no_new_standalone_thermal_stress_tests": true,
+  "required_context_tiers_tokens": [
+    65536,
+    204800
+  ],
+  "separate_32K_128K_tiers_required": false,
+  "updated_at": "2026-10-14T17:37:05.642171+08:00",
+  "active_vehicle_job": null,
+  "pending_user_choice": null,
+  "S1_runtime_repair_authorization": {
+    "answer": "继续修复Runtime（推荐）",
+    "Golden_changed": false,
+    "question_id": "call_c20ad3925c1644ddb30bd20b0088d8b6",
+    "engine_recompile": false,
+    "status": "EXPLICIT_USER_APPROVED"
+  },
+  "old_experimental_Tree8K_archive": {
+    "status": "PASS_COLD_ARCHIVE_AND_EXACT_RELEASE",
+    "Golden_K7_R4_model_unchanged": true,
+    "archive": "E:\\Thor64G_AI\\HostArchive\\20261014_superseded_Tree8K",
+    "current_shared200K_Tree_unchanged": true,
+    "reclaimed_GiB": 17.079280853271484
+  },
+  "S1_K7_Tree_comparison": {
+    "status": "GO_SCOPED_K7_TREE_SHARED200K_64K_200K_MATCHED_FIXTURES",
+    "timestamp_utc": "2026-10-14T10:50:28.353653+00:00",
+    "required_tiers": [
+      65536,
+      204800
+    ],
+    "comparisons": [
+      {
+        "tier": 65536,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "K7_Decode_tok_s": 39.4046769089122,
+        "Tree_Decode_tok_s": 46.45893583172896,
+        "Tree_Decode_advantage_percent": 17.902085427888093,
+        "K7_TTFT_s": 44.550345533993095,
+        "Tree_TTFT_s": 44.613915808004094,
+        "K7_wall_s": 45.59248398599448,
+        "Tree_wall_s": 45.498043500003405,
+        "K7_committed_tokens_per_verify": 7.0,
+        "Tree_committed_tokens_per_verify": 8.4,
+        "exact_output_ids_match": true
+      },
+      {
+        "tier": 65536,
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "K7_Decode_tok_s": 34.08128880622818,
+        "Tree_Decode_tok_s": 39.1678939137406,
+        "Tree_Decode_advantage_percent": 14.924920053442548,
+        "K7_TTFT_s": 0.24072614299075212,
+        "Tree_TTFT_s": 0.23974066899972968,
+        "K7_wall_s": 1.445314430995495,
+        "Tree_wall_s": 1.2881215740053449,
+        "K7_committed_tokens_per_verify": 6.0,
+        "Tree_committed_tokens_per_verify": 7.0,
+        "exact_output_ids_match": true
+      },
+      {
+        "tier": 204800,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "K7_Decode_tok_s": 31.096555066144518,
+        "Tree_Decode_tok_s": 32.31491352354384,
+        "Tree_Decode_advantage_percent": 3.917985303541771,
+        "K7_TTFT_s": 208.22598802899302,
+        "Tree_TTFT_s": 207.93473365799582,
+        "K7_wall_s": 213.05190774900257,
+        "Tree_wall_s": 212.57881702198938,
+        "K7_committed_tokens_per_verify": 7.55,
+        "Tree_committed_tokens_per_verify": 7.947368421052632,
+        "exact_output_ids_match": true
+      },
+      {
+        "tier": 204800,
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "K7_Decode_tok_s": 31.203201068462775,
+        "Tree_Decode_tok_s": 32.4563254740266,
+        "Tree_Decode_advantage_percent": 4.016012340574782,
+        "K7_TTFT_s": 0.437616479001008,
+        "Tree_TTFT_s": 0.43390328501118347,
+        "K7_wall_s": 5.24703601100191,
+        "Tree_wall_s": 5.057771361010964,
+        "K7_committed_tokens_per_verify": 7.55,
+        "Tree_committed_tokens_per_verify": 7.947368421052632,
+        "exact_output_ids_match": true
+      }
+    ],
+    "identical_conditions": [
+      "Original NVIDIA NVFP4 checkpoint",
+      "canonical final input IDs",
+      "natural EOS and exact output IDs",
+      "sampling and seed",
+      "qualified Draft binary",
+      "native Runtime v1",
+      "bounded capacity views",
+      "matched prefix-cache alignment policy"
+    ],
+    "observed_K7_clocks_Hz": {
+      "65536": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      },
+      "204800": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      }
+    },
+    "quality_scope": "One three-anchor strict JSON fixture per tier;42/151 output tokens;not a full quality or sustained decode suite",
+    "K7_minimum_UMA_GiB": {
+      "65536": 27.729576110839844,
+      "204800": 18.569255828857422
+    },
+    "K7_peak_GPU_C": {
+      "65536": 61.906,
+      "204800": 64.687
+    },
+    "Tree_resident_long_context_candidate": "RETAIN;higher observed Decode at both tiers;similar cold Prefill;K7 completed long-context Engine cold retained without recompile",
+    "DFlash2": "Actual isolated Runtime state repair compiled;CPU72 tests passed;complete paired Engine and GPU tests pending",
+    "Golden_changed": false,
+    "CUDA13x_generic_pass": false,
+    "production_release": "NO_GO",
+    "next_unique_action": "Complete DFlash2 paired Engine build and actual guarded64K/200K cold/warm tests with explicit future-independent hybrid checkpoints;do not repeat passed K7/Tree fixtures"
+  },
+  "S2_DFlash2": {
+    "Runtime": "ARM SM110 actual build PASS;72 CPU tests PASS",
+    "native_runtime_SHA": "6cbd59dd7a0ca20154f601633fa45f3e82a7e4290664dfb4fe01423520183604",
+    "package_boundary_repair": "PASS_PUBLIC_NATIVE_LOADER_PACKAGE_BOUNDARY_CPU_ONLY",
+    "Engine_pair": "BUILDING_TARGET",
+    "GPU_inference": "PENDING",
+    "K7_long_Engine": "Cold complete bytes and full SHA;released16.41GiB;Golden retained",
+    "source_transfer": "Existing HTTP8000;no new listener",
+    "source_stage": "RAM before Draft build;transfer SHA required",
+    "context_harness": "Prepared;frozen final IDs and matched warm suffix"
+  },
+  "S2_three_method_comparison": {
+    "status": "GO_SCOPED_THREE_METHOD_SHARED200K_64K_200K_MATCHED_FIXTURES",
+    "timestamp_utc": "2026-10-14T11:53:32.028434+00:00",
+    "required_tiers": [
+      65536,
+      204800
+    ],
+    "actual_input_tokens": [
+      65112,
+      195686
+    ],
+    "comparison": [
+      {
+        "tier": 65536,
+        "method": "K7",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 44.550345533993095,
+        "Decode_tok_s": 39.4046769089122,
+        "wall_s": 45.59248398599448,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 47,
+        "computed_final_tokens": 7768,
+        "reused_tokens": 57344,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9396253917954289
+      },
+      {
+        "tier": 65536,
+        "method": "Tree",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 44.613915808004094,
+        "Decode_tok_s": 46.45893583172896,
+        "wall_s": 45.498043500003405,
+        "committed_tokens_per_verify": 8.4,
+        "actual_Graph_replays": 44,
+        "computed_final_tokens": 7768,
+        "reused_tokens": 57344,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9398131975332605
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 43.93696851799905,
+        "Decode_tok_s": 44.027935355702326,
+        "wall_s": 44.86984274699353,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 9,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9378240414133274
+      },
+      {
+        "tier": 65536,
+        "method": "K7",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.24072614299075212,
+        "Decode_tok_s": 34.08128880622818,
+        "wall_s": 1.445314430995495,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 55,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      },
+      {
+        "tier": 65536,
+        "method": "Tree",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.23974066899972968,
+        "Decode_tok_s": 39.1678939137406,
+        "wall_s": 1.2881215740053449,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 53,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.26062331900175195,
+        "Decode_tok_s": 44.04939410281751,
+        "wall_s": 1.1930444999889005,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 9,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      },
+      {
+        "tier": 204800,
+        "method": "K7",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 208.22598802899302,
+        "Decode_tok_s": 31.096555066144518,
+        "wall_s": 213.05190774900257,
+        "committed_tokens_per_verify": 7.55,
+        "actual_Graph_replays": 159,
+        "computed_final_tokens": 7270,
+        "reused_tokens": 188416,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9347078698740523
+      },
+      {
+        "tier": 204800,
+        "method": "Tree",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 207.93473365799582,
+        "Decode_tok_s": 32.31491352354384,
+        "wall_s": 212.57881702198938,
+        "committed_tokens_per_verify": 7.947368421052632,
+        "actual_Graph_replays": 170,
+        "computed_final_tokens": 7270,
+        "reused_tokens": 188416,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9339409695852532
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 201.20372386199597,
+        "Decode_tok_s": 27.537231523872343,
+        "wall_s": 206.65322623999964,
+        "committed_tokens_per_verify": 5.033333333333333,
+        "actual_Graph_replays": 51,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584,
+        "cold_GPU_base_prefill_fraction_of_TTFT": 0.9533845782027915
+      },
+      {
+        "tier": 204800,
+        "method": "K7",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.437616479001008,
+        "Decode_tok_s": 31.203201068462775,
+        "wall_s": 5.24703601100191,
+        "committed_tokens_per_verify": 7.55,
+        "actual_Graph_replays": 159,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      },
+      {
+        "tier": 204800,
+        "method": "Tree",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.43390328501118347,
+        "Decode_tok_s": 32.4563254740266,
+        "wall_s": 5.057771361010964,
+        "committed_tokens_per_verify": 7.947368421052632,
+        "actual_Graph_replays": 170,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.44805527800053824,
+        "Decode_tok_s": 27.532568753737383,
+        "wall_s": 5.898488910010201,
+        "committed_tokens_per_verify": 5.033333333333333,
+        "actual_Graph_replays": 51,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584,
+        "cold_GPU_base_prefill_fraction_of_TTFT": null
+      }
+    ],
+    "memory": {
+      "DFlash2_KV64K_GiB": 5.33203125,
+      "DFlash2_KV200K_GiB": 16.48828125,
+      "KV_saved_with64K_view_GiB": 11.15625,
+      "measured_minimum_UMA_GiB": {
+        "65536": 22.638084411621094,
+        "204800": 11.181861877441406
+      },
+      "measured_minimum_GPU_free_GiB": {
+        "65536": 22.615440368652344,
+        "204800": 10.952220916748047
+      },
+      "peak_GPU_C": {
+        "65536": 62.406,
+        "204800": 65.531
+      },
+      "speed_cost_against_dedicated64K_Engine": "NOT_MEASURED;no separate64K Engine compilation or repeated baseline;this same shared pair actually supports both capacity views"
+    },
+    "DFlash2_Engine_SHAs": {
+      "base": "4bcc9d9568c80751877832baa95583567c4c7ae4cf44ab98c51291d62e7032ad",
+      "draft": "f21094544e3dfc5e669c9d43553a273a4f8ee3259c026928085fd5aff86b49f3"
+    },
+    "native_runtime_SHA": "6cbd59dd7a0ca20154f601633fa45f3e82a7e4290664dfb4fe01423520183604",
+    "native_environment": "Kernel6.8.12-prod;NvGPU595.78;CUDA13.2.86;TensorRT10.16.0.72;SM110/14SM",
+    "root_cause_repaired": "Missing matching595.78 JIT compiler closure;actual NvTile errorCUDA_ERROR_JIT_COMPILER_NOT_FOUND. Original optimized Draft context passed after private RAM deployment;no driver/kernel/firmware changes",
+    "frontend_repair": "Explicit layer_index forwarding in process-local DFlash2 constructor",
+    "runtime_state_repair": "Explicit future-independent paired hybrid recurrent+TargetKV+DraftKV checkpoints;prefill-only;no MTP hidden-boundary fold",
+    "cold_chunk_semantics": "DFlash2 publishes complete raw canonical primers and an aligned final primer;MTP source-plan stable_boundary annotations in raw DFlash primer rows are historical annotations,actual checkpoints equal input_tokens as proven by following reused count",
+    "quality_scope": "One strict three-anchor JSON fixture per tier;full natural EOS;identical final input and output IDs across K7/Tree/DFlash2;not a full quality or sustained Decode suite",
+    "observed_DFlash2_clocks_Hz": {
+      "65536": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      },
+      "204800": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      }
+    },
+    "horizon8_evidence": [
+      {
+        "tier": 65536,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "committed_span_histogram": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "8": 4
+        },
+        "full_window8_rounds": 4,
+        "rounds": 7,
+        "full_window_fraction": 0.5714285714285714
+      },
+      {
+        "tier": 65536,
+        "mode": "WARM_SAME_PREFIX",
+        "committed_span_histogram": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "8": 4
+        },
+        "full_window8_rounds": 4,
+        "rounds": 7,
+        "full_window_fraction": 0.5714285714285714
+      },
+      {
+        "tier": 204800,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "committed_span_histogram": {
+          "1": 1,
+          "2": 3,
+          "3": 5,
+          "4": 7,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 8
+        },
+        "full_window8_rounds": 8,
+        "rounds": 30,
+        "full_window_fraction": 0.26666666666666666
+      },
+      {
+        "tier": 204800,
+        "mode": "WARM_SAME_PREFIX",
+        "committed_span_histogram": {
+          "1": 1,
+          "2": 3,
+          "3": 5,
+          "4": 7,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 8
+        },
+        "full_window8_rounds": 8,
+        "rounds": 30,
+        "full_window_fraction": 0.26666666666666666
+      }
+    ],
+    "all_DFlash2_Graph_errors": 0,
+    "all_DFlash2_kernel_errors": 0,
+    "full_wheel_source_match": false,
+    "CUDA13x_generic_pass": false,
+    "production_release": "NO_GO",
+    "Golden_changed": false,
+    "next_unique_action": "Same original Engine pair:runtime-only DFlash2 block16 challenge,64K correctness/performance first;retain any verified gain and then200K. No new Kernel or Engine compilation."
+  },
+  "S2_final_comparison": {
+    "status": "GO_SCOPED_SHARED200K_64K200K_RUNTIME_BLOCK16",
+    "timestamp_utc": "2026-10-14T12:02:10.596100+00:00",
+    "comparison": [
+      {
+        "tier": 65536,
+        "method": "K7",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 44.550345533993095,
+        "Decode_tok_s": 39.4046769089122,
+        "wall_s": 45.59248398599448,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 47,
+        "cold_GPU_base_prefill_s": 41.860635877,
+        "computed_final_tokens": 7768,
+        "reused_tokens": 57344
+      },
+      {
+        "tier": 65536,
+        "method": "Tree",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 44.613915808004094,
+        "Decode_tok_s": 46.45893583172896,
+        "wall_s": 45.498043500003405,
+        "committed_tokens_per_verify": 8.4,
+        "actual_Graph_replays": 44,
+        "cold_GPU_base_prefill_s": 41.928746870000005,
+        "computed_final_tokens": 7768,
+        "reused_tokens": 57344
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2-block8",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 43.93696851799905,
+        "Decode_tok_s": 44.027935355702326,
+        "wall_s": 44.86984274699353,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 9,
+        "cold_GPU_base_prefill_s": 41.205145383,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2-block16",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 42.60556374900625,
+        "Decode_tok_s": 53.09574804268523,
+        "wall_s": 43.37938431800285,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 11,
+        "cold_GPU_base_prefill_s": 40.92323583100001,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 65536,
+        "method": "K7",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.24072614299075212,
+        "Decode_tok_s": 34.08128880622818,
+        "wall_s": 1.445314430995495,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 55,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 65536,
+        "method": "Tree",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.23974066899972968,
+        "Decode_tok_s": 39.1678939137406,
+        "wall_s": 1.2881215740053449,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 53,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2-block8",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.26062331900175195,
+        "Decode_tok_s": 44.04939410281751,
+        "wall_s": 1.1930444999889005,
+        "committed_tokens_per_verify": 6.0,
+        "actual_Graph_replays": 9,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 65536,
+        "method": "DFlash2-block16",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "TTFT_s": 0.2531563480006298,
+        "Decode_tok_s": 53.2231015914447,
+        "wall_s": 1.0251280069933273,
+        "committed_tokens_per_verify": 7.0,
+        "actual_Graph_replays": 11,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 88,
+        "reused_tokens": 65024
+      },
+      {
+        "tier": 204800,
+        "method": "K7",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 208.22598802899302,
+        "Decode_tok_s": 31.096555066144518,
+        "wall_s": 213.05190774900257,
+        "committed_tokens_per_verify": 7.55,
+        "actual_Graph_replays": 159,
+        "cold_GPU_base_prefill_s": 194.63046972299998,
+        "computed_final_tokens": 7270,
+        "reused_tokens": 188416
+      },
+      {
+        "tier": 204800,
+        "method": "Tree",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 207.93473365799582,
+        "Decode_tok_s": 32.31491352354384,
+        "wall_s": 212.57881702198938,
+        "committed_tokens_per_verify": 7.947368421052632,
+        "actual_Graph_replays": 170,
+        "cold_GPU_base_prefill_s": 194.198766763,
+        "computed_final_tokens": 7270,
+        "reused_tokens": 188416
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2-block8",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 201.20372386199597,
+        "Decode_tok_s": 27.537231523872343,
+        "wall_s": 206.65322623999964,
+        "committed_tokens_per_verify": 5.033333333333333,
+        "actual_Graph_replays": 51,
+        "cold_GPU_base_prefill_s": 191.82452740699998,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2-block16",
+        "mode": "COLD_CHUNKED_PREFILL",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 201.16717368199897,
+        "Decode_tok_s": 30.576184263511873,
+        "wall_s": 206.07521712299786,
+        "committed_tokens_per_verify": 5.592592592592593,
+        "actual_Graph_replays": 52,
+        "cold_GPU_base_prefill_s": 191.786499414,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      },
+      {
+        "tier": 204800,
+        "method": "K7",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.437616479001008,
+        "Decode_tok_s": 31.203201068462775,
+        "wall_s": 5.24703601100191,
+        "committed_tokens_per_verify": 7.55,
+        "actual_Graph_replays": 159,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      },
+      {
+        "tier": 204800,
+        "method": "Tree",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.43390328501118347,
+        "Decode_tok_s": 32.4563254740266,
+        "wall_s": 5.057771361010964,
+        "committed_tokens_per_verify": 7.947368421052632,
+        "actual_Graph_replays": 170,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2-block8",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.44805527800053824,
+        "Decode_tok_s": 27.532568753737383,
+        "wall_s": 5.898488910010201,
+        "committed_tokens_per_verify": 5.033333333333333,
+        "actual_Graph_replays": 51,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      },
+      {
+        "tier": 204800,
+        "method": "DFlash2-block16",
+        "mode": "WARM_SAME_PREFIX",
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "TTFT_s": 0.44625169300707057,
+        "Decode_tok_s": 30.575521824267227,
+        "wall_s": 5.354405477002729,
+        "committed_tokens_per_verify": 5.592592592592593,
+        "actual_Graph_replays": 52,
+        "cold_GPU_base_prefill_s": null,
+        "computed_final_tokens": 102,
+        "reused_tokens": 195584
+      }
+    ],
+    "selected_by_request_wall": [
+      {
+        "tier": 65536,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "observed_lowest_wall_method": "DFlash2-block16",
+        "wall_s": 43.37938431800285,
+        "Decode_tok_s": 53.09574804268523,
+        "decision": "RETAIN_SCOPED_CANDIDATE;single_fixture_not_universal_winner"
+      },
+      {
+        "tier": 65536,
+        "mode": "WARM_SAME_PREFIX",
+        "observed_lowest_wall_method": "DFlash2-block16",
+        "wall_s": 1.0251280069933273,
+        "Decode_tok_s": 53.2231015914447,
+        "decision": "RETAIN_SCOPED_CANDIDATE;single_fixture_not_universal_winner"
+      },
+      {
+        "tier": 204800,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "observed_lowest_wall_method": "DFlash2-block16",
+        "wall_s": 206.07521712299786,
+        "Decode_tok_s": 30.576184263511873,
+        "decision": "RETAIN_SCOPED_CANDIDATE;single_fixture_not_universal_winner"
+      },
+      {
+        "tier": 204800,
+        "mode": "WARM_SAME_PREFIX",
+        "observed_lowest_wall_method": "Tree",
+        "wall_s": 5.057771361010964,
+        "Decode_tok_s": 32.4563254740266,
+        "decision": "RETAIN_SCOPED_CANDIDATE;single_fixture_not_universal_winner"
+      }
+    ],
+    "block16_horizon_and_cost": [
+      {
+        "tier": 65536,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "emitted_decode_span_histogram": {
+          "3": 2,
+          "5": 1,
+          "7": 1,
+          "11": 1,
+          "12": 1
+        },
+        "native_spec_counter_deltas": {
+          "total_iterations": 6,
+          "total_generated_tokens": 42,
+          "total_accepted_draft_tokens": 36,
+          "total_proposed_draft_tokens": 90
+        },
+        "mean_emitted_decode_tokens_per_stream_round": 6.833333333333333,
+        "committed_tokens_per_verify": 7.0,
+        "native_draft_acceptance_fraction": 0.4,
+        "total_decode_interval_s": 0.7721898930030875,
+        "Decode_change_vs_block8_pct": 20.59558917247406,
+        "request_wall_reduction_vs_block8_pct": 3.3217375808399674,
+        "exact_Draft_Verify_GPU_split": "UNMEASURED;Graph replay encloses stages;non-Graph fence rows are not full Decode attribution"
+      },
+      {
+        "tier": 65536,
+        "mode": "WARM_SAME_PREFIX",
+        "emitted_decode_span_histogram": {
+          "3": 2,
+          "5": 1,
+          "7": 1,
+          "11": 1,
+          "12": 1
+        },
+        "native_spec_counter_deltas": {
+          "total_iterations": 6,
+          "total_generated_tokens": 42,
+          "total_accepted_draft_tokens": 36,
+          "total_proposed_draft_tokens": 90
+        },
+        "mean_emitted_decode_tokens_per_stream_round": 6.833333333333333,
+        "committed_tokens_per_verify": 7.0,
+        "native_draft_acceptance_fraction": 0.4,
+        "total_decode_interval_s": 0.7703421780024655,
+        "Decode_change_vs_block8_pct": 20.825956123742518,
+        "request_wall_reduction_vs_block8_pct": 14.074621105678409,
+        "exact_Draft_Verify_GPU_split": "UNMEASURED;Graph replay encloses stages;non-Graph fence rows are not full Decode attribution"
+      },
+      {
+        "tier": 204800,
+        "mode": "COLD_CHUNKED_PREFILL",
+        "emitted_decode_span_histogram": {
+          "2": 4,
+          "3": 8,
+          "4": 6,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "16": 1
+        },
+        "native_spec_counter_deltas": {
+          "total_iterations": 27,
+          "total_generated_tokens": 151,
+          "total_accepted_draft_tokens": 124,
+          "total_proposed_draft_tokens": 405
+        },
+        "mean_emitted_decode_tokens_per_stream_round": 5.555555555555555,
+        "committed_tokens_per_verify": 5.592592592592593,
+        "native_draft_acceptance_fraction": 0.30617283950617286,
+        "total_decode_interval_s": 4.9057789130019955,
+        "Decode_change_vs_block8_pct": 11.035796162025324,
+        "request_wall_reduction_vs_block8_pct": 0.27970002090870194,
+        "exact_Draft_Verify_GPU_split": "UNMEASURED;Graph replay encloses stages;non-Graph fence rows are not full Decode attribution"
+      },
+      {
+        "tier": 204800,
+        "mode": "WARM_SAME_PREFIX",
+        "emitted_decode_span_histogram": {
+          "2": 4,
+          "3": 8,
+          "4": 6,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "12": 2,
+          "13": 1,
+          "14": 1,
+          "16": 1
+        },
+        "native_spec_counter_deltas": {
+          "total_iterations": 27,
+          "total_generated_tokens": 151,
+          "total_accepted_draft_tokens": 124,
+          "total_proposed_draft_tokens": 405
+        },
+        "mean_emitted_decode_tokens_per_stream_round": 5.555555555555555,
+        "committed_tokens_per_verify": 5.592592592592593,
+        "native_draft_acceptance_fraction": 0.30617283950617286,
+        "total_decode_interval_s": 4.905885200001649,
+        "Decode_change_vs_block8_pct": 11.052194576347985,
+        "request_wall_reduction_vs_block8_pct": 9.224115554139967,
+        "exact_Draft_Verify_GPU_split": "UNMEASURED;Graph replay encloses stages;non-Graph fence rows are not full Decode attribution"
+      }
+    ],
+    "memory": {
+      "KV64K_GiB": 5.33203125,
+      "KV200K_GiB": 16.48828125,
+      "KV_saved_with64K_view_GiB": 11.15625,
+      "minimum_UMA_GiB": {
+        "65536": 21.405967712402344,
+        "204800": 9.9298095703125
+      },
+      "minimum_GPU_free_GiB": {
+        "65536": 21.148418426513672,
+        "204800": 9.918533325195312
+      },
+      "peak_GPU_C": {
+        "65536": 62.843,
+        "204800": 66.312
+      },
+      "measured_peak_allocation_GiB": {
+        "65536": 27.514320373535156,
+        "204800": 38.7642707824707
+      },
+      "block8_measured_peak_allocation_GiB": {
+        "65536": 27.13919448852539,
+        "204800": 37.59686279296875
+      },
+      "allocation_comparison_limit": "Sequential single runs;UMA includes CPU/cache variation;not per-buffer allocation attribution",
+      "dedicated64K_Engine_speed_penalty": "NOT_MEASURED;no extra Engine compilation"
+    },
+    "observed_clocks_Hz": {
+      "65536": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      },
+      "204800": {
+        "/sys/class/devfreq/gpu-gpc-0": [
+          1530000000
+        ],
+        "/sys/class/devfreq/gpu-nvd-0": [
+          1566000000
+        ]
+      }
+    },
+    "Engine_recompiled_for_challenge": false,
+    "Kernel_changed_for_challenge": false,
+    "checkpoint_training_block_size": 8,
+    "explicit_runtime_block_size": 16,
+    "quality_scope": "One frozen three-anchor JSON fixture per tier;65112/195686 input,42/151 naturalEOS output;identical final IDs;not sustained Decode or full quality",
+    "production_release": "NO_GO",
+    "CUDA13x_generic_pass": false,
+    "Golden_changed": false,
+    "native_environment": "Kernel6.8.12-prod;NvGPU595.78;CUDA13.2.86;TensorRT10.16.0.72;SM110/14SM",
+    "remaining_conditions": [
+      "Full quality and representative sustained-generation validation;current42/151 output tokens do not establish general Decode throughput",
+      "Persistence of private595.78 JIT closure and isolated Runtime,independent startup and recovery admission",
+      "Source95515c2 runtime differs from installed74f8732 wheel;explicit ABI provenance retained,full wheel/source match missing",
+      "Agent/concurrency/API deferred by user scope"
+    ],
+    "next_unique_action": "Use saved200K cold-Prefill evidence to select one attention-path profiling candidate;do not rebuild Engine or repeat passed end-to-end fixtures before a concrete bottleneck is established"
+  },
+  "historical_fields_policy": "Older nested gate snapshots retained as history;S2_final_comparison is current long-context authority",
+  "S2_final_terminal_receipt": {
+    "status": "CPU_ONLY_FINAL_NATIVE_LONG_CONTEXT_STATE",
+    "timestamp_utc": "1970-01-01T21:25:28.100059+00:00",
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "kernel": "6.8.12-prod-g78272943bba3",
+    "GPU_FD_owners": [],
+    "memory": {
+      "MemTotal": 62990389248,
+      "MemAvailable": 52850302976
+    },
+    "DATA_free_bytes": 13200162816,
+    "MAP_free_bytes": 14049222656,
+    "selected_K7_runtime_engine_dir": "/zeekr_data/nvidia-native-ai-v2/engines/native-mtp-k7-sm14-c1-8k",
+    "MTP_K": 7,
+    "new_root_mounts": [
+      "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+    ],
+    "thermal_mC": {
+      "cpu-thermal": 44625,
+      "tj-thermal": 44625,
+      "soc012-thermal": 43375,
+      "gpu-thermal": 42312,
+      "soc345-thermal": 44406
+    },
+    "JIT_closure_private_volatile_dir": "/run/thor-cuda-jit-59578-v1",
+    "JIT_files": [
+      {
+        "name": "libnvidia-nvvm70.so.595.78",
+        "bytes": 21494664
+      },
+      {
+        "name": "libnvidia-nvvm.so.595.78",
+        "bytes": 22057088
+      },
+      {
+        "name": "libnvidia-ptxjitcompiler.so.595.78",
+        "bytes": 32367296
+      },
+      {
+        "name": "libnvidia-gpucomp.so.595.78",
+        "bytes": 89554616
+      },
+      {
+        "name": "libnvidia-tileiras.so.595.78",
+        "bytes": 93664856
+      }
+    ],
+    "production_health": "NOT_PROVEN;intentionally stopped in preexisting user exclusive RAM window",
+    "production_restore_attempted": false,
+    "default_changed": false,
+    "CUDA_calls": false,
+    "model_SHA_policy": "Reuse prior verified full deployment SHAs;no redundant full model reread"
+  },
+  "last_authority_validation": {
+    "status": "PASS_FINAL_AUTHORITY_COHERENCE_AND_HASH_INDEX_ONLY",
+    "GPU_test_repeated": false,
+    "benchmark_rows": 26,
+    "terminal_GPU_FD_owners": 0,
+    "production_release": "NO_GO",
+    "CUDA13x_generic_pass": false,
+    "next_action": "Use saved200K cold-Prefill evidence to select one attention-path profiling candidate;do not rebuild Engine or repeat passed end-to-end fixtures before a concrete bottleneck is established",
+    "timestamp_utc": "2026-10-14T12:03:27.310314+00:00"
+  },
+  "S3_prefill_attribution": {
+    "status": "PASS_SCOPED_PUBLIC_LAYER_AND_EXISTING_LONG_GROWTH_ATTRIBUTION",
+    "timestamp_utc": "2026-10-14T12:15:55.043391+00:00",
+    "short_profiles": [
+      {
+        "phase": 1,
+        "physical_tokens": 8207,
+        "enqueue_wall_ms": 4077.805637,
+        "layer_time_sum_ms": 4044.729792519356,
+        "named_region_groups": {
+          "Other fused regions": {
+            "rows": 744,
+            "ms": 767.146879137028
+          },
+          "Unnamed plugins;semantic mapping unproven": {
+            "rows": 290,
+            "ms": 712.3750054970151
+          },
+          "TRT fused FC named regions": {
+            "rows": 160,
+            "ms": 593.4396152794361
+          },
+          "TRT Matrix Multiply named regions": {
+            "rows": 337,
+            "ms": 1749.8984996676445
+          },
+          "Attention named regions": {
+            "rows": 16,
+            "ms": 221.86979293823242
+          }
+        },
+        "layer_rows": 1547
+      },
+      {
+        "phase": 2,
+        "physical_tokens": 8192,
+        "enqueue_wall_ms": 4343.233464,
+        "layer_time_sum_ms": 4337.805763989105,
+        "named_region_groups": {
+          "Other fused regions": {
+            "rows": 744,
+            "ms": 765.5994897433557
+          },
+          "Unnamed plugins;semantic mapping unproven": {
+            "rows": 290,
+            "ms": 703.736414079438
+          },
+          "TRT fused FC named regions": {
+            "rows": 160,
+            "ms": 578.0323523879051
+          },
+          "TRT Matrix Multiply named regions": {
+            "rows": 337,
+            "ms": 1731.1415406763554
+          },
+          "Attention named regions": {
+            "rows": 16,
+            "ms": 559.2959671020508
+          }
+        },
+        "layer_rows": 1547
+      }
+    ],
+    "largest_layer_increases": [
+      {
+        "name": "attention_568_myl0_369",
+        "initial_ms": 13.562911987304688,
+        "continuation_ms": 34.973758697509766,
+        "delta_ms": 21.410846710205078
+      },
+      {
+        "name": "attention_274_myl0_177",
+        "initial_ms": 13.549535751342773,
+        "continuation_ms": 34.95935821533203,
+        "delta_ms": 21.409822463989258
+      },
+      {
+        "name": "attention_1009_myl0_657",
+        "initial_ms": 13.577183723449707,
+        "continuation_ms": 34.97782516479492,
+        "delta_ms": 21.400641441345215
+      },
+      {
+        "name": "attention_2332_myl0_1521",
+        "initial_ms": 13.601920127868652,
+        "continuation_ms": 35.00252914428711,
+        "delta_ms": 21.400609016418457
+      },
+      {
+        "name": "attention_862_myl0_561",
+        "initial_ms": 13.562335968017578,
+        "continuation_ms": 34.958431243896484,
+        "delta_ms": 21.396095275878906
+      },
+      {
+        "name": "attention_421_myl0_273",
+        "initial_ms": 13.523967742919922,
+        "continuation_ms": 34.91952133178711,
+        "delta_ms": 21.395553588867188
+      },
+      {
+        "name": "attention_1156_myl0_753",
+        "initial_ms": 13.581343650817871,
+        "continuation_ms": 34.976863861083984,
+        "delta_ms": 21.395520210266113
+      },
+      {
+        "name": "attention_2185_myl0_1425",
+        "initial_ms": 13.533280372619629,
+        "continuation_ms": 34.927616119384766,
+        "delta_ms": 21.394335746765137
+      },
+      {
+        "name": "attention_1891_myl0_1233",
+        "initial_ms": 13.53212833404541,
+        "continuation_ms": 34.925567626953125,
+        "delta_ms": 21.393439292907715
+      },
+      {
+        "name": "attention_1744_myl0_1137",
+        "initial_ms": 13.590592384338379,
+        "continuation_ms": 34.982784271240234,
+        "delta_ms": 21.392191886901855
+      },
+      {
+        "name": "attention_2038_myl0_1329",
+        "initial_ms": 13.53222370147705,
+        "continuation_ms": 34.92348861694336,
+        "delta_ms": 21.39126491546631
+      },
+      {
+        "name": "attention_1450_myl0_945",
+        "initial_ms": 13.601728439331055,
+        "continuation_ms": 34.985984802246094,
+        "delta_ms": 21.38425636291504
+      },
+      {
+        "name": "attention_1597_myl0_1041",
+        "initial_ms": 13.591584205627441,
+        "continuation_ms": 34.97270584106445,
+        "delta_ms": 21.38112163543701
+      },
+      {
+        "name": "attention_1303_myl0_849",
+        "initial_ms": 13.59654426574707,
+        "continuation_ms": 34.97574234008789,
+        "delta_ms": 21.37919807434082
+      },
+      {
+        "name": "attention_715_myl0_465",
+        "initial_ms": 13.562944412231445,
+        "continuation_ms": 34.940895080566406,
+        "delta_ms": 21.37795066833496
+      },
+      {
+        "name": "attention_127_myl0_81",
+        "initial_ms": 18.36956787109375,
+        "continuation_ms": 34.89289474487305,
+        "delta_ms": 16.523326873779297
+      },
+      {
+        "name": "(Unnamed Layer* 2730) [PluginV3_V3ONE]_myl0_488",
+        "initial_ms": 4.071199893951416,
+        "continuation_ms": 4.304959774017334,
+        "delta_ms": 0.23375988006591797
+      },
+      {
+        "name": "(Unnamed Layer* 2329) [PluginV3_V3ONE]_myl0_416",
+        "initial_ms": 4.05299186706543,
+        "continuation_ms": 4.278463840484619,
+        "delta_ms": 0.22547197341918945
+      },
+      {
+        "name": "(Unnamed Layer* 2195) [PluginV3_V3ONE]_myl0_392",
+        "initial_ms": 4.093984127044678,
+        "continuation_ms": 4.307040214538574,
+        "delta_ms": 0.21305608749389648
+      },
+      {
+        "name": "(Unnamed Layer* 8080) [PluginV3_V3ONE]_myl0_1448",
+        "initial_ms": 4.124671936035156,
+        "continuation_ms": 4.335648059844971,
+        "delta_ms": 0.21097612380981445
+      }
+    ],
+    "Attention_increment_ms": 337.42617416381836,
+    "whole_Base_layer_sum_increment_ms": 293.07597146974877,
+    "short_Attention_normalized_growth_ms_per_query_token_per_cached_Ki_tokens": 0.005145480799490269,
+    "saved200K_Base_growth_fit": {
+      "points": 22,
+      "slope_ms_per_query_token_per_cached_Ki_tokens": 0.0054620758073010865,
+      "intercept_ms_per_query_token": 0.47799209962449996,
+      "R2": 0.9993729786312497
+    },
+    "slope_ratio_observation": 0.9420376027393049,
+    "interpretation": "NamedAttention intervals account for the measured short continuation growth;their normalized slope is consistent with most saved200K Base growth. This is a candidate-selection observation,not exact200K per-kernel attribution.",
+    "limitations": [
+      "Past0/8207 only for public layer profiling;200K reused prior uninstrumented Base intervals",
+      "Public layer times can include timer overhead/fusion/overlap;sum is not guaranteed exclusive critical-path cost",
+      "Unnamed plugins are not assigned to GDN/MLP without semantic mapping",
+      "No end-to-end performance or quality ranking from this diagnostic"
+    ],
+    "selected_engineering_candidate": "Attention FP8 KV backend admission and one exact-head256/24Qheads/4KVheads short operator comparison before any fullEngine rebuild",
+    "rationale": "Targets long-cache growth and memory;requires actual same595.78/SM110 plugin support and numeric/performance gates;FP8 fullModel quality is not yet PASS",
+    "Engine_recompiled": false,
+    "formal64K200K_repeated": false,
+    "previous_failure_preserved": "S3-prefill-layer-v1-result.json;native metrics were disabled,the public layer trace itself was valid"
+  },
+  "S3_final_adjudication": {
+    "status": "GO_SCOPED_FP8_OPERATOR;NO_GO_FULL_MODEL_PROMOTION_PENDING_REAL_CALIBRATION_AND_TARGET_ONLY_QUALITY",
+    "timestamp_utc": "2026-10-14T12:46:49.324354+00:00",
+    "public_layer_attribution": {
+      "status": "PASS_SCOPED_PUBLIC_LAYER_AND_EXISTING_LONG_GROWTH_ATTRIBUTION",
+      "timestamp_utc": "2026-10-14T12:15:55.043391+00:00",
+      "short_profiles": [
+        {
+          "phase": 1,
+          "physical_tokens": 8207,
+          "enqueue_wall_ms": 4077.805637,
+          "layer_time_sum_ms": 4044.729792519356,
+          "named_region_groups": {
+            "Other fused regions": {
+              "rows": 744,
+              "ms": 767.146879137028
+            },
+            "Unnamed plugins;semantic mapping unproven": {
+              "rows": 290,
+              "ms": 712.3750054970151
+            },
+            "TRT fused FC named regions": {
+              "rows": 160,
+              "ms": 593.4396152794361
+            },
+            "TRT Matrix Multiply named regions": {
+              "rows": 337,
+              "ms": 1749.8984996676445
+            },
+            "Attention named regions": {
+              "rows": 16,
+              "ms": 221.86979293823242
+            }
+          },
+          "layer_rows": 1547
+        },
+        {
+          "phase": 2,
+          "physical_tokens": 8192,
+          "enqueue_wall_ms": 4343.233464,
+          "layer_time_sum_ms": 4337.805763989105,
+          "named_region_groups": {
+            "Other fused regions": {
+              "rows": 744,
+              "ms": 765.5994897433557
+            },
+            "Unnamed plugins;semantic mapping unproven": {
+              "rows": 290,
+              "ms": 703.736414079438
+            },
+            "TRT fused FC named regions": {
+              "rows": 160,
+              "ms": 578.0323523879051
+            },
+            "TRT Matrix Multiply named regions": {
+              "rows": 337,
+              "ms": 1731.1415406763554
+            },
+            "Attention named regions": {
+              "rows": 16,
+              "ms": 559.2959671020508
+            }
+          },
+          "layer_rows": 1547
+        }
+      ],
+      "largest_layer_increases": [
+        {
+          "name": "attention_568_myl0_369",
+          "initial_ms": 13.562911987304688,
+          "continuation_ms": 34.973758697509766,
+          "delta_ms": 21.410846710205078
+        },
+        {
+          "name": "attention_274_myl0_177",
+          "initial_ms": 13.549535751342773,
+          "continuation_ms": 34.95935821533203,
+          "delta_ms": 21.409822463989258
+        },
+        {
+          "name": "attention_1009_myl0_657",
+          "initial_ms": 13.577183723449707,
+          "continuation_ms": 34.97782516479492,
+          "delta_ms": 21.400641441345215
+        },
+        {
+          "name": "attention_2332_myl0_1521",
+          "initial_ms": 13.601920127868652,
+          "continuation_ms": 35.00252914428711,
+          "delta_ms": 21.400609016418457
+        },
+        {
+          "name": "attention_862_myl0_561",
+          "initial_ms": 13.562335968017578,
+          "continuation_ms": 34.958431243896484,
+          "delta_ms": 21.396095275878906
+        },
+        {
+          "name": "attention_421_myl0_273",
+          "initial_ms": 13.523967742919922,
+          "continuation_ms": 34.91952133178711,
+          "delta_ms": 21.395553588867188
+        },
+        {
+          "name": "attention_1156_myl0_753",
+          "initial_ms": 13.581343650817871,
+          "continuation_ms": 34.976863861083984,
+          "delta_ms": 21.395520210266113
+        },
+        {
+          "name": "attention_2185_myl0_1425",
+          "initial_ms": 13.533280372619629,
+          "continuation_ms": 34.927616119384766,
+          "delta_ms": 21.394335746765137
+        },
+        {
+          "name": "attention_1891_myl0_1233",
+          "initial_ms": 13.53212833404541,
+          "continuation_ms": 34.925567626953125,
+          "delta_ms": 21.393439292907715
+        },
+        {
+          "name": "attention_1744_myl0_1137",
+          "initial_ms": 13.590592384338379,
+          "continuation_ms": 34.982784271240234,
+          "delta_ms": 21.392191886901855
+        },
+        {
+          "name": "attention_2038_myl0_1329",
+          "initial_ms": 13.53222370147705,
+          "continuation_ms": 34.92348861694336,
+          "delta_ms": 21.39126491546631
+        },
+        {
+          "name": "attention_1450_myl0_945",
+          "initial_ms": 13.601728439331055,
+          "continuation_ms": 34.985984802246094,
+          "delta_ms": 21.38425636291504
+        },
+        {
+          "name": "attention_1597_myl0_1041",
+          "initial_ms": 13.591584205627441,
+          "continuation_ms": 34.97270584106445,
+          "delta_ms": 21.38112163543701
+        },
+        {
+          "name": "attention_1303_myl0_849",
+          "initial_ms": 13.59654426574707,
+          "continuation_ms": 34.97574234008789,
+          "delta_ms": 21.37919807434082
+        },
+        {
+          "name": "attention_715_myl0_465",
+          "initial_ms": 13.562944412231445,
+          "continuation_ms": 34.940895080566406,
+          "delta_ms": 21.37795066833496
+        },
+        {
+          "name": "attention_127_myl0_81",
+          "initial_ms": 18.36956787109375,
+          "continuation_ms": 34.89289474487305,
+          "delta_ms": 16.523326873779297
+        },
+        {
+          "name": "(Unnamed Layer* 2730) [PluginV3_V3ONE]_myl0_488",
+          "initial_ms": 4.071199893951416,
+          "continuation_ms": 4.304959774017334,
+          "delta_ms": 0.23375988006591797
+        },
+        {
+          "name": "(Unnamed Layer* 2329) [PluginV3_V3ONE]_myl0_416",
+          "initial_ms": 4.05299186706543,
+          "continuation_ms": 4.278463840484619,
+          "delta_ms": 0.22547197341918945
+        },
+        {
+          "name": "(Unnamed Layer* 2195) [PluginV3_V3ONE]_myl0_392",
+          "initial_ms": 4.093984127044678,
+          "continuation_ms": 4.307040214538574,
+          "delta_ms": 0.21305608749389648
+        },
+        {
+          "name": "(Unnamed Layer* 8080) [PluginV3_V3ONE]_myl0_1448",
+          "initial_ms": 4.124671936035156,
+          "continuation_ms": 4.335648059844971,
+          "delta_ms": 0.21097612380981445
+        }
+      ],
+      "Attention_increment_ms": 337.42617416381836,
+      "whole_Base_layer_sum_increment_ms": 293.07597146974877,
+      "short_Attention_normalized_growth_ms_per_query_token_per_cached_Ki_tokens": 0.005145480799490269,
+      "saved200K_Base_growth_fit": {
+        "points": 22,
+        "slope_ms_per_query_token_per_cached_Ki_tokens": 0.0054620758073010865,
+        "intercept_ms_per_query_token": 0.47799209962449996,
+        "R2": 0.9993729786312497
+      },
+      "slope_ratio_observation": 0.9420376027393049,
+      "interpretation": "NamedAttention intervals account for the measured short continuation growth;their normalized slope is consistent with most saved200K Base growth. This is a candidate-selection observation,not exact200K per-kernel attribution.",
+      "limitations": [
+        "Past0/8207 only for public layer profiling;200K reused prior uninstrumented Base intervals",
+        "Public layer times can include timer overhead/fusion/overlap;sum is not guaranteed exclusive critical-path cost",
+        "Unnamed plugins are not assigned to GDN/MLP without semantic mapping",
+        "No end-to-end performance or quality ranking from this diagnostic"
+      ],
+      "selected_engineering_candidate": "Attention FP8 KV backend admission and one exact-head256/24Qheads/4KVheads short operator comparison before any fullEngine rebuild",
+      "rationale": "Targets long-cache growth and memory;requires actual same595.78/SM110 plugin support and numeric/performance gates;FP8 fullModel quality is not yet PASS",
+      "Engine_recompiled": false,
+      "formal64K200K_repeated": false,
+      "previous_failure_preserved": "S3-prefill-layer-v1-result.json;native metrics were disabled,the public layer trace itself was valid"
+    },
+    "operator_comparison": [
+      {
+        "tier": 65536,
+        "FP16_ms": 162.7696990966797,
+        "FP8_ms": 124.98236846923828,
+        "operator_speedup": 1.3023412909377048,
+        "KV_saved_bytes": 136314880,
+        "operator_latency_reduction_pct": 23.21521194494377,
+        "operator_throughput_increase_pct": 30.234129093770477
+      },
+      {
+        "tier": 204800,
+        "FP16_ms": 504.2608337402344,
+        "FP8_ms": 387.1221618652344,
+        "operator_speedup": 1.3025883904724074,
+        "KV_saved_bytes": 421527552,
+        "operator_latency_reduction_pct": 23.229777931819896,
+        "operator_throughput_increase_pct": 30.258839047240738
+      }
+    ],
+    "actual_operator_clocks_Hz": {
+      "/sys/class/devfreq/gpu-gpc-0": [
+        1530000000
+      ],
+      "/sys/class/devfreq/gpu-nvd-0": [
+        1566000000
+      ]
+    },
+    "operator_scales": [
+      0.125,
+      0.125,
+      0.125
+    ],
+    "actual_installed_checkpoint_default_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "default_unit_scale_numeric_gate": "PASS_TWO_SYNTHETIC_NORMAL_AND_CACHED_13TOKEN_CASES_ONLY;no timing repeated",
+    "original_checkpoint_explicit_KV_scale_tensors": 0,
+    "real_weight_KV_calibration": "MISSING",
+    "target_attention_layers": 16,
+    "excluded_MTP_attention_layers": 1,
+    "peak_GPU_C": 61.0,
+    "minimum_UMA_GiB": 47.21003341674805,
+    "model_Engine_recompiled": false,
+    "formal64K200K_repeated": false,
+    "FP16_default_retained": true,
+    "exact_speculative_acceptance_unchanged": true,
+    "original_weight_quantization_unchanged": true,
+    "full_model_quality_PASS": false,
+    "full_model_FP8_speedup": "UNMEASURED",
+    "CUDA13x_generic_PASS": false,
+    "qualification_scope": "ExactHead256/24Qheads/4KVheads synthetic single AttentionPlugin on existingKernel6.8.12/NvGPU595.78/CUDA13.2.86/TRT10.16.0.72/SM11014SM;not full-model quality or speed",
+    "user_quality_requirements": {
+      "reference": "Original NVIDIA Target-only",
+      "checks": [
+        "Logits",
+        "GDN state",
+        "Token IDs"
+      ],
+      "workloads": [
+        "Thinking",
+        "code",
+        "JSON",
+        "long recall",
+        "long continuous generation"
+      ],
+      "status": "NOT_YET_PROVEN"
+    },
+    "performance_targets": {
+      "cold200K_TTFT_s": 180,
+      "stretch_TTFT_s": 160,
+      "Decode200K_tok_s": 36,
+      "saved_FP16_DFlash2_block16_TTFT_s": 201.16717368199897,
+      "saved_FP16_DFlash2_block16_Decode_tok_s": 30.576184263511873,
+      "status": "TARGETS_NOT_YET_MET"
+    },
+    "next_unique_action": "Process-scoped real-weight QKV calibration plus originalTarget-only Logits/GDN/Token reference capture,using existing FP16 Engine;do not compile a full FP8 Engine or promote default before this evidence",
+    "next_action_constraints": [
+      "No weight/kernel/CUDA/engine migration or Golden overwrite",
+      "Only64K/200K formal tiers;short calibration is diagnostic,no repeated passed benchmark",
+      "Defaultunit-scales are fallback values,not calibrated manufacturer evidence",
+      "No approximate speculative acceptance;real model quality is a separate mandatory gate"
+    ],
+    "preserved_failures": [
+      "Native counter switch disabled in layerV1;layerV2 fixed",
+      "Operator profile setter returnsNone;readback fixed",
+      "Operator output ABI is[T,H,D];strict shape fixed before enqueue",
+      "Probe globalVpageoffset was missing;retained GPU data proved K-as-V;V4 fixed",
+      "Unit-scale metadata initially counted extraMTP prefix;exact16 Target filter fixed before enqueue"
+    ]
+  },
+  "S3_terminal_receipt": {
+    "observed_uptime_s": 79732.85,
+    "status": "CPU_ONLY_S3_PREFILL_TERMINAL_STATE",
+    "timestamp_utc": "1970-01-01T22:08:52.851505+00:00",
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "kernel": "6.8.12-prod-g78272943bba3",
+    "GPU_FD_owners": [],
+    "memory": {
+      "MemTotal": 62990389248,
+      "MemAvailable": 52003782656
+    },
+    "DATA_free_bytes": 13133979648,
+    "MAP_free_bytes": 14049222656,
+    "selected_K7_runtime_engine_dir": "/zeekr_data/nvidia-native-ai-v2/engines/native-mtp-k7-sm14-c1-8k",
+    "MTP_K": 7,
+    "new_root_mounts": [
+      "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+    ],
+    "thermal_mC": {
+      "cpu-thermal": 42750,
+      "tj-thermal": 42750,
+      "soc012-thermal": 41687,
+      "gpu-thermal": 40437,
+      "soc345-thermal": 42687
+    },
+    "JIT_closure_private_volatile_dir": "/run/thor-cuda-jit-59578-v1",
+    "JIT_files": [
+      {
+        "name": "libnvidia-nvvm70.so.595.78",
+        "bytes": 21494664
+      },
+      {
+        "name": "libnvidia-nvvm.so.595.78",
+        "bytes": 22057088
+      },
+      {
+        "name": "libnvidia-ptxjitcompiler.so.595.78",
+        "bytes": 32367296
+      },
+      {
+        "name": "libnvidia-gpucomp.so.595.78",
+        "bytes": 89554616
+      },
+      {
+        "name": "libnvidia-tileiras.so.595.78",
+        "bytes": 93664856
+      }
+    ],
+    "production_health": "NOT_PROVEN;intentionally stopped in preexisting user exclusive RAM window",
+    "production_restore_attempted": false,
+    "default_changed": false,
+    "CUDA_calls": false,
+    "model_SHA_policy": "Reuse prior verified full deployment SHAs;no redundant full model reread"
+  },
+  "current_goal_scope": "OriginalNVIDIA27B_NVFP4+TensorRT_EdgeLLM+TreeMTP8/2/16+FP16KV",
+  "S4_actual_calibration_status": "Real weight statistics captured;frozen custom sample V scales NO_GO on heldout;unit-scale fullmodel untested",
+  "S4_instrumentation_transparency": "PASS_ALL_TOKEN_IDS_ALL_LOGITS_FINAL_48_GDN_48_CONV_BYTES_IDENTICAL",
+  "S4_calibration_sidecar_SHA": "59f6102379a8c70110a158697185d563338823eb7bee33419b36fdfd9a1286da",
+  "S4_heldout_quality": {
+    "status": "PASS_REFERENCE_CAPTURE;PARTIAL_ORIGINAL_MODEL_TASK_QUALITY;NO_GO_FROZEN_SAMPLE_V_SCALES",
+    "cases": [
+      {
+        "case": "thinking_math",
+        "input_tokens": 73,
+        "output_tokens": 226,
+        "natural_EOS": true,
+        "raw_reference": {
+          "status": "PASS_COMPLETE_RAW_TARGET_ONLY_REFERENCE",
+          "logit_rows": 226,
+          "all_raw_argmax_IDs_match": true,
+          "GDN_conv_tensors": 96,
+          "all_active_states_finite": true,
+          "final_logical_position": 298,
+          "state_max_abs": 59.59375
+        },
+        "semantic_quality": {
+          "passed": true,
+          "result": 995006,
+          "actual_thinking_present": true
+        },
+        "calibrated_scale_violations": []
+      },
+      {
+        "case": "code_intervals",
+        "input_tokens": 65,
+        "output_tokens": 111,
+        "natural_EOS": true,
+        "raw_reference": {
+          "status": "PASS_COMPLETE_RAW_TARGET_ONLY_REFERENCE",
+          "logit_rows": 111,
+          "all_raw_argmax_IDs_match": true,
+          "GDN_conv_tensors": 96,
+          "all_active_states_finite": true,
+          "final_logical_position": 175,
+          "state_max_abs": 67.125
+        },
+        "semantic_quality": {
+          "passed": true,
+          "code_validation": {
+            "status": "PASS_PURE_CODE_38_CPU_UNIT_CASES",
+            "tests": 38,
+            "input_unchanged": true
+          }
+        },
+        "calibrated_scale_violations": []
+      },
+      {
+        "case": "json_order",
+        "input_tokens": 81,
+        "output_tokens": 127,
+        "natural_EOS": true,
+        "raw_reference": {
+          "status": "PASS_COMPLETE_RAW_TARGET_ONLY_REFERENCE",
+          "logit_rows": 127,
+          "all_raw_argmax_IDs_match": true,
+          "GDN_conv_tensors": 96,
+          "all_active_states_finite": true,
+          "final_logical_position": 207,
+          "state_max_abs": 67.125
+        },
+        "semantic_quality": {
+          "passed": true,
+          "strict_JSON_without_fence": true
+        },
+        "calibrated_scale_violations": []
+      },
+      {
+        "case": "continuous_squares",
+        "input_tokens": 59,
+        "output_tokens": 598,
+        "natural_EOS": true,
+        "raw_reference": {
+          "status": "PASS_COMPLETE_RAW_TARGET_ONLY_REFERENCE",
+          "logit_rows": 598,
+          "all_raw_argmax_IDs_match": true,
+          "GDN_conv_tensors": 96,
+          "all_active_states_finite": true,
+          "final_logical_position": 656,
+          "state_max_abs": 59.59375
+        },
+        "semantic_quality": {
+          "passed": false,
+          "all80_square_lines_correct": true,
+          "checksum_actual": 171760,
+          "checksum_expected": 173880,
+          "continuous_output_tokens": 598,
+          "failure_scope": "OriginalTarget-only output,not introduced by FP8;FP8 model not run"
+        },
+        "calibrated_scale_violations": [
+          {
+            "attention_index": 3,
+            "k_max_abs": 17.921875,
+            "v_max_abs": 7.5859375,
+            "frozen_k_scale": 0.0625,
+            "frozen_v_scale": 0.015625,
+            "k_exceeds_frozen_FP8_range": false,
+            "v_exceeds_frozen_FP8_range": true
+          }
+        ]
+      }
+    ],
+    "semantically_passed": 3,
+    "semantically_total": 4,
+    "calibrated_K_sample_V_profile": "NO_GO_HELDOUT_V_RANGE_VIOLATION;do not silently retune usingheldout",
+    "predefined_official_unit_scale_recipe": {
+      "scales": [
+        1,
+        1,
+        1
+      ],
+      "prior_definition": "S3 actual installedWeights fallback,defined beforeheldout",
+      "observed_KV_overflow_cases": [],
+      "range_validation": "PASS_OBSERVED_ONLY",
+      "full_model_FP8_quality_PASS": false,
+      "not_checkpoint_supplied_calibration": true
+    },
+    "original_model_checksum_error": "80 square rows correct but finalchecksum171760 !=173880;preserveactualreference,do not callfullquality PASS",
+    "FP16_default_retained": true,
+    "actual_FP8_model_run": false,
+    "long64K200K_Target_only_reference": "MISSING",
+    "quality_admission": "NO_GO_FP8_MODEL_PROMOTION;local30percent speedup and synthetic/real-range gates do not substitute full-model quality"
+  },
+  "active_job": null,
+  "S4_long_reference_quality": {
+    "status": "PASS_ORIGINAL_TARGET_ONLY_64K200K_RAW_REFERENCE_CAPTURE",
+    "cases": [
+      {
+        "tier_tokens": 65536,
+        "input_tokens": 65112,
+        "output_tokens": 39,
+        "natural_EOS": true,
+        "strict_long_recall_oracle": true,
+        "all_raw_logits_argmax_IDs_match": true,
+        "all96_GDN_conv_states_finite": true,
+        "prior_speculative_fixture_IDs_match": false,
+        "final_logical_position": 65150,
+        "total_cold_computed_tokens": 65112,
+        "Draft_forwards": 0,
+        "custom_frozen_scale_violations": [],
+        "official_default_unit_scale_overflows": [],
+        "max_K_abs": 22.921875,
+        "max_V_abs": 145.625,
+        "largest_active_state_abs": 67.125,
+        "engine_recompiled": false,
+        "performance_benchmark": false
+      },
+      {
+        "tier_tokens": 204800,
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "natural_EOS": true,
+        "strict_long_recall_oracle": true,
+        "all_raw_logits_argmax_IDs_match": true,
+        "all96_GDN_conv_states_finite": true,
+        "prior_speculative_fixture_IDs_match": true,
+        "final_logical_position": 195836,
+        "total_cold_computed_tokens": 195686,
+        "Draft_forwards": 0,
+        "custom_frozen_scale_violations": [],
+        "official_default_unit_scale_overflows": [],
+        "max_K_abs": 22.921875,
+        "max_V_abs": 102.9375,
+        "largest_active_state_abs": 67.125,
+        "engine_recompiled": false,
+        "performance_benchmark": false
+      }
+    ],
+    "long_recall_semantic_PASS": true,
+    "official_unit_scale_observed_range_PASS": true,
+    "original_short_suite": "Thinking/code/JSON PASS;continuous80squares PASS but original checksum FAIL",
+    "custom_sample_V_scale_profile": "NO_GO_HELDOUT_OVERFLOW;not retuned with heldout",
+    "full_model_FP8_quality_PASS": false,
+    "full_model_FP8_performance": "UNMEASURED",
+    "FP16_default_retained": true,
+    "next_unique_action": "Admit one full FP8 KV Target Engine using pre-existing official unit-scale alternative;reuse existing FP16 Draft;compare fullmodel quality before speed/promotion"
+  },
+  "S4_reference_final": {
+    "status": "PASS_ORIGINAL_TARGET_ONLY_REFERENCE_STAGE;NO_GO_FP8_FULL_MODEL_PROMOTION",
+    "quality_reference": {
+      "status": "PASS_ORIGINAL_TARGET_ONLY_64K200K_RAW_REFERENCE_CAPTURE",
+      "cases": [
+        {
+          "tier_tokens": 65536,
+          "input_tokens": 65112,
+          "output_tokens": 39,
+          "natural_EOS": true,
+          "strict_long_recall_oracle": true,
+          "all_raw_logits_argmax_IDs_match": true,
+          "all96_GDN_conv_states_finite": true,
+          "prior_speculative_fixture_IDs_match": false,
+          "final_logical_position": 65150,
+          "total_cold_computed_tokens": 65112,
+          "Draft_forwards": 0,
+          "custom_frozen_scale_violations": [],
+          "official_default_unit_scale_overflows": [],
+          "max_K_abs": 22.921875,
+          "max_V_abs": 145.625,
+          "largest_active_state_abs": 67.125,
+          "engine_recompiled": false,
+          "performance_benchmark": false
+        },
+        {
+          "tier_tokens": 204800,
+          "input_tokens": 195686,
+          "output_tokens": 151,
+          "natural_EOS": true,
+          "strict_long_recall_oracle": true,
+          "all_raw_logits_argmax_IDs_match": true,
+          "all96_GDN_conv_states_finite": true,
+          "prior_speculative_fixture_IDs_match": true,
+          "final_logical_position": 195836,
+          "total_cold_computed_tokens": 195686,
+          "Draft_forwards": 0,
+          "custom_frozen_scale_violations": [],
+          "official_default_unit_scale_overflows": [],
+          "max_K_abs": 22.921875,
+          "max_V_abs": 102.9375,
+          "largest_active_state_abs": 67.125,
+          "engine_recompiled": false,
+          "performance_benchmark": false
+        }
+      ],
+      "long_recall_semantic_PASS": true,
+      "official_unit_scale_observed_range_PASS": true,
+      "original_short_suite": "Thinking/code/JSON PASS;continuous80squares PASS but original checksum FAIL",
+      "custom_sample_V_scale_profile": "NO_GO_HELDOUT_OVERFLOW;not retuned with heldout",
+      "full_model_FP8_quality_PASS": false,
+      "full_model_FP8_performance": "UNMEASURED",
+      "FP16_default_retained": true,
+      "next_unique_action": "Admit one full FP8 KV Target Engine using pre-existing official unit-scale alternative;reuse existing FP16 Draft;compare fullmodel quality before speed/promotion"
+    },
+    "guard_safety": "PASS_MISSING_64K200K_TARGET_ONLY_REFERENCE_PROCESS_SAFETY_ONLY",
+    "peak_GPU_C": 65.843,
+    "minimum_UMA_GiB": 9.305805206298828,
+    "minimum_GPU_free_GiB": 8.937427520751953,
+    "original_semantic_suite": "5of6:Thinking,code,JSON,64Krecall,200Krecall PASS;original continuous checksum FAIL",
+    "exact_ID_scope": "200K originalTarget-only IDs equal archived spec fixture;64K JSON semantic equality with indentation-only ID difference",
+    "custom_sample_V_scale_profile": "NO_GO:heldout V overflow;unchanged,not retuned with test data",
+    "official_unit_scale_alternative": "No observed range overflow on calibrated and heldout samples;full model quality/performance untested",
+    "model_Engine_recompiled": false,
+    "FP16_default_retained": true,
+    "Golden_changed": false,
+    "formal64K200K_benchmarks_repeated": false,
+    "measured_performance_improvement": "None this reference stage;prior1.30x is single Attention operator only",
+    "performance_targets": {
+      "TTFT200K_s": 180,
+      "stretch_TTFT200K_s": 160,
+      "Decode200K_tok_s": 36
+    },
+    "performance_current": {
+      "DFlash2_block16_TTFT200K_s": 201.16717368199897,
+      "DFlash2_block16_Decode200K_tok_s": 30.576184263511873,
+      "Tree200K_warm_wall_s": 5.057771361
+    },
+    "next_unique_action": "One FP8 KV Target Engine build and originalTarget-only quality A/B using predefined official unit scales;reuse FP16 Draft and existing max200K profile;storage/ABI admission first",
+    "prerequisite": "Need space for one17GiB Target Engine while retaining12GiB floor;retain or exact-SHA cold-archive only inactive nonGolden Tree engine before compiling",
+    "whole_model_quality_regression_gate": "No approximate speculative acceptance,unchanged originalNVFP4 weights;Logits/GDN/Token IDs and semantics compared before promotion"
+  },
+  "S4_terminal_state": {
+    "status": "PASS_CPU_ONLY_LONG_REFERENCE_TERMINAL_STATE",
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "GPU_FD_owners": [],
+    "MemAvailable_bytes": 52728590336,
+    "DATA_free_bytes": 13064298496,
+    "MAP_free_bytes": 14049222656,
+    "thermal_mC": {
+      "cpu-thermal": 43656,
+      "tj-thermal": 43656,
+      "soc012-thermal": 42468,
+      "gpu-thermal": 41343,
+      "soc345-thermal": 43531
+    },
+    "new_root_mounts": [
+      "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+    ],
+    "model_Engine_recompiled": false,
+    "FP16_default_retained": true,
+    "production_restore_attempted": false,
+    "production_health": "UNPROVEN;preexisting exclusive RAM maintenance"
+  },
+  "S5_first_divergence": {
+    "status": "PASS_OFFLINE_FIRST_DIVERGENCE_LOCATION_ONLY",
+    "first_divergence_zero_based": 2,
+    "common_output_prefix_IDs": [
+      90,
+      198
+    ],
+    "Target_output_tokens": 39,
+    "spec_output_tokens": 42,
+    "Target_text": "{\n\"opening\": \"CL-4827\",\n\"middle\": \"amber-west-29\",\n\"closing\": \"MH-1954\"\n}",
+    "spec_text": "{\n  \"opening\": \"CL-4827\",\n  \"middle\": \"amber-west-29\",\n  \"closing\": \"MH-1954\"\n}",
+    "semantic_JSON_equivalent": true,
+    "strict_token_equivalent": false,
+    "actual_input_ID_SHA_equal": true,
+    "Target_only_engine_scope": "DFlash2 spec_base.engine with speculation disabled;not a separately built standalone Target Engine",
+    "Target_graph": false,
+    "spec_graph": true,
+    "Target_capacity": 205824,
+    "spec_capacity": 66560,
+    "Target_runtime_sha256": "58bd3b864e5658558315a7d0e50700f579f70ebf787de39019284f4c7d818033",
+    "spec_runtime_sha256": "6cbd59dd7a0ca20154f601633fa45f3e82a7e4290664dfb4fe01423520183604",
+    "sampling": {
+      "temperature": 0,
+      "top_k": 1,
+      "top_p": 1,
+      "seed": 7785123
+    },
+    "EOS": {
+      "Target": 248046,
+      "spec": 248046
+    },
+    "raw_Target_logits": [
+      {
+        "index": 0,
+        "Target_ID": 90,
+        "spec_ID": 90,
+        "Target_logit": 24.125,
+        "spec_ID_Target_logit": 24.125,
+        "Target_minus_spec_ID_logit": 0.0,
+        "top10": [
+          {
+            "token_id": 90,
+            "logit": 24.125
+          },
+          {
+            "token_id": 71093,
+            "logit": 22.609375
+          },
+          {
+            "token_id": 4754,
+            "logit": 19.96875
+          },
+          {
+            "token_id": 27775,
+            "logit": 14.5859375
+          },
+          {
+            "token_id": 51,
+            "logit": 14.5390625
+          },
+          {
+            "token_id": 760,
+            "logit": 14.5
+          },
+          {
+            "token_id": 3040,
+            "logit": 14.3359375
+          },
+          {
+            "token_id": 49573,
+            "logit": 13.6171875
+          },
+          {
+            "token_id": 40,
+            "logit": 13.6015625
+          },
+          {
+            "token_id": 58,
+            "logit": 13.4296875
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "Target_ID": 198,
+        "spec_ID": 198,
+        "Target_logit": 23.953125,
+        "spec_ID_Target_logit": 23.953125,
+        "Target_minus_spec_ID_logit": 0.0,
+        "top10": [
+          {
+            "token_id": 198,
+            "logit": 23.953125
+          },
+          {
+            "token_id": 328,
+            "logit": 15.40625
+          },
+          {
+            "token_id": 271,
+            "logit": 15.046875
+          },
+          {
+            "token_id": 220,
+            "logit": 13.2734375
+          },
+          {
+            "token_id": 2228,
+            "logit": 11.8046875
+          },
+          {
+            "token_id": 262,
+            "logit": 11.578125
+          },
+          {
+            "token_id": 695,
+            "logit": 11.5
+          },
+          {
+            "token_id": 248046,
+            "logit": 11.484375
+          },
+          {
+            "token_id": 1,
+            "logit": 11.0703125
+          },
+          {
+            "token_id": 1076,
+            "logit": 10.6875
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "Target_ID": 1,
+        "spec_ID": 220,
+        "Target_logit": 23.265625,
+        "spec_ID_Target_logit": 22.875,
+        "Target_minus_spec_ID_logit": 0.390625,
+        "top10": [
+          {
+            "token_id": 1,
+            "logit": 23.265625
+          },
+          {
+            "token_id": 220,
+            "logit": 22.875
+          },
+          {
+            "token_id": 262,
+            "logit": 19.09375
+          },
+          {
+            "token_id": 93767,
+            "logit": 17.328125
+          },
+          {
+            "token_id": 328,
+            "logit": 16.671875
+          },
+          {
+            "token_id": 2228,
+            "logit": 15.5703125
+          },
+          {
+            "token_id": 24567,
+            "logit": 15.4375
+          },
+          {
+            "token_id": 256,
+            "logit": 15.28125
+          },
+          {
+            "token_id": 52576,
+            "logit": 14.90625
+          },
+          {
+            "token_id": 44773,
+            "logit": 14.5546875
+          }
+        ]
+      }
+    ],
+    "unmeasured": [
+      "Speculative verify raw logits at same accepted prefix",
+      "Corresponding pre-divergence GDN/conv state equality",
+      "Independent standalone Target Engine64K evidence",
+      "Same Graph setting and same capacity control"
+    ],
+    "root_cause": "UNPROVEN;formatting-only result does not establish strict losslessness",
+    "FP8_full_model": "NO_GO;no new full FP8 Engine build",
+    "GPU_rerun": false
+  },
+  "S5_control": {
+    "status": "PASS_CONTROLLED64K_DIVERGENCE_PERSISTS;NO_GO_STRICT_LOSSLESS_CLAIM",
+    "eliminated_in_this_control": [
+      "Different baseEngine bytes",
+      "Different Runtime bytes",
+      "Different maximumKVcapacity",
+      "Different canonicalInputIDs",
+      "Different sampling/EOS",
+      "Different matchedPrefix length",
+      "CUDA Graph as cause of this16token prefix difference"
+    ],
+    "shared": {
+      "base_engine_sha256": "4bcc9d9568c80751877832baa95583567c4c7ae4cf44ab98c51291d62e7032ad",
+      "native_runtime_sha256": "58bd3b864e5658558315a7d0e50700f579f70ebf787de39019284f4c7d818033",
+      "max_KV": 205824,
+      "input_tokens": 65112,
+      "input_ID_sha256": "c7323ed04c62c57042eeee9e68c51911004e979790eebba07dad783820c1bbfb",
+      "reused_prefix_tokens": 65024,
+      "computed_suffix_tokens": 88,
+      "sampling": {
+        "temperature": 0,
+        "top_k": 1,
+        "top_p": 1,
+        "seed": 7785123
+      }
+    },
+    "first_divergence_zero_based": 2,
+    "Target_ID": 1,
+    "spec_ID": 220,
+    "diagnostic_arms": [
+      {
+        "mode": "SPEC_GRAPH_OFF",
+        "disable_spec_decode": false,
+        "input_tokens": 65112,
+        "output_ids": [
+          90,
+          198,
+          220,
+          328,
+          65403,
+          763,
+          328,
+          3040,
+          12,
+          19,
+          23,
+          17,
+          22,
+          487,
+          198,
+          220
+        ],
+        "output": "{\n  \"opening\": \"CL-4827\",\n ",
+        "output_tokens": 16,
+        "computed": 88,
+        "reused": 65024,
+        "native_spec_counter_deltas": {
+          "total_iterations": 3,
+          "total_generated_tokens": 16,
+          "total_accepted_draft_tokens": 12,
+          "total_proposed_draft_tokens": 45
+        },
+        "Graph_replays": {
+          "attempts": 0,
+          "successes": 0,
+          "failures": 0,
+          "resolve_failures": 0
+        },
+        "wall_s": 1.579531590003171,
+        "equals_saved_Target_prefix": false,
+        "equals_saved_spec_prefix": true
+      },
+      {
+        "mode": "SPEC_GRAPH_ON",
+        "disable_spec_decode": false,
+        "input_tokens": 65112,
+        "output_ids": [
+          90,
+          198,
+          220,
+          328,
+          65403,
+          763,
+          328,
+          3040,
+          12,
+          19,
+          23,
+          17,
+          22,
+          487,
+          198,
+          220
+        ],
+        "output": "{\n  \"opening\": \"CL-4827\",\n ",
+        "output_tokens": 16,
+        "computed": 88,
+        "reused": 65024,
+        "native_spec_counter_deltas": {
+          "total_iterations": 3,
+          "total_generated_tokens": 16,
+          "total_accepted_draft_tokens": 12,
+          "total_proposed_draft_tokens": 45
+        },
+        "Graph_replays": {
+          "attempts": 5,
+          "successes": 5,
+          "failures": 0,
+          "resolve_failures": 0
+        },
+        "wall_s": 0.6397335289948387,
+        "equals_saved_Target_prefix": false,
+        "equals_saved_spec_prefix": true
+      },
+      {
+        "mode": "TARGET_ONLY_GRAPH_CONFIGURED",
+        "disable_spec_decode": true,
+        "input_tokens": 65112,
+        "output_ids": [
+          90,
+          198,
+          1,
+          65403,
+          763,
+          328,
+          3040,
+          12,
+          19,
+          23,
+          17,
+          22,
+          487,
+          198,
+          1,
+          19055
+        ],
+        "output": "{\n\"opening\": \"CL-4827\",\n\"middle",
+        "output_tokens": 16,
+        "computed": 88,
+        "reused": 65024,
+        "native_spec_counter_deltas": {
+          "total_iterations": 0,
+          "total_generated_tokens": 0,
+          "total_accepted_draft_tokens": 0,
+          "total_proposed_draft_tokens": 0
+        },
+        "Graph_replays": {
+          "attempts": 0,
+          "successes": 0,
+          "failures": 0,
+          "resolve_failures": 0
+        },
+        "wall_s": 1.751612389998627,
+        "equals_saved_Target_prefix": true,
+        "equals_saved_spec_prefix": false
+      }
+    ],
+    "observed_launches": {
+      "records": 318,
+      "kernel_names": {
+        "kernel_mha": 318
+      },
+      "PDL_attribute6_enabled_records": 318,
+      "coverage": "PARTIAL_DRIVER_INTERPOSITION;not a full kernel activity trace;unobserved families are not proven absent"
+    },
+    "captured_Graph_kernels": {
+      "records": 4182,
+      "GDN_tree_prep_nodes": 48,
+      "GDN_tree_apply_nodes": 48,
+      "actual_graph_replay_successes": 5,
+      "scope": "Kernel membership is capturedGraph evidence;counter proves actual successful replays,not an individual node timestamp"
+    },
+    "requested_feature_audit": {
+      "PDL": "Observed enabled launch attribute6 on intercepted kernels",
+      "CUDA_Graph": "Actual5successful speculative replays;Target-only0",
+      "SM110_GDN_Prefill": "NOT_PROVEN_HIT;partial launch observer did not cover relevant calls",
+      "FMHA_D256": "NOT_PROVEN_HIT",
+      "Paged_Attention": "Actual EnginepagedKV IO/profile plus captured attention kernels;complete current prefill dispatch mapping still missing"
+    },
+    "source_wheel": {
+      "status": "PASS_FROZEN_SPLIT_SOURCE_BINARY_PROVENANCE;NOT_FULL_SOURCE_WHEEL_EQUIVALENCE",
+      "wheel_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+      "Runtime_HEAD": "95515c2f87fba8982db5a519f9022277667b3cc9",
+      "plugin_sha256": "8fb2fb35b60b097c3a3f30c54fdb45d65c30469147c49ac61bb76468fa650c63",
+      "current_installed_corePython_files_equal_wheel": true,
+      "full_source_matches_full_wheel": false
+    },
+    "root_cause": "Not closed;remaining same-prefix Verify-vs-autoregressive numerical/state path and independentTarget Engine qualification",
+    "model_quality": "Strict token equality FAIL for this control;format-only semantic agreement does not prove complete quality regression absence",
+    "measured_performance_improvement": "NONE;diagnostic only,no new formal benchmark",
+    "safety": {
+      "peak_GPU_C": 62.718,
+      "minimum_UMA_GiB": 9.847248077392578,
+      "GPU_errors": []
+    },
+    "FP8_fullmodel": "NO_GO;no FP8Engine build or promotion",
+    "Engine_recompiled": false,
+    "Golden_changed": false,
+    "raw_files": [
+      {
+        "name": "graph-nodes.jsonl",
+        "bytes": 1632193,
+        "sha256": "0d4155ad5ece623764822b2ed026fd974122d1b5013213eecffd76abd7fac6cc",
+        "host_path": "/mnt/d/Thor64G/THOR_NVIDIA_NVFP4_20261013/evidence/S5-divergence-control-v1/graph-nodes.jsonl"
+      },
+      {
+        "name": "launches.jsonl",
+        "bytes": 55853,
+        "sha256": "f51c0a0392e83e078e9c586a0fcede7d4cf612dac2e301ff0891c6c8faad3960",
+        "host_path": "/mnt/d/Thor64G/THOR_NVIDIA_NVFP4_20261013/evidence/S5-divergence-control-v1/launches.jsonl"
+      }
+    ],
+    "next_unique_action": "Build isolated read-only firstVerify-row logits and GDN/conv snapshot observer;compare shared prefill and firsttwo common tokens against autoregressive Target before independentEngine or performance modifications"
+  },
+  "S5_source_wheel": {
+    "status": "PASS_FROZEN_SPLIT_SOURCE_BINARY_PROVENANCE;NOT_FULL_SOURCE_WHEEL_EQUIVALENCE",
+    "original_wheel": {
+      "path": "/work/native-v2/downloads/tensorrt_edgellm-0.11.0-cp312-cp312-manylinux_2_39_aarch64.whl",
+      "bytes": 447070745,
+      "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+      "metadata": [
+        {
+          "path": "tensorrt_edgellm/_native/variants.json",
+          "sha256": "3500dd8f454651c5428d9e353d74e0ac5b3c1e3e806c3d90c33306e7b1225c0d",
+          "bytes": 8187,
+          "data": {
+            "oss_policy_sha256": "74a540fa47b8c09f4f3f918446d03bfe06f67ebfd85f49604668880263ab8a56",
+            "package_version": "0.11.0",
+            "schema_version": 1,
+            "source_provenance_sha256": "45793c2f50c6aff8e262afec5e6392cba14f5545e9fe41677a8e32cae5d7d072",
+            "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+            "variants": [
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "8e91bc50c25e677bf9894b20c36707c615444cdc395bd3c24df9743e7355dfe9",
+                "extension": "_native/payloads/dgx-spark-cu13-sm121/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "1b5b67d173e4ca1c08007b5b45ba0bbc89af9798c95b574384001f535ca0d103",
+                "gpu_sm": 121,
+                "platform_family": "dgx-spark",
+                "platform_probe_source": "device-model",
+                "platform_probe_values": [
+                  "DGX Spark",
+                  "GB10"
+                ],
+                "platform_release": "current",
+                "plugin": "_native/payloads/dgx-spark-cu13-sm121/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "50c71473d99232b70b8ad5480e3e830ca0936daae89b0a193d1855734a1727ae",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "dgx-spark-cu13-sm121"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "5da6865ef683bbb46dbdf75a95308842a1b5fba87d09769be2a5fbd00b927d5f",
+                "extension": "_native/payloads/drive-thor-d72-cu13-sm110/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "1b8ee064724f4a1430cf197ecdddf6e7328fca11521c3c85c8dccedf2be6c435",
+                "gpu_sm": 110,
+                "platform_family": "drive",
+                "platform_probe_source": "driveos",
+                "platform_probe_values": [
+                  "7.2"
+                ],
+                "platform_release": "7.2",
+                "plugin": "_native/payloads/drive-thor-d72-cu13-sm110/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "8ee1e6c295d63823a30d9feeee73fa3be36d3f5fc3a3062c8f9082f873de05a9",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "drive-thor-d72-cu13-sm110"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "9e8847df11e9ae2a665f0b5756a27432bb95a78694dabfc1a1617c96d6d981ce",
+                "extension": "_native/payloads/igx-thor-cu13-sm110-sm120/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "6c0f50276cbe4e50c3140639de7a76915bac4ff91f26cde3a84aad305507edee",
+                "gpu_sm": 110,
+                "platform_family": "igx-thor",
+                "platform_probe_source": "device-model",
+                "platform_probe_values": [
+                  "NVIDIA IGX Thor"
+                ],
+                "platform_release": "current",
+                "plugin": "_native/payloads/igx-thor-cu13-sm110-sm120/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "080b8cbbb9dd1bd503cebb8bee389dfd785f8eebb6b5c26b5c874f1d82b1d1ce",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "igx-thor-cu13-sm110-sm120"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "9e8847df11e9ae2a665f0b5756a27432bb95a78694dabfc1a1617c96d6d981ce",
+                "extension": "_native/payloads/igx-thor-cu13-sm110-sm120/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "6c0f50276cbe4e50c3140639de7a76915bac4ff91f26cde3a84aad305507edee",
+                "gpu_sm": 120,
+                "platform_family": "igx-thor",
+                "platform_probe_source": "device-model",
+                "platform_probe_values": [
+                  "NVIDIA IGX Thor"
+                ],
+                "platform_release": "current",
+                "plugin": "_native/payloads/igx-thor-cu13-sm110-sm120/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "080b8cbbb9dd1bd503cebb8bee389dfd785f8eebb6b5c26b5c874f1d82b1d1ce",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "igx-thor-cu13-sm110-sm120"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "bdeb1885fdacc81cae6f6052c43ab7ac2b480b54f4f1252f531aa055f2606c30",
+                "extension": "_native/payloads/jetson-orin-jp72-cu13-sm87/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "a9f9bc3d082b32d770dcc0ac1223158d8885ed00e275db6fa0462a16d2ca02e0",
+                "gpu_sm": 87,
+                "platform_family": "jetson",
+                "platform_probe_source": "l4t",
+                "platform_probe_values": [
+                  "R39.2"
+                ],
+                "platform_release": "jp72",
+                "plugin": "_native/payloads/jetson-orin-jp72-cu13-sm87/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "1442e52df3f8adabb7a0f7327dd3a595638a5abf85aaff8fdfa845aaa2641592",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "jetson-orin-jp72-cu13-sm87"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "5da6865ef683bbb46dbdf75a95308842a1b5fba87d09769be2a5fbd00b927d5f",
+                "extension": "_native/payloads/jetson-thor-jp70-cu13-sm110/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "6e22a0f6e884dca7e55c0f12277e03098a8330aa1ce005fcaec991c074bdd891",
+                "gpu_sm": 110,
+                "platform_family": "jetson",
+                "platform_probe_source": "l4t",
+                "platform_probe_values": [
+                  "R38.2"
+                ],
+                "platform_release": "jp70",
+                "plugin": "_native/payloads/jetson-thor-jp70-cu13-sm110/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "237728777e9c2a38f8affa1f21baa084b6b4d5300b4f8371d16261a2e5ed92d5",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "jetson-thor-jp70-cu13-sm110"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "5da6865ef683bbb46dbdf75a95308842a1b5fba87d09769be2a5fbd00b927d5f",
+                "extension": "_native/payloads/jetson-thor-jp71-cu13-sm110/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "74f3ef9c6b064d9aca7e3019280050413b0bea489f1e0f247e5843ad56971578",
+                "gpu_sm": 110,
+                "platform_family": "jetson",
+                "platform_probe_source": "l4t",
+                "platform_probe_values": [
+                  "R38.4"
+                ],
+                "platform_release": "jp71",
+                "plugin": "_native/payloads/jetson-thor-jp71-cu13-sm110/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "454ff1431da880a783f2eb166f347ebe0620e2521400cb5c42a4716399c423a0",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "jetson-thor-jp71-cu13-sm110"
+              },
+              {
+                "cpu_arch": "aarch64",
+                "cuda_runtime_soname": "libcudart.so.13",
+                "cutedsl_metadata_sha256": "5da6865ef683bbb46dbdf75a95308842a1b5fba87d09769be2a5fbd00b927d5f",
+                "extension": "_native/payloads/jetson-thor-jp72-cu13-sm110/_edgellm_runtime.cpython-312-aarch64-linux-gnu.so",
+                "extension_sha256": "36fd822b8256ed79aa14871292cc517eb35cc24e71ce519361253291176b438e",
+                "gpu_sm": 110,
+                "platform_family": "jetson",
+                "platform_probe_source": "l4t",
+                "platform_probe_values": [
+                  "R39.2"
+                ],
+                "platform_release": "jp72",
+                "plugin": "_native/payloads/jetson-thor-jp72-cu13-sm110/lib/libNvInfer_edgellm_plugin.so",
+                "plugin_sha256": "8fb2fb35b60b097c3a3f30c54fdb45d65c30469147c49ac61bb76468fa650c63",
+                "python_abi": "cp312",
+                "source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+                "tensorrt_runtime_soname": "libnvinfer.so.10",
+                "variant_id": "jetson-thor-jp72-cu13-sm110"
+              }
+            ]
+          }
+        },
+        {
+          "path": "tensorrt_edgellm-0.11.0.dist-info/METADATA",
+          "sha256": "7d5d1c665f7c36b4fc8296e0e362dbb4a505cef24f195957f4686df3a4d55809",
+          "bytes": 13694
+        }
+      ]
+    },
+    "current_Runtime": {
+      "HEAD": "95515c2f87fba8982db5a519f9022277667b3cc9",
+      "source_dirty": true,
+      "native_runtime_sha256": "58bd3b864e5658558315a7d0e50700f579f70ebf787de39019284f4c7d818033",
+      "executor_sha256": "fdaced818440cf6907664a7824e279c1ce4c23c039584ffa64c16eb193b1bce3",
+      "source_diff_sha256": "d35e19fcf7765f2748823b6f869ad9b11727fed3ca850c9d9dcba60c532fed8d",
+      "qualification": {
+        "build_status": "PASS_ARM_SM110_REAL_KV_OBSERVER_RUNTIME_BUILD_ONLY",
+        "native_runtime_sha256": "58bd3b864e5658558315a7d0e50700f579f70ebf787de39019284f4c7d818033",
+        "native_runtime_bytes": 62589400,
+        "observer_sha256": "f0d1cac23520fad2b84896c9a2d672e6a22e7721102eed1cea1e94d4bb34a1ca",
+        "observer_bytes": 242544,
+        "source_revision": "95515c2f87fba8982db5a519f9022277667b3cc9",
+        "source_dirty": true,
+        "source_matches_full_wheel": false,
+        "executor_sha256": "fdaced818440cf6907664a7824e279c1ce4c23c039584ffa64c16eb193b1bce3",
+        "observer_source_SHA256": "fc77febd0d3414b97b21525254c4fdee502271f86ef9af1e3b176a6126428fca",
+        "TensorRT": "192.0.2.75",
+        "CUDA": "13.2.86",
+        "SM": "110a",
+        "Engine_recompiled": false,
+        "attention_plugin_replaced": false,
+        "numerical_kernels_replaced": false,
+        "diagnostic_only": true,
+        "performance_admitted": false,
+        "FP16_default_retained": true,
+        "CUDA13x_generic_PASS": false,
+        "metadata_binding_repair": "actualraggedpast_lengths;publicI/Oenumeration"
+      }
+    },
+    "current_plugin": {
+      "sha256": "8fb2fb35b60b097c3a3f30c54fdb45d65c30469147c49ac61bb76468fa650c63",
+      "actual_provenance": "Original wheel plugin retained;not rebuilt from patched Runtime HEAD",
+      "wheel_source_revision": "74f8732a7e8d1377e34471ad2652988346f18813",
+      "patched_manifest_source_revision": "95515c2f87fba8982db5a519f9022277667b3cc9"
+    },
+    "installed_python_file_correspondence": [
+      {
+        "path": "experimental/builder/core/bundle.py",
+        "current_installed_sha256": "2c80a3bba6fdcaa88d0b59a50249ed74d246cdf893987f5642eaa684921621d5",
+        "wheel_sha256": "2c80a3bba6fdcaa88d0b59a50249ed74d246cdf893987f5642eaa684921621d5",
+        "current_worktree_sha256": "2c80a3bba6fdcaa88d0b59a50249ed74d246cdf893987f5642eaa684921621d5",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/contracts.py",
+        "current_installed_sha256": "c6f4252d19583719994210a7cea1dcc86b2dc7f071e5cff65f8c8b9b944fbfe2",
+        "wheel_sha256": "c6f4252d19583719994210a7cea1dcc86b2dc7f071e5cff65f8c8b9b944fbfe2",
+        "current_worktree_sha256": "c6f4252d19583719994210a7cea1dcc86b2dc7f071e5cff65f8c8b9b944fbfe2",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/dspark_config.py",
+        "current_installed_sha256": "233eabfc6e7a63046a19782c4b08fe890e688ef8bce0ab2a90993966187a8fe8",
+        "wheel_sha256": "233eabfc6e7a63046a19782c4b08fe890e688ef8bce0ab2a90993966187a8fe8",
+        "current_worktree_sha256": "233eabfc6e7a63046a19782c4b08fe890e688ef8bce0ab2a90993966187a8fe8",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/quantization.py",
+        "current_installed_sha256": "c6c532470dfc468ec3128311bc5184c4cfe724ef421a010f66350c186e6a64e2",
+        "wheel_sha256": "c6c532470dfc468ec3128311bc5184c4cfe724ef421a010f66350c186e6a64e2",
+        "current_worktree_sha256": "c6c532470dfc468ec3128311bc5184c4cfe724ef421a010f66350c186e6a64e2",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/safetensors_np.py",
+        "current_installed_sha256": "f6c055664d956f512550d63d8dabe143cc29ee23ff9cc2a71bc7e35d2fed7fc0",
+        "wheel_sha256": "f6c055664d956f512550d63d8dabe143cc29ee23ff9cc2a71bc7e35d2fed7fc0",
+        "current_worktree_sha256": "f6c055664d956f512550d63d8dabe143cc29ee23ff9cc2a71bc7e35d2fed7fc0",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/ragged.py",
+        "current_installed_sha256": "bcefe629bbc9bb08d1ff6417f4ad7b347dd95a381f3b3e30d5b6f6f9dd26a217",
+        "wheel_sha256": "bcefe629bbc9bb08d1ff6417f4ad7b347dd95a381f3b3e30d5b6f6f9dd26a217",
+        "current_worktree_sha256": "bcefe629bbc9bb08d1ff6417f4ad7b347dd95a381f3b3e30d5b6f6f9dd26a217",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/numpy_dtypes.py",
+        "current_installed_sha256": "27fb6cbfa9b5e1fd02ef73afdefca4cf9ddc1048342455846e8b5882a91986e8",
+        "wheel_sha256": "27fb6cbfa9b5e1fd02ef73afdefca4cf9ddc1048342455846e8b5882a91986e8",
+        "current_worktree_sha256": "27fb6cbfa9b5e1fd02ef73afdefca4cf9ddc1048342455846e8b5882a91986e8",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/weight_policy.py",
+        "current_installed_sha256": "e3091a97d5ddca5e4d15564b187602b869265dae52e5388dccf9c67471d3342e",
+        "wheel_sha256": "e3091a97d5ddca5e4d15564b187602b869265dae52e5388dccf9c67471d3342e",
+        "current_worktree_sha256": "e3091a97d5ddca5e4d15564b187602b869265dae52e5388dccf9c67471d3342e",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/weights.py",
+        "current_installed_sha256": "0db5e762674c14f88d8ecf8b67bd762518f4afcc64788eb5452d4583f165c7fa",
+        "wheel_sha256": "0db5e762674c14f88d8ecf8b67bd762518f4afcc64788eb5452d4583f165c7fa",
+        "current_worktree_sha256": "0db5e762674c14f88d8ecf8b67bd762518f4afcc64788eb5452d4583f165c7fa",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/__init__.py",
+        "current_installed_sha256": "a9efd0a59a4a3dde33e7b3cc7ec7d9f1701a2fda32e05397e7ebc4a6e39a7be2",
+        "wheel_sha256": "a9efd0a59a4a3dde33e7b3cc7ec7d9f1701a2fda32e05397e7ebc4a6e39a7be2",
+        "current_worktree_sha256": "a9efd0a59a4a3dde33e7b3cc7ec7d9f1701a2fda32e05397e7ebc4a6e39a7be2",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/builder.py",
+        "current_installed_sha256": "0dca5a12ca492cd8f40d898ea1e64cf2795db199361b81ea5b7b7627df4aa29e",
+        "wheel_sha256": "0dca5a12ca492cd8f40d898ea1e64cf2795db199361b81ea5b7b7627df4aa29e",
+        "current_worktree_sha256": "0dca5a12ca492cd8f40d898ea1e64cf2795db199361b81ea5b7b7627df4aa29e",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      },
+      {
+        "path": "experimental/builder/core/config.py",
+        "current_installed_sha256": "b093ad9b055d98b8034b425126f4da9584d1ad88a8a9625eeb86af9c65ed936b",
+        "wheel_sha256": "b093ad9b055d98b8034b425126f4da9584d1ad88a8a9625eeb86af9c65ed936b",
+        "current_worktree_sha256": "b093ad9b055d98b8034b425126f4da9584d1ad88a8a9625eeb86af9c65ed936b",
+        "installed_equals_wheel": true,
+        "installed_equals_worktree": true
+      }
+    ],
+    "full_source_matches_full_wheel": false,
+    "manifest_revision_warning": "Patched variants.json source_revision describes local Runtime;it does not independently prove retained plugin was built from that revision",
+    "actual_kernel_hit_admission": "Requires recorded launches on current binary;symbols or feature docs alone are insufficient",
+    "official_readonly_sources": [
+      "https://nvidia.github.io/TensorRT-Edge-LLM/developer_guide/customization/tensorrt-plugins.html",
+      "https://github.com/NVIDIA/TensorRT-Edge-LLM/blob/main/docs/source/user_guide/getting_started/installation.md"
+    ],
+    "public_original_commit_lookup": "GitHub original wheel commit page returned404 in current read-only browse;full commit source unavailable through that page",
+    "Engine_rebuilt": false,
+    "FP8_fullmodel": "NO_GO"
+  },
+  "S5_terminal_state": {
+    "status": "PASS_CPU_ONLY_DIVERGENCE_CONTROL_TERMINAL_STATE",
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "GPU_FD_owners": [],
+    "MemAvailable_bytes": 52705640448,
+    "DATA_free_bytes": 13063946240,
+    "MAP_free_bytes": 14049222656,
+    "thermal_mC": {
+      "cpu-thermal": 43125,
+      "tj-thermal": 43125,
+      "soc012-thermal": 41968,
+      "gpu-thermal": 40812,
+      "soc345-thermal": 42875
+    },
+    "new_root_mounts": [
+      "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+    ],
+    "model_Engine_recompiled": false,
+    "FP16_default_retained": true,
+    "production_restore_attempted": false,
+    "production_health": "UNPROVEN;preexisting exclusive RAM maintenance"
+  },
+  "V24_tree_mainline": {
+    "status": "V24_TREE_8_2_16_FP16_ONLY_MAINLINE_SELECTED_HOST;CURRENT_DEVICE_ADMISSION_PENDING",
+    "mainline": "OriginalNVIDIA27B_NVFP4+TensorRT_EdgeLLM+TreeMTP8/2/16+FP16KV",
+    "engine_dir": "/zeekr_map/nvidia-native-ai-v2/engines/native-mtp-shared200k-opt64k-c1",
+    "base_engine_sha256": "69fcec117924780810ad464cf1fe975f4eda54180d2330c4e43dc27d5e1bab11",
+    "draft_engine_sha256": "dbbe26b09b4893da17702f4e272665f3bbffc1e776ed27971031a53c420efcab",
+    "qualified_Runtime": "/zeekr_data/nvidia-native-ai-v2/runtime/repairs/dynamic-kv-v1",
+    "native_runtime_sha256": "bb83eafdc835bf03e27970cdaa082b53773230560f7fa9711818d10c665cae2e",
+    "Prefix_GDN_cache": "Original qualified shared200K profiles,aligned-prefixpolicy3aaf2df1;reuse original S1 harness",
+    "baseline_evidence": {
+      "65536": {
+        "source": "S1-runtime-v1-65536-result.json",
+        "cases": [
+          {
+            "mode": "COLD_CHUNKED_PREFILL",
+            "input_tokens": 65112,
+            "output_tokens": 42,
+            "strict_oracle": true,
+            "TTFT_s": 44.613915808004094,
+            "Decode_wall_tok_s": 46.45893583172896,
+            "wall_s": 45.498043500003405
+          },
+          {
+            "mode": "WARM_SAME_PREFIX",
+            "input_tokens": 65112,
+            "output_tokens": 42,
+            "strict_oracle": true,
+            "TTFT_s": 0.23974066899972968,
+            "Decode_wall_tok_s": 39.1678939137406,
+            "wall_s": 1.2881215740053449
+          }
+        ]
+      },
+      "204800": {
+        "source": "S1-runtime-v1-204800-result.json",
+        "cases": [
+          {
+            "mode": "COLD_CHUNKED_PREFILL",
+            "input_tokens": 195686,
+            "output_tokens": 151,
+            "strict_oracle": true,
+            "TTFT_s": 207.93473365799582,
+            "Decode_wall_tok_s": 32.31491352354384,
+            "wall_s": 212.57881702198938
+          },
+          {
+            "mode": "WARM_SAME_PREFIX",
+            "input_tokens": 195686,
+            "output_tokens": 151,
+            "strict_oracle": true,
+            "TTFT_s": 0.43390328501118347,
+            "Decode_wall_tok_s": 32.4563254740266,
+            "wall_s": 5.057771361010964
+          }
+        ]
+      }
+    },
+    "quality_scope": "Historical long-anchor JSON and cold/warm IDs passed;Tree-own Target-only strict quality remains to be checked",
+    "DFlash2": "FROZEN_BACKUP;S5/S6 diagnostic evidence retained;does not block Tree admission",
+    "FP8": "NO_GO_OUTSIDE_MAINLINE",
+    "performance_targets": {
+      "Decode200K_tok_s": 36,
+      "TTFT200K_s": 180,
+      "stretch_TTFT200K_s": 160
+    },
+    "new_performance_gain": "NONE;restore and quality stage",
+    "K7_R4_Golden_changed": false,
+    "production_default_changed": false,
+    "next_unique_action": "Verify current originalTree assets/Runtime/Prefixpolicy,then one64K Tree-versus-ownTarget-only quality pair;reuse saved64K200K speed baseline"
+  },
+  "S6_DFlash_frozen": {
+    "evidence": "S6-real-state-logits-v2-adjudication.json",
+    "status": "FROZEN_DIAGNOSTIC;strictlosslessNO_GO",
+    "first_GDN_state_delta": "Layer0 max3.8147e-6;not Tree evidence",
+    "accepted_rule": "Captured greedy Verify acceptance matched its actual logits;forwardpath differed from DFlash ownAR",
+    "quality_scope": "Only DFlash Engine/runtime case;not Tree judgment"
+  },
+  "V24_tree_regression": {
+    "status": "GO_SCOPED_TREE_RESTORATION_AND_64K200K_OWN_TARGET_RECALL_IDS;FULL_QUALITY_AND_FIRST_VERIFY_STATE_PENDING",
+    "mainline": "OriginalNVIDIA_Qwen3.8_27B_NVFP4+EdgeLLM+Tree8/2/16+FP16KV",
+    "native_runtime_sha256": "bb83eafdc835bf03e27970cdaa082b53773230560f7fa9711818d10c665cae2e",
+    "Engine_assets": [
+      {
+        "tier": 65536,
+        "role": "base",
+        "path": "/zeekr_data/nvidia-native-ai-v2/runtime/repairs/dynamic-kv-v1/engine-view-65536/spec_base.engine",
+        "resolved": "/zeekr_map/nvidia-native-ai-v2/engines/native-mtp-shared200k-opt64k-c1/spec_base.engine",
+        "bytes": 17618540748,
+        "verified_prior_full_sha256": "69fcec117924780810ad464cf1fe975f4eda54180d2330c4e43dc27d5e1bab11",
+        "capacity": 66560,
+        "kv_dtype": "fp16"
+      },
+      {
+        "tier": 65536,
+        "role": "draft",
+        "path": "/zeekr_data/nvidia-native-ai-v2/runtime/repairs/dynamic-kv-v1/engine-view-65536/spec_draft.engine",
+        "resolved": "/zeekr_map/nvidia-native-ai-v2/engines/native-mtp-shared200k-opt64k-c1/spec_draft.engine",
+        "bytes": 718764492,
+        "verified_prior_full_sha256": "dbbe26b09b4893da17702f4e272665f3bbffc1e776ed27971031a53c420efcab",
+        "capacity": 66560,
+        "kv_dtype": "fp16"
+      },
+      {
+        "tier": 204800,
+        "role": "base",
+        "path": "/zeekr_data/nvidia-native-ai-v2/runtime/repairs/dynamic-kv-v1/engine-view-204800/spec_base.engine",
+        "resolved": "/zeekr_map/nvidia-native-ai-v2/engines/native-mtp-shared200k-opt64k-c1/spec_base.engine",
+        "bytes": 17618540748,
+        "verified_prior_full_sha256": "69fcec117924780810ad464cf1fe975f4eda54180d2330c4e43dc27d5e1bab11",
+        "capacity": 205824,
+        "kv_dtype": "fp16"
+      },
+      {
+        "tier": 204800,
+        "role": "draft",
+        "path": "/zeekr_data/nvidia-native-ai-v2/runtime/repairs/dynamic-kv-v1/engine-view-204800/spec_draft.engine",
+        "resolved": "/zeekr_map/nvidia-native-ai-v2/engines/native-mtp-shared200k-opt64k-c1/spec_draft.engine",
+        "bytes": 718764492,
+        "verified_prior_full_sha256": "dbbe26b09b4893da17702f4e272665f3bbffc1e776ed27971031a53c420efcab",
+        "capacity": 205824,
+        "kv_dtype": "fp16"
+      }
+    ],
+    "Tree64_actual_restoration": {
+      "output_tokens": 42,
+      "strict_oracle": true,
+      "all_prior_qualified_IDs_equal": true,
+      "actual_successful_Graph_replays": 44,
+      "source": "V24-tree-own-target64-v2-result.json:firstcase",
+      "raw_guard_exit": 1,
+      "raw_guard_limit": "Secondmode reference cache miss caused inputlength error;firstTreecase completed correctly,not GPU failure"
+    },
+    "own_Target_reference_gates": [
+      {
+        "tier_tokens": 65536,
+        "input_tokens": 65112,
+        "output_tokens": 42,
+        "natural_EOS": true,
+        "strict_oracle": true,
+        "all_Token_IDs_equal": true,
+        "Target_only": true,
+        "Draft_proposed_and_accepted_zero": true,
+        "Target_reused_tokens": 65024,
+        "Target_computed_suffix": 88,
+        "Tree_reference": "Current restoredTree originalRuntime",
+        "source": "V24-tree-target-only64-v1-result.json",
+        "source_sha256": "93a62d47b08307bfb7f39128faa16e9e6ba4c834f75eaeeb375ec61f6767e5a3",
+        "guard": "PASS_V24_TREE_OWN_REFERENCE_PROCESS_SAFETY_ONLY",
+        "peak_GPU_C": 62.843,
+        "minimum_UMA_GiB": 25.021934509277344
+      },
+      {
+        "tier_tokens": 204800,
+        "input_tokens": 195686,
+        "output_tokens": 151,
+        "natural_EOS": true,
+        "strict_oracle": true,
+        "all_Token_IDs_equal": true,
+        "Target_only": true,
+        "Draft_proposed_and_accepted_zero": true,
+        "Target_reused_tokens": 195584,
+        "Target_computed_suffix": 102,
+        "Tree_reference": "Saved qualifiedTree200K sameEngine/runtime;not repeated",
+        "source": "V24-tree-target-only200-v1-result.json",
+        "source_sha256": "580729036e3085e1bc9fc894a8392733067cefbd0c857dd5ba130861b6da95df",
+        "guard": "PASS_V24_TREE_OWN_REFERENCE_PROCESS_SAFETY_ONLY",
+        "peak_GPU_C": 65.937,
+        "minimum_UMA_GiB": 15.821670532226562
+      }
+    ],
+    "qualification_scope": "Two frozenlongrecall fixtures only. Target-only uses ownTreeBase Engine withspeculation disabled;not independently rebuilt standaloneEngine or completeThinking/code/JSON/continuous-output suite.",
+    "first_Verify_logits": "PENDING_TREE_SPECIFIC_CAPTURE",
+    "first_Verify_GDN_state": "PENDING_TREE_SPECIFIC_LIVE_COMMIT_CAPTURE",
+    "existing_baseline_200K": {
+      "cold_TTFT_s": 207.93473365799582,
+      "cold_Decode_tok_s": 32.31491352354384,
+      "warm_TTFT_s": 0.43390328501118347,
+      "warm_Decode_tok_s": 32.4563254740266,
+      "source": "S1-runtime-v1-204800-result.json;reusedwithoutrepeat"
+    },
+    "performance_targets": {
+      "cold_TTFT_s": 180,
+      "stretch_TTFT_s": 160,
+      "Decode_tok_s": 36
+    },
+    "measured_new_optimization_gain": "NONE;restore and quality-only stage;no formalbenchmark rows added",
+    "strongest_existing_Prefill_bound": {
+      "Base_GPU_prefill_s": 194.198766763,
+      "all_other_TTFT_cost_upper_s": 13.735966894995812,
+      "required_TTFT_saving_to180": 27.93473365799582,
+      "interpretation": "Eliminating all nonBase cost alone cannot reach180s;must reduce BaseGPU work. Internal Attention/GDN/FFN split remains unmeasured for this exactTree."
+    },
+    "current_kernel_hit_audit": {
+      "SM110_GDN_Prefill": "PENDING_ACTUAL_TREE_HIT_TRACE",
+      "FMHA_D256": "PENDING_ACTUAL_TREE_HIT_TRACE",
+      "Paged_Attention": "FP16pagedKV configuration admitted;complete dispatch evidence pending",
+      "CUDA_Graph": "44actualsuccessfulTree64Kreplays",
+      "PDL": "Capabilities known;no Tree-specific complete launchtrace claimed"
+    },
+    "R4_reuse": {
+      "source": "D:/Thor64G/R4_LLAMA_CPP_AI_HANDOFF_20261012/Thor_R4_llama_cpp_车机改动说明_20261012.md",
+      "sha256": "baa9fe553df2e1b9298897b6d1d9afb58ee3f55df06da919caa6e4f185941de9",
+      "applicable_ideas": [
+        "FFN/SwiGLU/RMS fusion with unchangedquantization",
+        "GDN producer/consumer dataflow withF32state",
+        "Conv and FP16KV vectorizedcopies"
+      ],
+      "historical_speed_not_transferred": true,
+      "Native_FA_F32Q_to_FP16_port_not_admitted": true
+    },
+    "candidate_exclusions": [
+      "Do not repeat rejectedCuTeM16 wholeTree substitution",
+      "No FP8KV or approximateTargetAttention",
+      "No DFlash optimization on this mainline"
+    ],
+    "protocol_repairs": {
+      "first_probe": "BYPASSneverpublishes;fixedUSE_CACHE",
+      "cross_mode": "ObservedTree-to-Target cachemiss;Targetprime own canonicalprefix instead;no Runtime or Engine rebuild"
+    },
+    "DFlash2": "FROZEN_BACKUP;S5/S6 not used as Tree failure",
+    "K7_R4_Golden_changed": false,
+    "production_default_changed": false,
+    "production_health": "UNPROVEN;preexisting userexclusive RAMmaintenance",
+    "full_model_quality_PASS": false,
+    "production_promotion": "NO_GO_PENDING_COMPLETE_GATES",
+    "next_unique_action": "One safe nativeTree Prefill layer/kernel-dispatch profile on originalRuntime,after CPU forwarding-contract validation;choose highestROI exactFP16 Prefill candidate;no repeated full8K64K200K quality or speed runs",
+    "first_Verify_capture": {
+      "input_tokens": 8207,
+      "context_length": 8214,
+      "matched_Target_AR_step": 7,
+      "prefill_all_states_and_logits_bitwise_equal": true,
+      "GDN_layers": 48,
+      "conv_layers": 48,
+      "FP16_attention_KV_layers": 16,
+      "all_finite": true,
+      "committed_states_captured_before_cleanup": true,
+      "all_KV_prefixes_bitwise_unchanged": true,
+      "first_Verify_logits": {
+        "stage": "first-verify",
+        "tensor": "logits",
+        "shape": [
+          1,
+          248320
+        ],
+        "dtype": "float32",
+        "Tree_sha256": "2a129cb31e5abea14d026201a036df464d37a906496eca14f077ee3b09a25e79",
+        "Target_sha256": "1f386deabfb5421d5de879176fee874793bcb00b6bb59d06dad3d2cc56b1cca9",
+        "finite": true,
+        "max_abs": 2.546875,
+        "relative_RMS": 0.20168797585714124,
+        "bitwise_equal": false,
+        "different_elements": 248098,
+        "Tree_argmax": 3040,
+        "Target_argmax": 3040,
+        "greedy_equal": true
+      },
+      "GDN_max_relative_RMS": 0.21546011662249528,
+      "layer0_recurrent": {
+        "stage": "first-verify",
+        "tensor": "layer_0.recurrent_state",
+        "shape": [
+          1,
+          48,
+          128,
+          128
+        ],
+        "dtype": "float32",
+        "Tree_sha256": "930e25b2e940125f1134adb1b02e444249f369d616b384f6cd451af7a4f6c279",
+        "Target_sha256": "39ee9665d62df782940cd810d82bed94089ec5ebeb810efdeff1d5aba6e47544",
+        "finite": true,
+        "max_abs": 9.5367431640625e-06,
+        "relative_RMS": 1.864115136310763e-07,
+        "bitwise_equal": false,
+        "different_elements": 612015
+      },
+      "layer0_conv_bitwise_equal": true,
+      "first9_IDs_equal": true,
+      "numerical_tolerance_PASS": "NOT_CLAIMED",
+      "interpretation": "Committed states and logits differ numerically afterVerify;no Token difference in observed fixtures. Not proof of state corruption or wholemodel numerical equivalence.",
+      "short_capture_spec_counters": "UNAVAILABLE_PROFILE_DISABLED;do not interpret zero counters as absence of Tree"
+    },
+    "full8K_own_Target": {
+      "input_tokens": 8207,
+      "Tree_output_tokens": 368,
+      "Target_output_tokens": 368,
+      "all368_Token_IDs_equal": true,
+      "both_natural_EOS": true,
+      "both_strict_JSON_oracle": true,
+      "Tree_Graph": {
+        "attempts": 395,
+        "successes": 395,
+        "failures": 0,
+        "resolve_failures": 0
+      },
+      "Target_Graph": {
+        "attempts": 367,
+        "successes": 367,
+        "failures": 0,
+        "resolve_failures": 0
+      },
+      "Tree_spec_metrics": {
+        "total_iterations": 44,
+        "total_generated_tokens": 368,
+        "total_accepted_draft_tokens": 324,
+        "total_proposed_draft_tokens": 660
+      },
+      "Target_spec_metrics": {
+        "total_iterations": 0,
+        "total_generated_tokens": 0,
+        "total_accepted_draft_tokens": 0,
+        "total_proposed_draft_tokens": 0
+      },
+      "GPU_peak_C": 55.718,
+      "minimum_UMA_GiB": 29.1595458984375,
+      "source": "V24-tree-full8k-v1-result.json",
+      "new_performance_gain": "NONE;quality gate only"
+    }
+  },
+  "V24_terminal_state": {
+    "status": "PASS_CPU_ONLY_D256_OPERATOR_TERMINAL_PROTECTION",
+    "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+    "kernel": "6.8.12-prod-g78272943bba3",
+    "GPU_FD_owners": [],
+    "MemAvailable_bytes": 51455455232,
+    "DATA_free_bytes": 12986036224,
+    "MAP_free_bytes": 14049222656,
+    "thermal_mC": {
+      "cpu-thermal": 42468,
+      "tj-thermal": 42593,
+      "soc012-thermal": 41093,
+      "gpu-thermal": 39937,
+      "soc345-thermal": 42250
+    },
+    "new_root_mounts": [
+      "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+    ],
+    "production_default_SHA": "dac9a3d306e14c40e51f24c93f44333f32e2ac93e905dbdc5c8630415890ce36",
+    "production_default_changed": false,
+    "Golden_changed": false,
+    "production_health": "UNPROVEN;preexisting exclusive RAMmaintenance",
+    "intermediate_production_restore": false,
+    "device_monotonic_s": 118283.44855241,
+    "profiler_permission_readonly": {
+      "Uid": "0\t0\t0\t0",
+      "Gid": "0\t0\t0\t0",
+      "CapEff": "000001ffffffffff",
+      "CapBnd": "000001ffffffffff",
+      "NoNewPrivs": "0",
+      "Seccomp": "0",
+      "CAP_SYS_ADMIN_effective": true
+    },
+    "profiling_parameter_readonly": {},
+    "profiling_device_nodes": [],
+    "profiling_permissions_changed": false
+  },
+  "V24_tree_firstVerify": {
+    "status": "GO_SCOPED_TREE_8K64K200K_RECALL_IDS;FIRST_VERIFY_FLOAT_DIFFERENCES_RECORDED;FULL_QUALITY_AND_PRODUCTION_NO_GO",
+    "timestamp_utc": "2026-10-14T16:11:09.628059+00:00",
+    "previous_goal_turn_classification": "NO_PROGRESS_STATUS_ONLY",
+    "this_goal_turn_classification": "PROGRESS_REAL_FIRST_VERIFY_ALL_STATE_CAPTURE_AND_FULL8K_OWN_TARGET_IDS",
+    "Runtime_SHA": "bb83eafdc835bf03e27970cdaa082b53773230560f7fa9711818d10c665cae2e",
+    "Runtime_recompiled": false,
+    "Engine_recompiled": false,
+    "weights_or_quantization_changed": false,
+    "first_Verify": {
+      "input_tokens": 8207,
+      "context_length": 8214,
+      "matched_Target_AR_step": 7,
+      "prefill_all_states_and_logits_bitwise_equal": true,
+      "GDN_layers": 48,
+      "conv_layers": 48,
+      "FP16_attention_KV_layers": 16,
+      "all_finite": true,
+      "committed_states_captured_before_cleanup": true,
+      "all_KV_prefixes_bitwise_unchanged": true,
+      "first_Verify_logits": {
+        "stage": "first-verify",
+        "tensor": "logits",
+        "shape": [
+          1,
+          248320
+        ],
+        "dtype": "float32",
+        "Tree_sha256": "2a129cb31e5abea14d026201a036df464d37a906496eca14f077ee3b09a25e79",
+        "Target_sha256": "1f386deabfb5421d5de879176fee874793bcb00b6bb59d06dad3d2cc56b1cca9",
+        "finite": true,
+        "max_abs": 2.546875,
+        "relative_RMS": 0.20168797585714124,
+        "bitwise_equal": false,
+        "different_elements": 248098,
+        "Tree_argmax": 3040,
+        "Target_argmax": 3040,
+        "greedy_equal": true
+      },
+      "GDN_max_relative_RMS": 0.21546011662249528,
+      "layer0_recurrent": {
+        "stage": "first-verify",
+        "tensor": "layer_0.recurrent_state",
+        "shape": [
+          1,
+          48,
+          128,
+          128
+        ],
+        "dtype": "float32",
+        "Tree_sha256": "930e25b2e940125f1134adb1b02e444249f369d616b384f6cd451af7a4f6c279",
+        "Target_sha256": "39ee9665d62df782940cd810d82bed94089ec5ebeb810efdeff1d5aba6e47544",
+        "finite": true,
+        "max_abs": 9.5367431640625e-06,
+        "relative_RMS": 1.864115136310763e-07,
+        "bitwise_equal": false,
+        "different_elements": 612015
+      },
+      "layer0_conv_bitwise_equal": true,
+      "first9_IDs_equal": true,
+      "numerical_tolerance_PASS": "NOT_CLAIMED",
+      "interpretation": "Committed states and logits differ numerically afterVerify;no Token difference in observed fixtures. Not proof of state corruption or wholemodel numerical equivalence.",
+      "short_capture_spec_counters": "UNAVAILABLE_PROFILE_DISABLED;do not interpret zero counters as absence of Tree"
+    },
+    "full8K": {
+      "input_tokens": 8207,
+      "Tree_output_tokens": 368,
+      "Target_output_tokens": 368,
+      "all368_Token_IDs_equal": true,
+      "both_natural_EOS": true,
+      "both_strict_JSON_oracle": true,
+      "Tree_Graph": {
+        "attempts": 395,
+        "successes": 395,
+        "failures": 0,
+        "resolve_failures": 0
+      },
+      "Target_Graph": {
+        "attempts": 367,
+        "successes": 367,
+        "failures": 0,
+        "resolve_failures": 0
+      },
+      "Tree_spec_metrics": {
+        "total_iterations": 44,
+        "total_generated_tokens": 368,
+        "total_accepted_draft_tokens": 324,
+        "total_proposed_draft_tokens": 660
+      },
+      "Target_spec_metrics": {
+        "total_iterations": 0,
+        "total_generated_tokens": 0,
+        "total_accepted_draft_tokens": 0,
+        "total_proposed_draft_tokens": 0
+      },
+      "GPU_peak_C": 55.718,
+      "minimum_UMA_GiB": 29.1595458984375,
+      "source": "V24-tree-full8k-v1-result.json",
+      "new_performance_gain": "NONE;quality gate only"
+    },
+    "kernel_audit": {
+      "new_v2_launch_observer": "NO_GO_CPU_SELF_FORWARDING_REPRO;removed;originalRuntime subsequently completed",
+      "actual_SM110_FMHA_D256_and_GDN_prefill_dispatch": "PENDING_SAFE_NATIVE_TREE_PROFILE",
+      "complete_GPU_time_split": "PENDING"
+    },
+    "backup": {
+      "status": "PASS_HOST_SHA_ALL_BLOBS_AND_LOSSLESS_ALL_VALID_KV_RECONSTRUCTION",
+      "archive_path": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\V24-tree-native-valid-v1.tar.gz",
+      "archive_sha256": "46a0b61640c0f65738f86ed40a2145c6ce37e578ae113023aa95805b4aed454c",
+      "archive_bytes": 2114584974,
+      "blob_count": 1258,
+      "tensor_count": 1378,
+      "valid_KV_tensors_reconstructed_and_SHA_verified": 192,
+      "full_states_logits_and_valid_KV_retained": true,
+      "unused_capacity_omitted": true,
+      "quality_PASS": false,
+      "timestamp_utc": "2026-10-14T16:04:47.531517+00:00"
+    },
+    "terminal": {
+      "status": "PASS_CPU_ONLY_TREE_FULL8K_TERMINAL_PROTECTION",
+      "boot_id": "9d74daba-0347-489c-9192-2d117806cbe7",
+      "GPU_FD_owners": [],
+      "MemAvailable_bytes": 51753938944,
+      "DATA_free_bytes": 12987629568,
+      "MAP_free_bytes": 14049222656,
+      "thermal_mC": {
+        "cpu-thermal": 43156,
+        "tj-thermal": 43156,
+        "soc012-thermal": 41968,
+        "gpu-thermal": 40781,
+        "soc345-thermal": 42937
+      },
+      "new_root_mounts": [
+        "/dev/vblkdev0 /new_root ext4 ro,relatime 0 0"
+      ],
+      "production_default_sha256": "dac9a3d306e14c40e51f24c93f44333f32e2ac93e905dbdc5c8630415890ce36",
+      "production_default_changed": false,
+      "Golden_changed": false,
+      "production_health": "UNPROVEN;preexisting exclusive RAMmaintenance;restore not attempted"
+    },
+    "full_model_quality_PASS": false,
+    "remaining_quality": "Three recall fixtures only;Thinking/code/generalJSON/continuous-output/independent standaloneEngine not fully qualified",
+    "production_promotion": "NO_GO",
+    "K7_R4_Golden_changed": false,
+    "production_default_changed": false,
+    "DFlash2": "FROZEN_BACKUP",
+    "new_performance_gain": "NONE",
+    "next_unique_action": "One safe nativeTree Prefill layer/kernel-dispatch profile on originalRuntime,after CPU forwarding-contract validation;choose highestROI exactFP16 Prefill candidate;no repeated full8K64K200K quality or speed runs"
+  },
+  "V24_host_lease_recovery": {
+    "status": "RUNNING_RECOVERED_HOST_MAINTENANCE_HEARTBEAT_ONLY",
+    "worker_pid": 12,
+    "process_starttime": "180",
+    "host_boot_id": "e8a510af-97c6-4473-8b60-dce4d3e7cdf8",
+    "generation": 365,
+    "previous_generation": 364,
+    "device_lock_bound": false,
+    "vehicle_service_changes": false,
+    "user_explicitly_approved_recovery": true,
+    "arbiter": "unified_arbiter_v2.py",
+    "heartbeat_at": "2026-10-14T22:56:35.287974+00:00",
+    "previous_archive": "/mnt/d/Thor64G/THOR_NVIDIA_PLATFORM/coord/leases/recovered/DEVICE_MAINTENANCE_EXCLUSIVE.A1_NVGPU_SINGLE_20261013.GEN364.RECOVERED_20261015T064058"
+  },
+  "V24_global_observer_v3": {
+    "status": "NO_GO_GLOBAL_CUDA_DISPATCH_INTERPOSER_V3",
+    "CPU_forwarding_contract": "PASS_32_CPU_CASES_ONLY",
+    "device_exit_code": -11,
+    "elapsed_s": 0.40781950698874425,
+    "model_initialization_reached": false,
+    "GPU_errors": [],
+    "original_Runtime_failed": false,
+    "route_abandoned": true,
+    "crash_root_cause": "UNPROVEN;CUDA query ABI concerns are a source inference,not a crash-stack finding"
+  },
+  "V24_tree_prefill_profile": {
+    "status": "PASS_OFFLINE_COMPLETE_200K_TREE_PUBLIC_LAYER_ATTRIBUTION_AND_SAVED_TOKENS_ONLY",
+    "receipt": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013\\evidence\\V24-tree-layer-profiler-v2-200K-offline-adjudication.json",
+    "original_runtime_SHA": "bb83eafdc835bf03e27970cdaa082b53773230560f7fa9711818d10c665cae2e",
+    "diagnostic_runtime_SHA": "58bd3b864e5658558315a7d0e50700f579f70ebf787de39019284f4c7d818033",
+    "original_plugin_SHA": "8fb2fb35b60b097c3a3f30c54fdb45d65c30469147c49ac61bb76468fa650c63",
+    "Tree": "8/2/16",
+    "KV": "FP16",
+    "actual_input_tokens": 195686,
+    "saved_token_checks": 24,
+    "base_diagnostic_layer_sum_s": 193.68623184667987,
+    "Base_groups_s": {
+      "Other_fused_regions": 18.197274115067966,
+      "Unnamed_plugins_semantics_unproven": 16.95308558549348,
+      "Fused_FC_named_regions": 14.160393895309419,
+      "Matrix_Multiply_named_regions": 42.690958496876064,
+      "Attention_named_regions": 101.68451975393295
+    },
+    "Attention_fraction": 0.5249961176095647,
+    "native_performance_admitted": false,
+    "actual_kernel_dispatch_proven": false,
+    "numerical_equivalence_PASS": false,
+    "production_promotion": "NO_GO",
+    "guard_raw_exit_code": 1,
+    "terminal_assertion_resolved_offline": true,
+    "GPU_peak_C": 65.406,
+    "min_UMA_GiB": 15.747329711914062,
+    "full200K_quality_or_performance_rerun": false,
+    "source_matches_full_wheel": false
+  },
+  "V24_D256_native_core": {
+    "status": "NO_GO_PACKED_CORE_SWITCH;GO_SCOPED_EXPLICIT_SM110_D256_OPERATOR_EVIDENCE;NO_NEW_MODEL_GAIN",
+    "timestamp_utc": "2026-10-14T23:32:46.300325+00:00",
+    "actual_builds": [
+      "libthor_v24_fp16_d256_native_v1.so",
+      "libthor_v24_fp16_d256_native_v2.so"
+    ],
+    "current_valid_library_SHA": "ebccbd83a1538952d443e5c19190cab2db9300eaba01b79eead1b73cd1f07332",
+    "mask": "causal_in_both_valid_variants",
+    "KV": "FP16",
+    "actual_SM": 110,
+    "actual_SM_count": 14,
+    "numerical_scope": "Three synthetic13token cases including cache continuation and reversed pages;full8192query outputs in64K/200K sized caches",
+    "model_Engine_recompiled": false,
+    "original_Runtime_changed": false,
+    "original_plugin_changed": false,
+    "wholemodel_quality_repeated": false,
+    "wholemodel_speed_retested": false,
+    "wholemodel_gain": "NONE",
+    "comparison": [
+      {
+        "tier": 65536,
+        "query_tokens": 8192,
+        "total_tokens": 65112,
+        "original_plugin_pipeline_ms": 162.75567626953125,
+        "uniform_causal_core_ms": 161.1367950439453,
+        "packed_causal_core_ms": 161.99069213867188,
+        "packed_latency_change_pct": 0.529920614651469,
+        "original_vs_core_upper_bound_saving_pct": 0.9946695947519513,
+        "paired_clock_Hz": {
+          "/sys/class/devfreq/gpu-gpc-0": [
+            1530000000
+          ],
+          "/sys/class/devfreq/gpu-nvd-0": [
+            1566000000
+          ]
+        },
+        "core_outputs_bitwise_equal": true,
+        "max_abs_vs_original": 6.103515625e-05,
+        "original_vs_core_limit": "Original includes QKNorm/Rope/KV update;this gap is an upper bound,not a pipeline optimization",
+        "decision": "NO_GO_PACKED_SWITCH"
+      },
+      {
+        "tier": 204800,
+        "query_tokens": 8192,
+        "total_tokens": 195686,
+        "original_plugin_pipeline_ms": 504.51763916015625,
+        "uniform_causal_core_ms": 502.52484130859375,
+        "packed_causal_core_ms": 505.8802490234375,
+        "packed_latency_change_pct": 0.6677098202958698,
+        "original_vs_core_upper_bound_saving_pct": 0.3949907192303148,
+        "paired_clock_Hz": {
+          "/sys/class/devfreq/gpu-gpc-0": [
+            1530000000
+          ],
+          "/sys/class/devfreq/gpu-nvd-0": [
+            1566000000
+          ]
+        },
+        "core_outputs_bitwise_equal": true,
+        "max_abs_vs_original": 6.103515625e-05,
+        "original_vs_core_limit": "Original includes QKNorm/Rope/KV update;this gap is an upper bound,not a pipeline optimization",
+        "decision": "NO_GO_PACKED_SWITCH"
+      }
+    ],
+    "static_kernel_evidence": [
+      {
+        "object": "fmha_d256_paged.o",
+        "cubin_SHA": "f877acc3b45212691775c20b4749990c2f039ac83f430cb4eed6e01ef147cfe8",
+        "actual_loaded_kernel_name": "kernel_cutlass_kernel___main__BlackwellFusedMultiHeadAttentionForwardHeadDimPerCta256_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK12812816_TVLayout_0",
+        "registers_per_thread": 168,
+        "local_bytes_per_thread": 1320,
+        "static_LDL": 504,
+        "static_STL": 367,
+        "static_R2UR": 1938,
+        "limitation": "No dynamic execution percentage or confirmed spill critical-path cause;some code may be tail/fallback only"
+      },
+      {
+        "object": "fmha_d256_packed_paged.o",
+        "cubin_SHA": "b8a048ad5aeb7f32b5c2a9182272190351c82ea9f7840c9ff8e76565607ae9fa",
+        "actual_loaded_kernel_name": "kernel_cutlass_kernel___main__BlackwellFusedMultiHeadAttentionForwardHeadDimPerCta256_object_at__TiledMMA_ThrLayoutVMNK11110000_PermutationMNK____MMAAtom_ThrID10_ShapeMNK12812816_TVLayout_0",
+        "registers_per_thread": 168,
+        "local_bytes_per_thread": 1352,
+        "static_LDL": 514,
+        "static_STL": 373,
+        "static_R2UR": 1970,
+        "limitation": "No dynamic execution percentage or confirmed spill critical-path cause;some code may be tail/fallback only"
+      }
+    ],
+    "GPU_peak_C": 63.812,
+    "min_UMA_GiB": 45.490882873535156,
+    "GPU_errors": [],
+    "original_model_kernel_dispatch": "UNPROVEN;explicit candidate operator kernel identity is verified separately",
+    "CUPTI": {
+      "CPU_only_admission": "PASS_WITHOUT_CONTEXT_ONLY",
+      "real_context": "NO_GO_INSUFFICIENT_PRIVILEGES_35",
+      "source_stage": "Callback registration before activity admission record;raw result field activity_enable_code is legacy naming",
+      "inference_request_executed": false,
+      "permission_changes": false,
+      "root_CAP_SYS_ADMIN_effective": true
+    },
+    "corrected_harness_error": "V1 dense_paged is noncausal,not a uniform-layout causal alternative;V2 usesfmha_d256_paged.Original model not implicated.",
+    "previous_goal_turn_classification": "PROGRESS:complete200KTreepubliclayerattribution changed nextcandidate selection",
+    "selected_next_candidate": "C1_HQ24_HKV4_D256_SM14_FP16_AOT",
+    "candidate_preparation_only": true,
+    "hypothesis": "Specializing observed heads/SMcount/native strides can reduce generic addressing and live register state;actual speedup unproven.",
+    "baseline200K": {
+      "TTFT_s": 207.934733658,
+      "Decode_tok_s": 32.314913524,
+      "source": "Saved S1 originalTree baseline;not retested"
+    },
+    "targets": {
+      "TTFT_s": 180,
+      "Decode_tok_s": 36,
+      "status": "NOT_ACHIEVED"
+    },
+    "next_action": "Admit an isolated host CUTLASS4.7 AOT compiler and compile one C1/Hq24/Hkv4/D256/SM14 FP16 causal candidate;inspect generated register/local-memory code before a justified numeric/coreA/B.Original Engine/Runtime/plugin retained.",
+    "full_quality": "PENDING",
+    "production_promotion": "NO_GO",
+    "generic_CUDA13x_PASS": false,
+    "Golden_changed": false
+  },
+  "V24_C1_AOT_preparation": {
+    "status": "PREPARED_NOT_BUILT_NOT_TESTED",
+    "candidate": "C1_HQ24_HKV4_D256_SM14_FP16_AOT",
+    "source_SHA": "aacc78dbc1b039f6bda9eb44e24e1173117ff9a6873dfeb727f35b867554b7b3",
+    "approximation_changed": false,
+    "FP16_KV": true,
+    "compile_time_constants": [
+      "B=1",
+      "Hq=24",
+      "Hkv=4",
+      "D=256",
+      "SMcount=14",
+      "NHD pool strides",
+      "scale=.0625"
+    ],
+    "dynamic_extents": [
+      "query_tokens",
+      "physical_pages",
+      "max_pages"
+    ],
+    "GPU_workload": false,
+    "original_Runtime_or_Engine_changed": false,
+    "required_compiler": "nvidia-cutlass-dsl4.7.0 matching pinned artifact;not installed in host venv",
+    "new_AOT_artifact": "MISSING",
+    "next_action": "Admit isolated host AOT compiler dependencies,compile exactly this candidate,cross-link against existingCUDA13.2,inspect SASS and only then run numeric/coreA/B if static result supports it",
+    "official_reference": "https://docs.nvidia.com/cutlass/4.7.0/media/docs/pythonDSL/cute_dsl_general/dsl_ahead_of_time_compilation.html",
+    "math_algorithm_changed_from_current_source": false,
+    "original_plugin_math_equivalence": "UNPROVEN;requires numeric and strict fullmodel Target gates"
+  }
+}

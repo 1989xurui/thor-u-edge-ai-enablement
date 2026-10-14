@@ -1,0 +1,98 @@
+{
+  "status": "SCOPED_GO_INSTRUMENTATION_ONLY",
+  "strict_first64IDs": true,
+  "original_edges_preserved": 1797,
+  "programmatic_edges_preserved": 578,
+  "regions": 1220,
+  "last_verify_replay_only": true,
+  "individual_region_Top3": [
+    {
+      "region": 1219,
+      "instrumented_interval_ms": 2.91321611,
+      "member_count": 2,
+      "kernel_names": [
+        "cutlass3x_sm100_bstensorop_s128x64x64gemm_block_scaled_ue4m3xf4_ue4m3xf4_f32_f16_f16_128x64x256_0_tnn_align32_o_vs16_1sm_bias_f16_relu",
+        "__myl_Cast_0xb6677649dee9d3ab182bc078ed85c3f4_com_vec"
+      ]
+    },
+    {
+      "region": 750,
+      "instrumented_interval_ms": 0.480895996,
+      "member_count": 5,
+      "kernel_names": [
+        "__myl_Fc_0xbaf0b6e164e3d43aa738b6112a4acf50_tensorop128x64_cga1x1_sm1_acc_float_tile_k_count_4_gemm_709_12450880",
+        "__myl_SlicCastMulMeanAddSqrtDivMulMulCastResh_0x68a19d4aca8d1cfa0887cd1582472f77_com_vec",
+        "_ZN11trt_edgellm6kernel32applyRopeFromPackedToSplitKernelI6__halfS2_Lb1EEEvPKT_PS3_S6_S6_PT0_PvPKfPKiSD_SD_S5_S5_fbfffiiijjjjjiiSD_ibb",
+        "kernel_mha",
+        "__myl_SlicSigmMulMulCast_0x0dd5d0b3d38ab66337d801d2b83cbcf0_com_vec"
+      ]
+    },
+    {
+      "region": 902,
+      "instrumented_interval_ms": 0.476671994,
+      "member_count": 5,
+      "kernel_names": [
+        "__myl_Fc_0xbaf0b6e164e3d43aa738b6112a4acf50_tensorop128x64_cga1x1_sm1_acc_float_tile_k_count_4_gemm_723_12450880",
+        "__myl_SlicCastMulMeanAddSqrtDivMulMulCastResh_0x68a19d4aca8d1cfa0887cd1582472f77_com_vec",
+        "_ZN11trt_edgellm6kernel32applyRopeFromPackedToSplitKernelI6__halfS2_Lb1EEEvPKT_PS3_S6_S6_PT0_PvPKfPKiSD_SD_S5_S5_fbfffiiijjjjjiiSD_ibb",
+        "kernel_mha",
+        "__myl_SlicSigmMulMulCast_0x0dd5d0b3d38ab66337d801d2b83cbcf0_com_vec"
+      ]
+    }
+  ],
+  "cumulative_GEMM_region_families": [
+    {
+      "name": "cutlass3x_sm100_bstensorop_s128x64x64gemm_block_scaled_ue4m3xf4_ue4m3xf4_f32_f16_f16_128x64x256_0_tnn_align32_o_vs16_1sm_bias_f16_relu",
+      "regions": 129,
+      "instrumented_region_interval_ms": 31.874080166000002
+    },
+    {
+      "name": "cutlass3x_sm100_bstensorop_s128x64x64gemm_block_scaled_ue4m3xf4_ue4m3xf4_f32_f16_f16_128x64x256_0_tnn_align32_o_vs16_1sm_bias_f16_swish",
+      "regions": 64,
+      "instrumented_region_interval_ms": 14.294080004000001
+    },
+    {
+      "name": "__myl_Fc_0x2624f6e287c4a237204703de6f5a1d94_tensorop64x32_cga1x1_sm1_acc_float_tile_k_count_4_gemm_LAYER",
+      "regions": 48,
+      "instrumented_region_interval_ms": 10.542527973999999
+    },
+    {
+      "name": "__myl_Fc_0x5e92b75e50f51b3ec0dc7fdc27d86fc8_tensorop64x64_cga1x1_sm1_acc_float_tile_k_count_4_gemm_LAYER",
+      "regions": 48,
+      "instrumented_region_interval_ms": 8.375392002999998
+    },
+    {
+      "name": "__myl_Fc_0xbaf0b6e164e3d43aa738b6112a4acf50_tensorop128x64_cga1x1_sm1_acc_float_tile_k_count_4_gemm_LAYER",
+      "regions": 16,
+      "instrumented_region_interval_ms": 7.512703986999999
+    },
+    {
+      "name": "cutlass3x_sm100_tensorop_s128x128x32gemm_f8_f8_f32_f16_f16_128x128x128_0_tnn_align16_2sm_epi_tma_bias_f16_relu_valpha_vbeta",
+      "regions": 48,
+      "instrumented_region_interval_ms": 7.262144025000001
+    },
+    {
+      "name": "cutlass3x_sm100_tensorop_s128x128x32gemm_f8_f8_f32_f16_f16_128x128x128_0_tnn_align16_1sm_bias_f16_relu_valpha_vbeta",
+      "regions": 48,
+      "instrumented_region_interval_ms": 3.8559680098000007
+    },
+    {
+      "name": "sm80_xmma_gemm_f16f16_f16f16_f16_tn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel_trt",
+      "regions": 96,
+      "instrumented_region_interval_ms": 1.4479680051999995
+    },
+    {
+      "name": "sm80_xmma_gemm_f16f16_f16f16_f16_tn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_split_k_kernel_trt",
+      "regions": 96,
+      "instrumented_region_interval_ms": 0.9689600035699999
+    }
+  ],
+  "attribution_limit": "Instrumented convex PDL region intervals;may reduce overlap and include timer overhead;not exact native kernel critical-path costs",
+  "native_throughput_newly_qualified": false,
+  "full368_repeated": false,
+  "new_dmesg_tail_lines": [],
+  "post_test_GPU_FD_owners": 0,
+  "guard_returncode": 0,
+  "maximum_Tj_mC": 58000,
+  "next_action": "Inspect true TensorRT layer shapes and tactics for the cumulative native NVFP4 GEMM hotspots;select one SM110/14SM microbenchmark candidate before any full engine rebuild;reuse qualified full8K results"
+}
