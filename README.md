@@ -6,10 +6,26 @@ An independent engineering research archive for NVIDIA DRIVE Thor T264 (AArch64,
 
 > IMPORTANT: Not an official NVIDIA platform release. No claim of a qualified cold boot, production-grade Edge-LLM deployment, or official DRIVE SDK certification.
 
+**Dual-path goal:** retain the original DriveOS 7.0.3 / Linux **6.1.119** Golden and add Linux **6.8.12** for native NVIDIA inference. Only the historical 6.1 -> 6.8 **kexec RAM handoff** has been demonstrated. **An independent persistent 6.8 boot item or boot menu is NOT installed.**
+
+## Boot architecture: current evidence vs proposed second boot
+
+```mermaid
+flowchart TD
+    OEM["Original OEM firmware + Hypervisor<br/>unchanged"] --> G61["Linux 6.1.119 Golden<br/>retained baseline"]
+    G61 --> OLD["Original system / R4 services<br/>preserve existing state"]
+    G61 -. "Historical kexec / RAM only" .-> K68["Linux 6.8.12 experimental RAM<br/>A1 scoped PASS"]
+    K68 --> N["NvGPU R39 595.78"] --> C["CUDA 13.2 U2<br/>basic compute PASS"] --> E["TensorRT Edge-LLM / NVFP4<br/>bounded inference qualification"]
+    OEM -. "Future only: OEM boot slot and recovery prerequisites" .-> NEW["Independent 6.8 cold boot<br/>NOT IMPLEMENTED / NO GO"]
+```
+
+**Important:** This is not a conventional PC GRUB/EFI dual boot and the two kernels do not run at the same time. The dotted RAM path is historical; the new boot selection path remains unimplemented. [Detailed diagrams](docs/ARCHITECTURE.md) · [6.1 + 6.8 implementation gates](docs/BOOT_6_1_TO_6_8.md) · [installation guide](docs/INSTALL_ON_THOR.md).
+
 ## Current evidence, not marketing
 
 | Layer | Evidence-based outcome | Remaining boundary |
 |---|---|---|
+| Original 6.1.119 / DriveOS 7.0.3 | Golden system historically captured; original boot assets not overwritten in A1 | Second permanent boot entry / universal auto-recovery NOT proven |
 | Linux 6.8.12 / R39 | A1 RAM-booted kernel with NvGPU 595.78 loaded | Standalone cold boot NOT PROVEN |
 | CUDA 13.2 U2 | Context, device memory, copy, kernel launch and result verification PASS in A1 session | Does not certify all CUDA APIs or long-term stability |
 | TensorRT Edge-LLM | 27B NVFP4 / 8K native inference verified for bounded fixtures | Full quality, independent recovery, production release NO-GO |
@@ -20,6 +36,9 @@ Source records date: 2026-10-13 to 2026-10-15. These are snapshots, NOT assertio
 
 ## What is in this repository?
 
+- docs/ARCHITECTURE.md: architectural Mermaid diagrams with actual 6.1 / experimental 6.8 / Edge-LLM flow
+- docs/BOOT_6_1_TO_6_8.md: preserve OEM 6.1 while designing an independent 6.8 add-on and recovery gates
+- manifest/BOOT_6_1_TO_6_8_GATES.json + tools/check_dual_boot_readiness.py: offline HOLD/NO-GO assessment; never activates a kernel
 - docs/kernel/: build reports, ABI and cold-boot handoff history
 - src/kernel-gpu/: authored build, ABI audit and numeric validation helpers
 - patches/kernel/: captured kernel config deltas, not an installation patch set
@@ -40,10 +59,12 @@ Files derived from NVIDIA-copyrighted sources have been held back for explicit l
 
 ## Start here
 
-1. Read docs/STATUS_AND_ACCEPTANCE.md and docs/RESOURCE_BUDGET.md.
-2. On an already-qualified target, read docs/INSTALL_ON_THOR.md, then execute only tools/preflight_thor_readonly.sh.
-3. On a developer workstation, run python tools/verify_manifest.py. This does not access the vehicle.
-4. Do not run old source build / flash / kernel activation scripts just because they are archived.
+1. Read docs/ARCHITECTURE.md and docs/BOOT_6_1_TO_6_8.md: the original 6.1 Golden must remain intact; permanent 6.8 is NOT IMPLEMENTED.
+2. Run python tools/check_dual_boot_readiness.py **on a developer PC**. Expected result: HOLD with exit code 2; this never accesses the vehicle.
+3. Read docs/STATUS_AND_ACCEPTANCE.md and docs/RESOURCE_BUDGET.md.
+4. On an already-qualified target, read docs/INSTALL_ON_THOR.md, then execute only tools/preflight_thor_readonly.sh.
+5. On a developer workstation, run python tools/verify_manifest.py. This does not access the vehicle.
+6. Do not run old source build / flash / kernel activation scripts just because they are archived.
 
 Official references:
 - https://nvidia.github.io/TensorRT-Edge-LLM/0.11.0/user_guide/getting_started/installation.html

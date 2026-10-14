@@ -1,14 +1,14 @@
 {
-  "status": "PUBLISHED_PRIVATE_VERIFIED",
-  "file_count": 114,
-  "bytes": 1465124,
-  "mebibytes": 1.397,
+  "status": "DOC_UPDATE_STAGING_NOT_YET_PUBLISHED",
+  "file_count": 118,
+  "bytes": 1488451,
+  "mebibytes": 1.419,
   "max_file_bytes": 219522,
   "large_file_violations": 0,
   "sha_manifest": "manifest/SHA256SUMS.txt",
   "source_index": "manifest/SOURCE_FILES.json",
   "privacy_review": "manifest/REVIEW_REQUIRED.json",
-  "published": true,
+  "published": false,
   "publication": {
     "repository": "1989xurui/thor-u-edge-ai-enablement",
     "visibility": "private",
@@ -19,5 +19,15 @@
     "bash_preflight_syntax": "PASS",
     "device_kernel_installed_by_this_task": false,
     "device_firmware_or_partition_writes": false
+  },
+  "documentation_update": {
+    "date": "2026-10-15",
+    "scope": "preserve 6.1 + 6.8 RAM historical vs nonimplemented independent 6.8 persistent boot, Mermaid architecture diagrams",
+    "architecture": "docs/ARCHITECTURE.md",
+    "additive_61_68": "docs/BOOT_6_1_TO_6_8.md",
+    "gates": "manifest/BOOT_6_1_TO_6_8_GATES.json",
+    "readiness_checker": "tools/check_dual_boot_readiness.py",
+    "current_persistent_boot_gate": "NOT_IMPLEMENTED_NO_GO",
+    "publication_state": "PENDING"
   }
 }

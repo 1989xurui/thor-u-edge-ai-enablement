@@ -1,0 +1,82 @@
+{
+  "schema": "THOR_61_PRESERVED_68_ADDON_GATES_V1",
+  "evaluated_date": "2026-10-15",
+  "source": "offline historical evidence; no fresh device revalidation",
+  "overall": "HOLD_NOT_A_DUAL_BOOT_RELEASE",
+  "policy": {
+    "golden_kernel": "6.1.119-rt45-prod-rt-tegra",
+    "addon_kernel": "6.8.12-prod-g78272943bba3",
+    "preserve_61": true,
+    "no_original_boot_partition_writes": true,
+    "no_oem_firmware_modifications": true,
+    "no_unsupported_jetson_bct": true,
+    "no_kernel_activation_in_this_repo": true
+  },
+  "modes": [
+    {
+      "id": "R_RAM_KEXEC",
+      "status": "PASS_SCOPED_HISTORICAL_A1",
+      "boot_menu_entry": false,
+      "persistent_68_boot": false,
+      "desc": "6.1 -> 6.8 memory handoff in a controlled past A1 session only"
+    },
+    {
+      "id": "C_RCM_COLD_RAM",
+      "status": "BLOCKED_HOST_TOOLS_AND_RCM_PHYSICAL_LINK",
+      "boot_menu_entry": false,
+      "persistent_68_boot": false,
+      "desc": "not an executed qualified 6.8 cold boot"
+    },
+    {
+      "id": "P_ADDITIVE_PERSISTENT",
+      "status": "NOT_IMPLEMENTED",
+      "boot_menu_entry": false,
+      "persistent_68_boot": false,
+      "desc": "future separate boot entry requires actual OEM host-side slot/signing and rollback evidence"
+    }
+  ],
+  "gates": [
+    {
+      "id": "B0_GOLDEN",
+      "status": "PARTIAL",
+      "explanation": "Golden historically captured; present recovery path must be validated"
+    },
+    {
+      "id": "B1_PAYLOAD",
+      "status": "PARTIAL",
+      "explanation": "A1 runtime historic pass; complete deployable image and firmware not distributed in Git"
+    },
+    {
+      "id": "B2_OEM_BOOT_SLOT",
+      "status": "BLOCKED",
+      "explanation": "GOS guest has HOST_ONLY boot slot visibility, SDK host matrix incomplete"
+    },
+    {
+      "id": "B3_PHYSICAL_RECOVERY",
+      "status": "PARTIAL",
+      "explanation": "previous specific cold power restore evidence, not current universal guarantee"
+    },
+    {
+      "id": "B4_ISOLATED_ADDON",
+      "status": "NOT_IMPLEMENTED",
+      "explanation": "no separate registered boot payload or installer"
+    },
+    {
+      "id": "B5_COLD_BOOT_AB",
+      "status": "NOT_ENTERED",
+      "explanation": "no independent 6.8 cold boot or two-way boot selection"
+    },
+    {
+      "id": "B6_NATIVE_GPU",
+      "status": "PASS_SCOPED_A1_RAM_ONLY",
+      "explanation": "NvGPU 595.78 CUDA 13.2 U2 basic compute on 6.8 RAM only"
+    },
+    {
+      "id": "B7_PRODUCTION_EDGE",
+      "status": "NO_GO",
+      "explanation": "full Edge 27B quality/stability/recovery not released"
+    }
+  ],
+  "next_permitted": "Offline host-only evidence collation + readonly platform/slot/firmware interface audit and physical recovery planning",
+  "prohibited": "Any automated cold boot flash, kexec, slot switch or producer kernel change from this repo"
+}

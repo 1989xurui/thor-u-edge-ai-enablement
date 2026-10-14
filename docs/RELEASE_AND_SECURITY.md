@@ -7,6 +7,7 @@ This repository is a **private, source-centric research archive** as of 2026-10-
 - Selected source files with private LAN IP literals have only documentation-range IP replacements. Their SHA-256 source and transformed hashes are recorded; redacted scripts are not runnable production configurations.
 - Two vendor-copyright source files were withheld for explicit license/provenance review. Apache-2.0 references or licensed source content must keep corresponding required attribution and license texts before any future public release.
 - Do not upload source snippets from NVIDIA proprietary SDK materials merely because the destination repository is private.
+- The 6.1 -> 6.8 historical kexec RAM experiment is not an independent permanent boot path. No executable dual boot, cold RAM boot, host slot remap, firmware flashing or image activation is authorized by this repository. See docs/BOOT_6_1_TO_6_8.md for HOLD gates.
 - Read REVIEW_REQUIRED.json before treating the snapshot as comprehensive. Missing files must not be represented as fully backed up.
 - GitHub Actions are disabled in this minimal snapshot. Any future CI must be offline/static by default, must not connect to a vehicle, and must not print secrets or private paths.
 - Each source-evidence item must be tied to a date, code SHA, model SHA, exact software stack and a PASS/FAIL/HOLD decision with its experimental scope.

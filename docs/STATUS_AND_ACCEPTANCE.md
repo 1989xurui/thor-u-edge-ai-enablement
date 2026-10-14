@@ -2,6 +2,15 @@
 
 Authoritative source ordering: A1_EXECUTION_CARD.md (2026-10-13); Edge CURRENT_RELEASE_CARD.md and RUN_STATE.json (latest 2026-10-14 UTC); older G5 reports document historical blockers and must not overwrite newer A1 basic CUDA evidence.
 
+## Stage 0 — 6.1 retained; 6.8 add-on readiness
+
+- Original Linux 6.1.119 / DriveOS 7.0.3 Golden read-only capture exists; A1 did not overwrite original OEM boot or firmware assets.
+- Historical scoped 6.1 -> kexec -> 6.8.12 RAM A1 handoff and basic CUDA compute passed; this is **not** a boot menu or a second permanent OS.
+- Persistent 6.8 independent cold boot, OEM boot slot discovery, selected dual boot and universal automatic return to 6.1: **NOT IMPLEMENTED / NO_GO**.
+- Public RCM transport on the inspected USB-C interfaces failed; SDK/OEM host-only signed boot evidence is a blocker for a new supported cold boot pathway.
+- Evidence is dated; the live system's current boot and cold rollback cannot be inferred from past data. Do not flash, kexec or boot-slot switch from this archive.
+- Read [add-on architecture](BOOT_6_1_TO_6_8.md), [diagrams](ARCHITECTURE.md) and [offline gate data](../manifest/BOOT_6_1_TO_6_8_GATES.json).
+
 ## Stage A — kernel + GPU
 
 - Kernel: 6.8.12-prod-g78272943bba3, user experimental A1 RAM session.
