@@ -1,5 +1,5 @@
 {
-  "status": "STAGING_COMPLETE_NOT_PUBLISHED",
+  "status": "PUBLISHED_PRIVATE_VERIFIED",
   "file_count": 114,
   "bytes": 1465124,
   "mebibytes": 1.397,
@@ -8,5 +8,16 @@
   "sha_manifest": "manifest/SHA256SUMS.txt",
   "source_index": "manifest/SOURCE_FILES.json",
   "privacy_review": "manifest/REVIEW_REQUIRED.json",
-  "published": false
+  "published": true,
+  "publication": {
+    "repository": "1989xurui/thor-u-edge-ai-enablement",
+    "visibility": "private",
+    "branch": "main",
+    "github_commit_verified": true,
+    "fresh_clone_sha256": "PASS_114_OF_114",
+    "fresh_clone_clean": true,
+    "bash_preflight_syntax": "PASS",
+    "device_kernel_installed_by_this_task": false,
+    "device_firmware_or_partition_writes": false
+  }
 }
