@@ -1,6 +1,6 @@
 {
   "schema": "THOR_U_REPO_RELEASE_SUMMARY_V2",
-  "status": "PUBLIC_SOURCE_MAP_STAGED_FOR_PUSH",
+  "status": "PUBLISHED_PUBLIC_SOURCE_MAP_VERIFIED",
   "archive_scope": "Public curated 6.1 -> 6.8 -> NVIDIA R39/CUDA -> Edge-LLM full workflow with complete 110-file provenance map; not firmware/weights",
   "file_count": 149,
   "bytes": 1686753,
@@ -28,7 +28,12 @@
     "boot_gate": "HOLD_EXPECTED",
     "offline_validation": "PASS",
     "device_system_modifications": 0,
-    "verification_utc": "2026-10-15T00:27:15.339265+00:00"
+    "verification_utc": "2026-10-15T00:27:15.339265+00:00",
+    "source_map_content_commit_verified": "3b08edbc14c0b80ac88ea0f5c7750926e3df9294",
+    "anonymous_fresh_clone": "PASS",
+    "fresh_clone_integrity": "SHA_149_OF_149_PASS",
+    "fresh_clone_source_map": "FILES_110_OF_110_PASS",
+    "fresh_clone_doc_links": "PASS_94"
   },
   "full_program_published": true,
   "independent_6p8_boot_installed": false,
@@ -45,7 +50,9 @@
     "other_source_files": 4,
     "original_source_changed_since_snapshot": 4,
     "all_export_hashes_checked_before_publication": true,
-    "public_update_state": "STAGED_NOT_YET_GITHUB_CONFIRMED",
-    "verification_tool": "tools/check_source_map.py"
-  }
+    "public_update_state": "PUBLIC_GITHUB_AND_ANONYMOUS_CLONE_VERIFIED",
+    "verification_tool": "tools/check_source_map.py",
+    "source_map_content_commit": "3b08edbc14c0b80ac88ea0f5c7750926e3df9294"
+  },
+  "verification_utc": "2026-10-15T01:39:20.581932+00:00"
 }
