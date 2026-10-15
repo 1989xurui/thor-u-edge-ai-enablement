@@ -8,6 +8,12 @@ An independent engineering research archive for NVIDIA DRIVE Thor T264 (AArch64,
 
 **Dual-path goal:** retain the original DriveOS 7.0.3 / Linux **6.1.119** Golden and add Linux **6.8.12** for native NVIDIA inference. Only the historical 6.1 -> 6.8 **kexec RAM handoff** has been demonstrated. **An independent persistent 6.8 boot item or boot menu is NOT installed.**
 
+## Source provenance / 本机来源地址与公开代码的关系
+
+本项目引用的三个本机研发目录并不是三套公开 Git 仓库。现已提供**[完整 SOURCE_MAP · D/E 来源目录与 GitHub 对应表](docs/SOURCE_MAP.md)**，包含官方 NVIDIA / Hugging Face 来源、逐文件 SHA256 和尚未公开的依赖。可直接查看 [110 行逐文件映射](manifest/SOURCE_MAP_FILES.tsv) 与 [来源统计 JSON](manifest/SOURCE_MAP.json)，并运行 python3 tools/check_source_map.py 作离线核对。
+
+**注意：**106 个映射文件来自这三个目录，另外 4 个来自历史 G5/Golden。4 份 Edge 状态源文件在原始归档之后又发生了变化，仓库保留的是当时冻结版本。
+
 ## Complete end-to-end engineering workflow / 全流程总方案
 
 **[Start Here · 全部安装/编译/验收入口](docs/START_HERE.md)** · **[13 阶段执行总控 P00–P12](docs/MASTER_IMPLEMENTATION_PLAN.md)** · **[执行 Checklist](docs/EXECUTION_CHECKLIST.md)**
@@ -90,4 +96,4 @@ Official references:
 - https://github.com/NVIDIA/TensorRT-Edge-LLM
 - https://developer.nvidia.com/drive/downloads
 
-**Publication policy:** keep private until source rights, secret scanning, reproduction contract, and supported/unsupported install boundaries are reviewed.
+**Publication policy:** this is a public research archive with mixed-origin materials, not a universal open-source license or official NVIDIA software distribution. Original NVIDIA/OEM restricted binaries, keys, model weights and complete device firmware remain excluded. Review [release/rights boundaries](docs/RELEASE_AND_SECURITY.md).

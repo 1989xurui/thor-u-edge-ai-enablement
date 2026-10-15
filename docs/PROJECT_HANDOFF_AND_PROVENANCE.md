@@ -28,7 +28,7 @@
 
 ## 3. 仓库资料优先级
 
-- **唯一流程入口**：docs/START_HERE.md → MASTER_IMPLEMENTATION_PLAN.md。
+- **唯一流程入口**：docs/START_HERE.md → MASTER_IMPLEMENTATION_PLAN.md；三套 D/E 来源的公开 URL / SHA 对照见 docs/SOURCE_MAP.md 与 manifest/SOURCE_MAP_FILES.tsv。
 - **最新技术事实**：docs/STATUS_AND_ACCEPTANCE.md 与各阶段最终 verdict。
 - **实时 / 冻结状态分离**：manifest/PROGRAM_GATES.json 是截至发布日期的分阶段判决，不反映未来设备实时。
 - **原始可追溯报告**：docs/evidence_history 和 evidence/cuda、evidence/edge。
@@ -55,25 +55,25 @@ read source evidence (read only)
     → secret / license / path scanner
     → sanitized staging copy + source/export SHA
     → static checks + source scripts syntax
-    → Git private branch / PR (optional)
+    → Git review branch / PR (optional)
     → independent reviewer or gate
     → push main
     → fresh clone + manifest check
     → publish commit SHA + remaining blockers
 ~~~
 
-文件可能含公司 LAN、用户名、内部保存路径，源码还可能含 NVIDIA copyright。不可把 GitHub Private 当成无限制许可。Native NVIDIA 的专有二进制、模型权重、签名/Key、车机分区镜像和 WSL VHDX 都排除。
+文件可能含公司 LAN、用户名、内部保存路径，源码还可能含 NVIDIA copyright。不可把 GitHub Public 当成统一开源许可证或无限制再分发授权。Native NVIDIA 的专有二进制、模型权重、签名/Key、车机分区镜像和 WSL VHDX 都排除。
 
 首次源归档已有 19 个内网 IP 脱敏文件、2 个供应商版权内容仍待许可审查、2 个原路径失效。新增历史报告同样脱敏；详情见相应 manifest。**脱敏过的源码可能不再可直接运行，执行前需合法恢复环境并二次审查**。
 
 ## 6. 可以交给后续 Codex 的单一任务提示词
 
-> 只处理 GitHub 私有项目 1989xurui/thor-u-edge-ai-enablement，以 docs/START_HERE.md、MASTER_IMPLEMENTATION_PLAN.md、PROGRAM_GATES.json 为唯一任务入口。唯一目标是保留 DriveOS7.0.3/Linux6.1 Golden 并逐步实现实验 Linux6.8.12→R39 NvGPU595.78→CUDA13.2→TensorRT Edge-LLM27B 的可重建、可安装、可恢复闭环。先逐项复核当前源码/Hash/设备状态，明确过去 PASS 与目前阻断，优先补真正的 Boot slot/签名/独立 cold boot 事实，不执行未获准的 kexec、刷写或生产切换。所有实验必须有界、单变量、GPU 独占、质量先于速度，已通过的重复测试不重跑。按 P00-P12 更新状态、明确来源与回退，避免新建重复项目仓库。完成每轮后提交 SHA、证据、未达项和下一最低风险动作。
+> 只处理 GitHub 公开科研项目 1989xurui/thor-u-edge-ai-enablement，以 docs/START_HERE.md、MASTER_IMPLEMENTATION_PLAN.md、PROGRAM_GATES.json 为唯一任务入口。唯一目标是保留 DriveOS7.0.3/Linux6.1 Golden 并逐步实现实验 Linux6.8.12→R39 NvGPU595.78→CUDA13.2→TensorRT Edge-LLM27B 的可重建、可安装、可恢复闭环。先逐项复核当前源码/Hash/设备状态，明确过去 PASS 与目前阻断，优先补真正的 Boot slot/签名/独立 cold boot 事实，不执行未获准的 kexec、刷写或生产切换。所有实验必须有界、单变量、GPU 独占、质量先于速度，已通过的重复测试不重跑。按 P00-P12 更新状态、明确来源与回退，避免新建重复项目仓库。完成每轮后提交 SHA、证据、未达项和下一最低风险动作。
 
 ## 7. 最终闭环的验收样式
 
 ~~~text
-CURRENT_RELEASE: PRIVATE_RESEARCH
+CURRENT_RELEASE: PUBLIC_RESEARCH_ARCHIVE
 GIT_COMMIT:
 CURRENT_DEVICE_BOOT_ID: NOT_READ_IN_THIS_RELEASE
 GOLDEN_6P1: HISTORICAL_PROTECTED

@@ -83,7 +83,7 @@ HOLD 返回 2 是正确行为，表示工程发布阻断，而不是要求自动
 
 ## 6. 发布分支与标签
 
-- PRIVATE_RESEARCH：GitHub 允许保存、说明、离线审计，不包含不可合法分享固件/权重。
+- PUBLIC_RESEARCH_ARCHIVE：公开 GitHub 保留可分享文档、代码与离线审计，不包含不可合法分享的固件/权重；非安装或生产发布。
 - RAM_EXPERIMENT_QUALIFIED：只在冻结的 A1 环境和已有范围内使用。
 - BOOT_ADDON_BLOCKED：没有独立 6.8 的冷态启动资格，不能宣称双系统。
 - EDGE_CANDIDATE：K7/Tree 部分场景有结果；生产默认不切换。

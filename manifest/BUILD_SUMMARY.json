@@ -1,10 +1,10 @@
 {
   "schema": "THOR_U_REPO_RELEASE_SUMMARY_V2",
-  "status": "PUBLISHED_PRIVATE_FULL_PROGRAM_VERIFIED",
-  "archive_scope": "Full 6.1 -> 6.8 -> R39/CUDA -> Edge-LLM implementation plan, linked source/evidence, verification; not firmware+weights",
-  "file_count": 145,
-  "bytes": 1619022,
-  "mebibytes": 1.544,
+  "status": "PUBLIC_SOURCE_MAP_STAGED_FOR_PUSH",
+  "archive_scope": "Public curated 6.1 -> 6.8 -> NVIDIA R39/CUDA -> Edge-LLM full workflow with complete 110-file provenance map; not firmware/weights",
+  "file_count": 149,
+  "bytes": 1686753,
+  "mebibytes": 1.609,
   "max_file_bytes": 219522,
   "large_file_violations": 0,
   "sha_manifest": "manifest/SHA256SUMS.txt",
@@ -17,7 +17,7 @@
   "master_plan": "docs/MASTER_IMPLEMENTATION_PLAN.md",
   "publication": {
     "repository": "1989xurui/thor-u-edge-ai-enablement",
-    "visibility": "private",
+    "visibility": "public",
     "branch": "main",
     "verified_source_content_commit": "ba0009baa379c381a13afd1b42e875ac545e28ba",
     "verified_fresh_clone_commit": "ba0009baa379c381a13afd1b42e875ac545e28ba",
@@ -34,5 +34,18 @@
   "independent_6p8_boot_installed": false,
   "edge_production_ready": false,
   "device_mutations_in_this_publish": 0,
-  "updated_at_utc": "2026-10-15T00:25:05.913522+00:00"
+  "updated_at_utc": "2026-10-15T01:37:49.435484+00:00",
+  "published": true,
+  "source_provenance": {
+    "map_document": "docs/SOURCE_MAP.md",
+    "map_json": "manifest/SOURCE_MAP.json",
+    "map_file_index": "manifest/SOURCE_MAP_FILES.tsv",
+    "mapped_source_files": 110,
+    "mapped_three_request_roots": 106,
+    "other_source_files": 4,
+    "original_source_changed_since_snapshot": 4,
+    "all_export_hashes_checked_before_publication": true,
+    "public_update_state": "STAGED_NOT_YET_GITHUB_CONFIRMED",
+    "verification_tool": "tools/check_source_map.py"
+  }
 }

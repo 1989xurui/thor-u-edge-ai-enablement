@@ -1,8 +1,12 @@
 # Thor-U 一站式交付与安装总入口
 
-**版本：2026-10-15 / Full Workflow V1 / GitHub Private**
+**版本：2026-10-15 / Full Workflow V1 / GitHub Public**
 
 **唯一目标：原有 DriveOS 7.0.3 / Linux 6.1 Golden 保留 → 新增 6.8.12 实验环境 → NVIDIA 595.78 / CUDA 13.2 → TensorRT Edge-LLM NVFP4 27B → 严格验收。**
+
+## 新增：源码来源地址与公开仓库对应
+
+这三个 D/E 盘研发目录均是本机绝对路径，不是源码网址。要看**精确 GitHub 位置、110 个文件的原始路径/SHA/脱敏状态、NVIDIA 上游与缺失文件**，请先读 [SOURCE_MAP.md](SOURCE_MAP.md)；机器可读逐文件明细见 [SOURCE_MAP_FILES.tsv](../manifest/SOURCE_MAP_FILES.tsv)，离线核验运行 python3 tools/check_source_map.py。
 
 ## 1. 选择你真正需要的路径
 

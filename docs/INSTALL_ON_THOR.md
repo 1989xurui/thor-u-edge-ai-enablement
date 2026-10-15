@@ -2,7 +2,7 @@
 
 **状态：安装资料/源码归档已准备；不是可在任何 DriveOS 设备上直接运行的一键刷机包。**
 
-此文件是安装入口；**全工程执行与验收顺序**见 [13 阶段实施总方案](MASTER_IMPLEMENTATION_PLAN.md)、[离线物料和版本锁](ASSET_AND_VERSION_LOCK.md)、[Kernel/GPU/CUDA 构建](BUILD_KERNEL_GPU_CUDA.md)、[Edge-LLM 27B](EDGE_LLM_27B.md)、[部署模式 Runbook](DEPLOYMENT_RUNBOOK.md) 和 [正式发布 Gate](ACCEPTANCE_AND_RELEASE.md)。
+此文件是安装入口；**如果你要找三个 D/E 盘来源的真正源码网址和 GitHub 文件，请先看 [SOURCE_MAP.md](SOURCE_MAP.md)**。**全工程执行与验收顺序**见 [13 阶段实施总方案](MASTER_IMPLEMENTATION_PLAN.md)、[离线物料和版本锁](ASSET_AND_VERSION_LOCK.md)、[Kernel/GPU/CUDA 构建](BUILD_KERNEL_GPU_CUDA.md)、[Edge-LLM 27B](EDGE_LLM_27B.md)、[部署模式 Runbook](DEPLOYMENT_RUNBOOK.md) 和 [正式发布 Gate](ACCEPTANCE_AND_RELEASE.md)。
 
 必须分清两个目标：
 A. 在已经完成 6.8 A1 RAM 启动和 CUDA 13.2 验证的现有车机上，部署 GitHub 项目资料并只读验收；
@@ -46,18 +46,18 @@ command -v nvcc || true
 
 先核对当前系统身份和维护窗口。**不要因为这些检查返回成功就触发 nvidia-smi 或 kexec**：驱动初始化与内核引导必须另有明确的测试资格。
 
-如果私有仓库已创建且可访问，只把 Git 项目复制进一个新的持久目录（不装驱动/不改生产）：
+如果公开 GitHub 仓库可通过 HTTPS 访问，只把 Git 项目复制进一个新的持久目录（不装驱动/不改生产）：
 
 ~~~sh
 # 先确保目标路径不存在、空间和权限符合操作规范
-git clone git@github.com:1989xurui/thor-u-edge-ai-enablement.git \
+git clone https://github.com/1989xurui/thor-u-edge-ai-enablement.git \
     /zeekr_data/thor-u-edge-ai-enablement-src
 cd /zeekr_data/thor-u-edge-ai-enablement-src
 python3 tools/verify_manifest.py
 bash tools/preflight_thor_readonly.sh
 ~~~
 
-私有仓库可通过只读 deploy key 访问。示例假定 git/python3 已安装。上面只安装“源码和说明文件”，**不会安装 Linux Kernel、NVIDIA 驱动、TensorRT Engine 或 27B 模型**。
+本仓已经公开，正常可匿名 HTTPS clone，无须预装私有 deploy key。示例假定 git/python3 已安装。上面只安装“源码和说明文件”，**不会安装 Linux Kernel、NVIDIA 驱动、TensorRT Engine 或 27B 模型**。
 
 如果当前系统没有 git、Python 或写入持久空间的授权，先在开发电脑执行 clone、校验，并用已有经过验收的文件分发机制将归档拷到车机。不要对只读原厂根文件系统执行 apt 安装。
 

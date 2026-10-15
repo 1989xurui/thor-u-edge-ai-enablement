@@ -6,7 +6,7 @@
 
 | 模式 | 当前事实 | 操作者能做什么 | 阻断 |
 |---|---|---|---|
-| D0：安装 GitHub 工程资料 | 私有仓可克隆 | clone + SHA + 只读检测 | 需只读 SSH/clone 权限 |
+| D0：安装 GitHub 工程资料 | 公开仓可匿名克隆 | clone + SHA + 只读检测 | 需 Git/HTTPS 网络或可信离线副本 |
 | D1：在现有 6.8 RAM 实验会话研究 | A1 历史 Kernel/GPU/CUDA PASS | 当下设备复核、隔离维护后单项资格 | 冷重启/无人值守 NO GO |
 | D2：从 6.1 kexec 到 RAM 6.8 | 历史实现过 | 仅审查原始工程、恢复、单次执行 Gate | 不能当万能安装方法 |
 | D3：OEM RAM cold boot 6.8 | 当前平台工具/物理通路阻断 | 离线对齐官方支持与 board/signature | NO GO |
@@ -15,7 +15,7 @@
 
 ## 第一部分：开发电脑下载与核验（安全）
 
-使用已有账户对 GitHub Private Repo 的合法读取方式：
+公开 GitHub 仓库可直接通过 HTTPS 匿名读取：
 
 ~~~sh
 git clone https://github.com/1989xurui/thor-u-edge-ai-enablement.git
@@ -25,7 +25,7 @@ python3 tools/check_repo_release.py
 python3 tools/check_program_readiness.py --summary
 ~~~
 
-若没有 GitHub 访问权限，先为该账户授权；不要把 GitHub Token 写入仓库或安装脚本。上述动作均不触及车机。Program Gate 的 HOLD 是当前准确结果。
+公开仓库正常无需 GitHub 账号或 Token；请勿将访问凭证写入仓库或脚本。上述动作均不触及车机。Program Gate 的 HOLD 是当前准确结果。
 
 ## 第二部分：在目标车机“安装研发资料”，不是安装新内核
 
@@ -39,11 +39,11 @@ grep -E 'MemTotal|MemAvailable' /proc/meminfo
 df -h /zeekr_data /zeekr_map 2>/dev/null
 ~~~
 
-如果拥有 GitHub 私有仓只读 deploy key、可用的持久空间、不会影响正在运行的系统，才在新、未占用的隔离目录克隆：
+如果车机能通过 HTTPS 访问公开仓库，且有足够持久空间、不会影响正在运行的系统，才在新、未占用的隔离目录克隆：
 
 ~~~sh
 # Do not run against the OEM read-only root; dedicated persistent data only
-git clone git@github.com:1989xurui/thor-u-edge-ai-enablement.git \
+git clone https://github.com/1989xurui/thor-u-edge-ai-enablement.git \
   /zeekr_data/thor-u-edge-ai-enablement-src
 
 cd /zeekr_data/thor-u-edge-ai-enablement-src

@@ -4,7 +4,7 @@
 
 ## Phase 0：仓库、原件、宿主
 
-- [x] 创建 Private GitHub 工程仓库和保存已授权可上传的代码/证据。
+- [x] 建立 GitHub 工程仓库，筛选公开安全内容，现已公开并保留已审核的归档证据。
 - [x] 统一 START_HERE、主方案、架构图、Gate、Kernel/GPU/Edge 构建与安装手册。
 - [x] README/安装指南包含 6.1/6.8 结构图与各模式实际状态。
 - [x] 录入 Golden 6.1、G4E2、G4D、A1 等历史核心报告（脱敏、保留源 SHA）。
@@ -39,7 +39,7 @@
 
 - [x] 脱敏与许可证隔离、仓库 SHA、一份离线可执行 Gate / 只读审计方案。
 - [ ] 具备完整 Kernel 独立 cold boot、OEM 签名合法性和黄金恢复合同。
-- [ ] 所有阶段满足 PASS_CURRENT_VERIFIED，才从 PRIVATE_RESEARCH 改为 RELEASE_READY。
+- [ ] 所有阶段满足 PASS_CURRENT_VERIFIED，才从 PUBLIC_RESEARCH_ARCHIVE 改为 RELEASE_READY。
 - [ ] 系统级和推理级回退实测，发布后最小健康观察、故障通知、独立恢复验证。
 
 所有当前状态由 manifest/PROGRAM_GATES.json 和 manifest/BOOT_6_1_TO_6_8_GATES.json 判定；打勾只表示证据类型，不替代那两个机器可读文件的 verdict。

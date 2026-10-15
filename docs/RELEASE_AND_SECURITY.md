@@ -1,6 +1,6 @@
 # Repository release and safety policy
 
-This repository is a **private, source-centric research archive** as of 2026-10-15, not a public binary distribution or an executable installer.
+This repository is a **public, source-centric research archive** as of 2026-10-15. Visibility is not a grant of rights to redistribute all mixed-origin materials, nor is this an official NVIDIA binary distribution or vehicle installer. Source map: docs/SOURCE_MAP.md.
 
 - No credentials, authentication tokens, company passwords, signing keys, SSH keys or live SQLite databases.
 - No model weights, Engine binaries, firmware, NVIDIA proprietary driver/source archives, compressed SDK packages or WSL VHDX.
@@ -12,7 +12,7 @@ This repository is a **private, source-centric research archive** as of 2026-10-
 - GitHub Actions include one **manual-only** workflow in .github/workflows/offline-validation.yml. It verifies SHA/static documentation and asserts that cold boot and full program gates still return HOLD. It never connects to a vehicle, runs GPU tests, prints credentials, or deploys models.
 - Each source-evidence item must be tied to a date, code SHA, model SHA, exact software stack and a PASS/FAIL/HOLD decision with its experimental scope.
 - The original R4 llama.cpp and API gateway project are intentionally outside scope.
-- A private source archive is not a replacement for verified offline golden images, proprietary firmware backup or boot-recovery assets.
+- A public research repository is not a replacement for verified offline golden images, proprietary firmware backup or boot-recovery assets.
 - Do not put blanket MIT/Apache licensing on mixed-origin files until full authorship and third-party rights have been confirmed.
 
 Ready-to-publish gates:
@@ -22,4 +22,4 @@ Ready-to-publish gates:
 4. Manual review of CODE provenance and LICENSE requirements.
 5. Distinct kernel/CUDA/Edge completion decisions and explicit unsupported paths.
 6. Isolated clone on another workstation + manifest check PASS.
-7. Git remote repository confirmed PRIVATE before first push.
+7. Public release must retain vendor/source-rights boundaries and sanitize all mapped data/history; verify unauthenticated public access and immutable source-map SHA after pushing.

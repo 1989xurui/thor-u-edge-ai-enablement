@@ -2,6 +2,17 @@
 
 链接及解释复核日期：2026-10-15。外部文档可能更新，应按链接内版本、发布日期和本仓实际制品核对，不把当前 main 文档的新增功能自动追溯到旧 wheel。
 
+## 0. 三份本机研发项目与上游如何对应？
+
+请看 [SOURCE_MAP.md](SOURCE_MAP.md) 的公开目录映射与 [110 文件 TSV](../manifest/SOURCE_MAP_FILES.tsv)。本机 D/E 路径不代表公开下载地址。
+
+- NVIDIA Jetson Linux R39.2.1 Kernel/模块源码合法获取参考：https://docs.nvidia.com/jetson/archives/r39.2.1/DeveloperGuide/SD/Kernel/KernelCustomization.html
+- NVIDIA Jetson Linux release archive：https://developer.nvidia.com/embedded/jetson-linux-archive
+- NVIDIA DRIVE Thor 7.0.3 bootburn/board config 正式文档：https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/getting-started/flash_steps_for_Thor_SOC.html
+- NVIDIA Qwen3.8-27B-NVFP4 固定 revision（已核实）：https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4/tree/fed99d815f4e8c7c616dd3dd6780076e26d5fb61
+
+上述上游网址**并非本机自定义 Kernel/插件/G4 启动研究的逐字节镜像**；Jetson P3834 Boot 配置也不能用于 DRIVE P3960。
+
 ## 1. NVIDIA 官方 TensorRT Edge-LLM 支持
 
 - **v0.11.0 官方安装指南**：https://nvidia.github.io/TensorRT-Edge-LLM/0.11.0/user_guide/getting_started/installation.html
@@ -27,7 +38,7 @@
 - nvidia/Qwen3.8-27B-NVFP4 模型及 Hugging Face revision 是否公开/可被目标合法使用；本机实测 revision 只作为来源事实。
 - TensorRT 10.16.0.72 与 10.16.2.10 两种历史候选不能混写为同一个运行环境。
 - Edge-LLM v0.11.0 source commit 与安装 wheel build revision 不一致，必须为对应 Engine/插件分别冻结。
-- NVIDIA 官方驱动/firmware/DRIVE SDK、模型权重、原厂签名/密钥都不得未经许可再分发，即使 Private Repo 也应谨慎。
+- NVIDIA 官方驱动/firmware/DRIVE SDK、模型权重、原厂签名/密钥都不得未经许可再分发；尤其不能因本仓是 Public 就推定已获得再分发许可。
 - 对未知准确 ABI 的功能，不因为名称相似就替换系统文件。不开启 Secure Boot/Auth bypass 或非受支持引导写入。
 
 ## 4. 查询资料的最小原则

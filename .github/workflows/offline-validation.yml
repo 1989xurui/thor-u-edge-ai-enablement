@@ -18,6 +18,7 @@ jobs:
         run: |
           python3 tools/verify_manifest.py
           python3 tools/check_repo_release.py
+          python3 tools/check_source_map.py
       - name: Assert blocked cold boot is not promoted
         run: |
           set +e

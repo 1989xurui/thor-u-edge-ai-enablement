@@ -1,7 +1,7 @@
 {
   "schema": "THOR_U_FULL_PROGRAM_GATES_V1",
   "frozen_at_utc": "2026-10-15",
-  "release_type": "PRIVATE_RESEARCH_SOURCE_AND_RUNBOOK",
+  "release_type": "PUBLIC_RESEARCH_SOURCE_AND_RUNBOOK",
   "primary_goal": "Preserve original DriveOS 7.0.3 Linux 6.1 and add Linux 6.8 experimental GPU + Edge-LLM stack without touching OEM safety bootchain",
   "source": "Historical Golden/G4E2/A1/Edge logs plus official compatibility pages; no new live device probes in this Git operation",
   "protect_original_61": true,
@@ -139,13 +139,16 @@
     },
     {
       "id": "P12",
-      "title": "GitHub private source archive and document handoff",
-      "status": "ARCHIVED_PRIVATE_VERIFIED",
+      "title": "GitHub public source archive, provenance map and document handoff",
+      "status": "ARCHIVED_PUBLIC_SOURCE_MAP_VERIFIED",
       "next": "After each future edit, repeat local SHA/security/fresh-clone checks; publication is not device deployment",
       "blocking_to_production": false,
       "evidence": [
         "docs/START_HERE.md",
-        "manifest/SHA256SUMS.txt"
+        "manifest/SHA256SUMS.txt",
+        "docs/SOURCE_MAP.md",
+        "manifest/SOURCE_MAP.json",
+        "manifest/SOURCE_MAP_FILES.tsv"
       ]
     }
   ],

@@ -1,0 +1,148 @@
+{
+  "schema": "THOR_U_SOURCE_MAP_V1",
+  "snapshot_date": "2026-10-15",
+  "repository": "1989xurui/thor-u-edge-ai-enablement",
+  "repository_visibility": "public",
+  "method": "Cross-references published SOURCE_FILES/SUPPLEMENTAL_EVIDENCE manifests, verifies each Git export SHA and CURRENT original source SHA. Current raw source content may have changed since archival; no source files modified.",
+  "source_roots": [
+    {
+      "id": "kernel",
+      "folder_name": "THOR_U_A1_NVGPU_R39_20261013",
+      "local_windows_path": "D:\\Thor64G\\THOR_U_A1_NVGPU_R39_20261013",
+      "description": "G35 Kernel 6.8 build, NVIDIA R39/NvGPU ABI, CUDA 13.2 A1"
+    },
+    {
+      "id": "edge",
+      "folder_name": "THOR_NVIDIA_NVFP4_20261013",
+      "local_windows_path": "D:\\Thor64G\\THOR_NVIDIA_NVFP4_20261013",
+      "description": "TensorRT Edge-LLM NVFP4 27B, K7/Tree-MTP, measurements"
+    },
+    {
+      "id": "boot",
+      "folder_name": "THOR_U_R39_GOS_BOOT_GATE_20261006",
+      "local_windows_path": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006",
+      "description": "G0-G5/G4E2 kexec, HV/IVC, RCM, cold-boot blockers"
+    },
+    {
+      "id": "g5",
+      "folder_name": "G5_TAKEOVER_20261007",
+      "local_windows_path": "D:\\Thor64G\\G5_TAKEOVER_20261007",
+      "description": "Extra historical G5 handoff artifacts, not one of the three requested roots"
+    },
+    {
+      "id": "golden",
+      "folder_name": "GoldenBoard_2026-09-01",
+      "local_windows_path": "E:\\Thor64G_Backup\\GoldenBoard_2026-09-01",
+      "description": "Additional original Linux 6.1 Golden capture, not one of the three requested roots"
+    }
+  ],
+  "root_id_to_display": {
+    "kernel": "A1_KERNEL_GPU_CUDA",
+    "boot": "BOOT_G4_G5",
+    "edge": "EDGE_NVFP4_MTP",
+    "g5": "G5_TAKEOVER_EXTRA",
+    "golden": "GOLDEN_6P1_EXTRA"
+  },
+  "published_primary_selected": 102,
+  "published_supplemental_historical": 8,
+  "mapped_published_files": 110,
+  "by_root": {
+    "boot": 19,
+    "edge": 59,
+    "g5": 3,
+    "golden": 1,
+    "kernel": 28
+  },
+  "by_root_primary_only": {
+    "boot": 12,
+    "edge": 59,
+    "g5": 3,
+    "kernel": 28
+  },
+  "by_repository_prefix": {
+    "docs/edge": 2,
+    "docs/evidence_history": 8,
+    "docs/kernel": 11,
+    "evidence/cuda": 1,
+    "evidence/edge": 21,
+    "evidence/kernel": 6,
+    "patches/kernel": 2,
+    "src/edge-llm": 36,
+    "src/kernel-gpu": 23
+  },
+  "current_original_source_status": {
+    "CURRENT_SOURCE_EQUALS_EXPORT_BASELINE": 106,
+    "SOURCE_CHANGED_AFTER_EXPORT": 4
+  },
+  "export_exact_sha_verified": true,
+  "per_file_inventory": "manifest/SOURCE_MAP_FILES.tsv",
+  "vendor_upstream_links": [
+    {
+      "id": "JETSON_LINUX_39_2_1",
+      "kind": "upstream_sources_and_docs",
+      "url": "https://docs.nvidia.com/jetson/archives/r39.2.1/DeveloperGuide/SD/Kernel/KernelCustomization.html",
+      "note": "Jetson source access; NOT a drop-in DRIVE P3960 boot image"
+    },
+    {
+      "id": "JETSON_LINUX_ARCHIVE",
+      "kind": "upstream_distribution",
+      "url": "https://developer.nvidia.com/embedded/jetson-linux-archive",
+      "note": "Jetson Linux R39.2.1 package release; board-specific BCT/boot still unsuitable for DRIVE P3960"
+    },
+    {
+      "id": "DRIVE_OS_7_0_3_THOR",
+      "kind": "oem_platform_docs",
+      "url": "https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/getting-started/flash_steps_for_Thor_SOC.html",
+      "note": "Bootburn/RCM and OEM board-specific support. Depends on authorized SDK/keys"
+    },
+    {
+      "id": "TENSORRT_EDGE_LLM",
+      "kind": "upstream_source",
+      "url": "https://github.com/NVIDIA/TensorRT-Edge-LLM",
+      "version_in_local_experiment": "v0.11.0 source=95515c2f87fba8982db5a519f9022277667b3cc9; installed wheel=74f8732a7e8d1377e34471ad2652988346f18813; not identical"
+    },
+    {
+      "id": "TENSORRT_EDGE_LLM_SUPPORT",
+      "kind": "compatibility_matrix",
+      "url": "https://github.com/NVIDIA/TensorRT-Edge-LLM/blob/main/docs/source/user_guide/getting_started/support-matrix.md",
+      "note": "Official DRIVE Thor: DriveOS 7.2/CUDA 13.3, not local DriveOS 7.0.3 experimental stack"
+    },
+    {
+      "id": "QWEN_NVFP4_27B_PINNED",
+      "kind": "model_checkpoint",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4/tree/fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+      "revision": "fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+      "note": "Upstream public model repository; model weight blobs are not copied into this GitHub"
+    }
+  ],
+  "excluded_from_first_pass": [
+    {
+      "origin": "edge/scripts\\build-tree-prefix-policy.py",
+      "reason": "review_required",
+      "flags": [
+        "vendor_copyright_review"
+      ]
+    },
+    {
+      "origin": "edge/scripts\\build-native-mtp-bounded-state.py",
+      "reason": "missing"
+    },
+    {
+      "origin": "edge/artifacts\\native-tree-replay-v1.cu",
+      "reason": "review_required",
+      "flags": [
+        "vendor_copyright_review"
+      ]
+    },
+    {
+      "origin": "edge/artifacts\\native-tree-replay-v1-tested.cu",
+      "reason": "missing"
+    }
+  ],
+  "excluded_vendor_artifacts": "manifest/OFFLINE_REQUIRED_ASSETS.json",
+  "important": "The three D/E Windows paths are personal workstation paths, not public Git repositories or direct download links. These URLs are upstream projects, NOT bitwise mirrors of custom local work.",
+  "compatibility": "DRIVE T264/P3960 != Jetson Thor T4000/P3834. DriveOS 7.0.3 + experimental 6.8 RAM/CUDA13.2 is NOT the official DriveOS 7.2/CUDA13.3 Edge matrix.",
+  "license_status": "Mixed-origin content; do not apply a blanket open-source license to all files; see docs/RELEASE_AND_SECURITY.md",
+  "boot_state": "6.8 kexec RAM A1 historical PASS; standalone cold boot/dual-boot NOT IMPLEMENTED",
+  "production_state": "NO_GO"
+}

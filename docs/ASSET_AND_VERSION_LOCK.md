@@ -2,6 +2,8 @@
 
 所有数值来自历史冻结记录（2026-09 至 2026-10）；不代表当前设备 live 状态。
 
+**新增来源溯源入口**：[SOURCE_MAP.md](SOURCE_MAP.md) → [SOURCE_MAP_FILES.tsv](../manifest/SOURCE_MAP_FILES.tsv)（110 个公开文件精确来源）；厂商/权重与实际版本锁定仍按本文件执行。
+
 ## 1. 完整硬件与软件锁
 
 | 组件 | 历史锁定身份 | 实验边界 |
