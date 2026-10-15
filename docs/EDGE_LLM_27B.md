@@ -1,5 +1,7 @@
 # TensorRT Edge-LLM 0.11.0 + NVFP4 27B：从权重到推理的完整流程
 
+**可复现下载入口**：[TensorRT Edge-LLM v0.11.0 ARM64 Wheel 3 种 Python ABI、Pinned NVIDIA 27B 模型三分片以及 SHA](DOWNLOAD_AND_REPRODUCE.md)。先做 R0/R1 复现，随后才按隔离实验 Gate 进行设备上的 NVIDIA/CUDA/Edge 资格验证；原创 MIT 不覆盖模型及 NVIDIA binary。
+
 **研究栈**：DRIVE Thor T264 SM110 / 14SM / Linux 6.8 RAM / NvGPU 595.78 / CUDA 13.2 U2 / TensorRT 10.16.x / Edge-LLM 0.11.0。
 
 本方案用于隔离实验和正确性验收，不能把本机非官方版本组合包装为 NVIDIA 官方 DriveOS 7.2 + CUDA 13.3 支持版本。

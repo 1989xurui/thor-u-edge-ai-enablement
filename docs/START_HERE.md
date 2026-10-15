@@ -8,6 +8,12 @@
 
 这三个 D/E 盘研发目录均是本机绝对路径，不是源码网址。要看**精确 GitHub 位置、110 个文件的原始路径/SHA/脱敏状态、NVIDIA 上游与缺失文件**，请先读 [SOURCE_MAP.md](SOURCE_MAP.md)；机器可读逐文件明细见 [SOURCE_MAP_FILES.tsv](../manifest/SOURCE_MAP_FILES.tsv)，离线核验运行 python3 tools/check_source_map.py。
 
+## MIT 许可、官方下载与 AI 助手的可执行任务
+
+项目原创部分已提供 [MIT LICENSE](../LICENSE)；第三方源码/驱动/模型的许可与分发边界见 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。其他 AI 助手请先阅读 [AGENTS.md](../AGENTS.md)：不需要 OEM SDK 即可完成安全的源码/清单/数值资料审查。
+
+想要下载软件并尽可能复现结果，使用 [DOWNLOAD_AND_REPRODUCE.md](DOWNLOAD_AND_REPRODUCE.md) 和 [DOWNLOAD_LOCK.json](../manifest/DOWNLOAD_LOCK.json)，可直接查看完整 TensorRT Edge-LLM v0.11.0、ARM64 wheel 下载 SHA、NVIDIA 固定 27B 模型，以及官方 CUDA/Kernel/DriveOS 获取入口。
+
 ## 1. 选择你真正需要的路径
 
 | 当前需求 | 阅读 | 本项目能提供什么 | 不能声称 |

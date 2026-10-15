@@ -1,10 +1,10 @@
 {
   "schema": "THOR_U_REPO_RELEASE_SUMMARY_V2",
-  "status": "PUBLISHED_PUBLIC_SOURCE_MAP_VERIFIED",
-  "archive_scope": "Public curated 6.1 -> 6.8 -> NVIDIA R39/CUDA -> Edge-LLM full workflow with complete 110-file provenance map; not firmware/weights",
-  "file_count": 149,
-  "bytes": 1686753,
-  "mebibytes": 1.609,
+  "status": "PUBLIC_MIT_DOWNLOADS_STAGED_PENDING_GITHUB_PUSH",
+  "archive_scope": "Curated public Thor-U research, MIT contributor-owned original contributions plus third-party exceptions, verified downloads and honest R0-R4 reproducibility gates; not an OEM firmware/production distribution",
+  "file_count": 156,
+  "bytes": 1733234,
+  "mebibytes": 1.653,
   "max_file_bytes": 219522,
   "large_file_violations": 0,
   "sha_manifest": "manifest/SHA256SUMS.txt",
@@ -33,13 +33,14 @@
     "anonymous_fresh_clone": "PASS",
     "fresh_clone_integrity": "SHA_149_OF_149_PASS",
     "fresh_clone_source_map": "FILES_110_OF_110_PASS",
-    "fresh_clone_doc_links": "PASS_94"
+    "fresh_clone_doc_links": "PASS_94",
+    "this_update": "NOT_YET_PUSHED"
   },
   "full_program_published": true,
   "independent_6p8_boot_installed": false,
   "edge_production_ready": false,
   "device_mutations_in_this_publish": 0,
-  "updated_at_utc": "2026-10-15T01:37:49.435484+00:00",
+  "updated_at_utc": "2026-10-15T01:58:32.172236+00:00",
   "published": true,
   "source_provenance": {
     "map_document": "docs/SOURCE_MAP.md",
@@ -54,5 +55,24 @@
     "verification_tool": "tools/check_source_map.py",
     "source_map_content_commit": "3b08edbc14c0b80ac88ea0f5c7750926e3df9294"
   },
-  "verification_utc": "2026-10-15T01:39:20.581932+00:00"
+  "verification_utc": "2026-10-15T01:39:20.581932+00:00",
+  "license": {
+    "spdx_identifier": "MIT",
+    "file": "LICENSE",
+    "copyright_holder": "Thor-U Edge AI Enablement contributors",
+    "scope": "Contributor-owned original code/documentation only, upstream rights excluded",
+    "third_party_exceptions": "THIRD_PARTY_NOTICES.md"
+  },
+  "reproduce": {
+    "guide": "docs/DOWNLOAD_AND_REPRODUCE.md",
+    "download_lock": "manifest/DOWNLOAD_LOCK.json",
+    "agents": "AGENTS.md",
+    "offline_check": "tools/verify_download_lock.py",
+    "explicit_pinned_wheel_fetch": "tools/fetch_public_wheel.py",
+    "source_map": "docs/SOURCE_MAP.md",
+    "pypi_arm64_wheel_metadata_verified": 3,
+    "source_tag_verified": "NVIDIA TensorRT Edge-LLM v0.11.0=95515c2f87fba8982db5a519f9022277667b3cc9",
+    "model_sha_check_required_after_download": true,
+    "no_large_assets_downloaded_or_installed_in_publication": true
+  }
 }

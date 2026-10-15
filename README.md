@@ -8,6 +8,22 @@ An independent engineering research archive for NVIDIA DRIVE Thor T264 (AArch64,
 
 **Dual-path goal:** retain the original DriveOS 7.0.3 / Linux **6.1.119** Golden and add Linux **6.8.12** for native NVIDIA inference. Only the historical 6.1 -> 6.8 **kexec RAM handoff** has been demonstrated. **An independent persistent 6.8 boot item or boot menu is NOT installed.**
 
+## MIT license, downloads, and reproduction / 开源许可与复现
+
+**License:** [MIT](LICENSE) for original project contributions (rights held by their respective contributors); [third-party licenses / exceptions](THIRD_PARTY_NOTICES.md) remain in force for NVIDIA sources, TensorRT, firmware, model weights, and archived mixed-origin code. GitHub Public and MIT **do not** authorize copying/providing proprietary NVIDIA/DRIVE binaries.
+
+**For developers and AI assistants:** [AGENTS.md](AGENTS.md) gives executable R0/R1 safe tasks instead of stopping at missing OEM SDK. [Download and reproduction guide](docs/DOWNLOAD_AND_REPRODUCE.md) lists pinned official upstream sources, three ARM64 v0.11.0 wheel SHA256 values, the fixed 27B NVFP4 Hugging Face revision, the kernel/CUDA SDK dependency boundary, and exact quality gates. [Machine-readable download lock](manifest/DOWNLOAD_LOCK.json).
+
+~~~bash
+python3 tools/verify_manifest.py
+python3 tools/check_source_map.py
+python3 tools/verify_download_lock.py
+python3 tools/check_repo_release.py
+python3 tools/fetch_public_wheel.py --list   # no download by default
+~~~
+
+**Reproducibility levels:** R0 source/docs SHA = independently checkable; R1 public upstream/model/wheel SHA requires external downloads; R2 build needs exact SDK and ABI; R3 device experiment requires controlled A1-like maintenance; R4 independent cold boot/production is **NOT QUALIFIED**. None of these commands changes the car.
+
 ## Source provenance / 本机来源地址与公开代码的关系
 
 本项目引用的三个本机研发目录并不是三套公开 Git 仓库。现已提供**[完整 SOURCE_MAP · D/E 来源目录与 GitHub 对应表](docs/SOURCE_MAP.md)**，包含官方 NVIDIA / Hugging Face 来源、逐文件 SHA256 和尚未公开的依赖。可直接查看 [110 行逐文件映射](manifest/SOURCE_MAP_FILES.tsv) 与 [来源统计 JSON](manifest/SOURCE_MAP.json)，并运行 python3 tools/check_source_map.py 作离线核对。
@@ -80,7 +96,7 @@ No model weights (.safetensors/.gguf), TensorRT engines, firmware, NVIDIA redist
 
 Some source snapshots had private LAN IP literals replaced with RFC5737 documentation IPs (192.0.2.x). These files are tagged in manifest/SOURCE_FILES.json. They are **NOT drop-in executable deployment artifacts**; operators must provide qualified target configuration and review them.
 
-Files derived from NVIDIA-copyrighted sources have been held back for explicit license and attribution review. This snapshot is a private research work-in-progress, not a self-contained kernel or driver build.
+Two NVIDIA-attributed source paths remain excluded pending rights/attribution review. This **public MIT-scoped research archive** is not a self-contained kernel/driver build, OEM boot bundle, or general NVIDIA-licensed binary distribution. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Start here
 

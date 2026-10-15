@@ -1,0 +1,165 @@
+{
+  "schema": "THOR_U_VERIFIED_PUBLIC_DOWNLOADS_V1",
+  "snapshot_date": "2026-10-15",
+  "purpose": "Trusted upstream download pointers and pinned SHA checks for independent engineering research. Never assumes OEM boot authorization, complete firmware, or quality/prod qualification.",
+  "repo_license": "MIT for original contributor-owned material; see THIRD_PARTY_NOTICES.md",
+  "downloads": [
+    {
+      "id": "edge_source_v0_11_0",
+      "kind": "git_source",
+      "provider": "NVIDIA",
+      "access": "public",
+      "version": "v0.11.0",
+      "commit": "95515c2f87fba8982db5a519f9022277667b3cc9",
+      "url": "https://github.com/NVIDIA/TensorRT-Edge-LLM/tree/v0.11.0",
+      "clone": "https://github.com/NVIDIA/TensorRT-Edge-LLM.git",
+      "license": "Apache-2.0",
+      "fetch_mode": "git_clone_and_checkout",
+      "matching_local_installed_wheel": false,
+      "notes": "Source tag is NOT the same as installed wheel compiled revision 74f8732a7e8d1377e34471ad2652988346f18813."
+    },
+    {
+      "id": "edge_wheel_cp310_aarch64",
+      "kind": "wheel",
+      "provider": "NVIDIA/PyPI",
+      "access": "public",
+      "version": "0.11.0",
+      "python_abi": "cp310",
+      "platform": "manylinux_2_39_aarch64",
+      "filename": "tensorrt_edgellm-0.11.0-cp310-cp310-manylinux_2_39_aarch64.whl",
+      "bytes": 447051288,
+      "sha256": "9bb4383ef013a2108d2c077c8758a1a1ecbb2995ac9450ae02d5611dcecba611",
+      "url": "https://files.pythonhosted.org/packages/90/8b/2a8e32f3fd7bf25446eb777ffd0bc8f8583b699a0de2eb3b5bc599cc45be/tensorrt_edgellm-0.11.0-cp310-cp310-manylinux_2_39_aarch64.whl",
+      "license": "Apache-2.0",
+      "fetch_mode": "explicit_verified_wheel",
+      "notes": "Linux glibc>=2.39 aarch64; Python3.10; dependencies, NVIDIA runtime stack and hardware separately required."
+    },
+    {
+      "id": "edge_wheel_cp311_aarch64",
+      "kind": "wheel",
+      "provider": "NVIDIA/PyPI",
+      "access": "public",
+      "version": "0.11.0",
+      "python_abi": "cp311",
+      "platform": "manylinux_2_39_aarch64",
+      "filename": "tensorrt_edgellm-0.11.0-cp311-cp311-manylinux_2_39_aarch64.whl",
+      "bytes": 447058774,
+      "sha256": "21a66a57de5264bcf24e3e699e3e7b660e9541409d978cb5e76fe92e890b9c33",
+      "url": "https://files.pythonhosted.org/packages/c0/1f/2b46c643045322cf06b1f895b1111fc4f5eeb3fc38c025762d35773311ea/tensorrt_edgellm-0.11.0-cp311-cp311-manylinux_2_39_aarch64.whl",
+      "license": "Apache-2.0",
+      "fetch_mode": "explicit_verified_wheel",
+      "notes": "Linux glibc>=2.39 aarch64; Python3.11; dependencies and NVIDIA runtime stack separately required."
+    },
+    {
+      "id": "edge_wheel_cp312_aarch64",
+      "kind": "wheel",
+      "provider": "NVIDIA/PyPI",
+      "access": "public",
+      "version": "0.11.0",
+      "python_abi": "cp312",
+      "platform": "manylinux_2_39_aarch64",
+      "filename": "tensorrt_edgellm-0.11.0-cp312-cp312-manylinux_2_39_aarch64.whl",
+      "bytes": 447070745,
+      "sha256": "9e6722a5a250d0ba18665911a908aecfc9684722b9d56d944efe31fe6c889d9b",
+      "url": "https://files.pythonhosted.org/packages/c2/07/32efeb227b4b4c952b051ab9b990b21146756296b5ee65450de827cc5072/tensorrt_edgellm-0.11.0-cp312-cp312-manylinux_2_39_aarch64.whl",
+      "license": "Apache-2.0",
+      "fetch_mode": "explicit_verified_wheel",
+      "notes": "Linux glibc>=2.39 aarch64; Python3.12. Wheels are not self-contained NVIDIA DRIVE SDK installers."
+    },
+    {
+      "id": "model_qwen3_8_27b_nvfp4",
+      "kind": "huggingface_model",
+      "provider": "NVIDIA/HuggingFace",
+      "access": "public",
+      "version": "fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+      "repository": "nvidia/Qwen3.8-27B-NVFP4",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4/tree/fed99d815f4e8c7c616dd3dd6780076e26d5fb61",
+      "license": "Apache-2.0 (model card; review model and base-model requirements)",
+      "fetch_mode": "huggingface_hf_download_pinned",
+      "notes": "Approx 20.42 GiB weights. Does not include TensorRT Engine or draft runtime. See model_shards below."
+    },
+    {
+      "id": "jetson_kernel_r39_2_1",
+      "kind": "kernel_upstream_docs",
+      "provider": "NVIDIA",
+      "access": "public",
+      "version": "R39.2.1",
+      "url": "https://docs.nvidia.com/jetson/archives/r39.2.1/DeveloperGuide/SD/Kernel/KernelCustomization.html",
+      "archive": "https://developer.nvidia.com/embedded/jetson-linux-archive",
+      "license": "Varies by file (Linux GPL, NVIDIA components and other licenses)",
+      "fetch_mode": "manual_select_official_source_archive",
+      "notes": "Public Jetson kernel/NVIDIA OOT sources are not an OEM DRIVE P3960 bootloader/firmware package; exact G35 commit and SHA must match."
+    },
+    {
+      "id": "cuda_13_2_update2",
+      "kind": "cuda_toolkit_archive",
+      "provider": "NVIDIA",
+      "access": "public",
+      "version": "13.2.2",
+      "url": "https://developer.nvidia.com/cuda-13-2-2-download-archive",
+      "license": "NVIDIA CUDA Toolkit EULA",
+      "fetch_mode": "manual_target_os_arch_package_sha_required",
+      "notes": "Select supported Linux aarch64 package compatible with target. Do not install directly over OEM DriveOS; verify device runtime ABI before use."
+    },
+    {
+      "id": "tensorrt_10_16_0_72",
+      "kind": "tensorrt_official_distribution",
+      "provider": "NVIDIA",
+      "access": "public_index",
+      "version": "10.16.0.72",
+      "url": "https://pypi.org/project/tensorrt/10.16.0.72/",
+      "license": "NVIDIA proprietary",
+      "fetch_mode": "manual_verify_actual_arm_runtime_package",
+      "notes": "PyPI tensorrt may be meta/package bootstrap, not full device-ready ARM runtime. Local Edge results used different TRT10.16.x instances; no exact complete binary bundle in Git."
+    },
+    {
+      "id": "driveos_7_0_3_thor",
+      "kind": "oem_sdk_docs",
+      "provider": "NVIDIA DRIVE",
+      "access": "authorized_sdk_required",
+      "version": "7.0.3",
+      "url": "https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/getting-started/flash_steps_for_Thor_SOC.html",
+      "license": "NVIDIA/OEM DRIVE SDK terms",
+      "fetch_mode": "documentation_only_no_automated_download",
+      "notes": "P3960 board configs/host-only slots/OEM signatures unavailable in this repository. No automatic flash/bootburn/RCM/device manipulation."
+    }
+  ],
+  "model_shards": [
+    {
+      "filename": "model-00001-of-00003.safetensors",
+      "bytes": 9965652544,
+      "sha256": "7d0fd155118901373eb0fd13ed3aae68f95be747bc205be72ebc41739c25ee80"
+    },
+    {
+      "filename": "model-00002-of-00003.safetensors",
+      "bytes": 9985757064,
+      "sha256": "98a7e9486baa860c792c9463a770cb9d017696bdd17606300a5b9334149f4c27"
+    },
+    {
+      "filename": "model-00003-of-00003.safetensors",
+      "bytes": 1970287672,
+      "sha256": "0506ad35dc21469708e7813bd76c592cef08bd0317b4a1fe899745ebe2435271"
+    }
+  ],
+  "constraints": {
+    "original_linux61_preserved": true,
+    "kernel68_ram_historical_scoped_pass": true,
+    "independent_cold_boot_qualified": false,
+    "persistent_dual_boot_qualified": false,
+    "edge_full_model_quality_and_production_qualified": false,
+    "model_checkpoint_and_installed_wheel_differ_in_provenance": true,
+    "do_not_distribute": [
+      "OEM signing/HSM keys",
+      "DRIVE SDK and proprietary firmware",
+      "model/engine binaries in Git",
+      "third-party code without license review"
+    ]
+  },
+  "verification": {
+    "edge_source_tag": "Git remote refs/tags/v0.11.0 resolved to 95515c2f87fba8982db5a519f9022277667b3cc9",
+    "edge_wheel_sha": "PyPI version 0.11.0 JSON metadata SHA256/bytes for Linux aarch64 wheels",
+    "cuda": "NVIDIA 13.2 Update2 archive landing page",
+    "model": "NVIDIA pinned HuggingFace model file listing shows 21.9GB and apache-2.0",
+    "drive": "NVIDIA official 7.0.3 Thor bootburn documentation"
+  }
+}

@@ -19,6 +19,8 @@ jobs:
           python3 tools/verify_manifest.py
           python3 tools/check_repo_release.py
           python3 tools/check_source_map.py
+          python3 tools/verify_download_lock.py
+          python3 tools/fetch_public_wheel.py --list > /dev/null
       - name: Assert blocked cold boot is not promoted
         run: |
           set +e

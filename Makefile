@@ -1,5 +1,5 @@
 # Safe developer-host checks only. No boot tools, GPU loads or target network access.
-.PHONY: check gates asset-plan source-map docs
+.PHONY: check gates asset-plan source-map downloads docs
 
 check:
 	python3 tools/verify_manifest.py
@@ -14,6 +14,10 @@ asset-plan:
 
 source-map:
 	python3 tools/check_source_map.py
+
+downloads:
+	python3 tools/verify_download_lock.py
+	python3 tools/fetch_public_wheel.py --list
 
 docs:
 	@echo "Read docs/START_HERE.md and docs/MASTER_IMPLEMENTATION_PLAN.md"

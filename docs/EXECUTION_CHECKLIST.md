@@ -4,6 +4,10 @@
 
 ## Phase 0：仓库、原件、宿主
 
+- [x] MIT LICENSE（原创作者拥有权利的部分）和第三方许可排除说明已经建立；不存在对全部 NVIDIA 原始软件的 MIT 重授权。
+- [x] 官方上游/ARM64 PyPI wheel/模型 SHA 下载清单、无设备变更的 R0 验收及 AI 助手 AGENTS.md 已就绪。
+- [ ] 不同目标硬件及厂商 SDK 全量重建与 GPU/模型验收，保持分阶段 HOLD。
+
 - [x] 建立 GitHub 工程仓库，筛选公开安全内容，现已公开并保留已审核的归档证据。
 - [x] 统一 START_HERE、主方案、架构图、Gate、Kernel/GPU/Edge 构建与安装手册。
 - [x] README/安装指南包含 6.1/6.8 结构图与各模式实际状态。

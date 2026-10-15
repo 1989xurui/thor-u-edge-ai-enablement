@@ -5,16 +5,17 @@ import json,re,subprocess,sys
 
 ROOT=Path(__file__).resolve().parent.parent
 required=[
-"README.md","docs/START_HERE.md","docs/MASTER_IMPLEMENTATION_PLAN.md",
+"README.md","LICENSE","AGENTS.md","THIRD_PARTY_NOTICES.md","docs/START_HERE.md","docs/MASTER_IMPLEMENTATION_PLAN.md",
 "docs/ARCHITECTURE.md","docs/BOOT_6_1_TO_6_8.md",
 "docs/ASSET_AND_VERSION_LOCK.md","docs/BUILD_KERNEL_GPU_CUDA.md",
 "docs/EDGE_LLM_27B.md","docs/DEPLOYMENT_RUNBOOK.md",
 "docs/ACCEPTANCE_AND_RELEASE.md","docs/RECOVERY_AND_TROUBLESHOOTING.md",
-"docs/PROJECT_HANDOFF_AND_PROVENANCE.md","docs/OFFICIAL_REFERENCES.md","docs/SOURCE_MAP.md",
+"docs/PROJECT_HANDOFF_AND_PROVENANCE.md","docs/OFFICIAL_REFERENCES.md","docs/SOURCE_MAP.md","docs/DOWNLOAD_AND_REPRODUCE.md",
 "docs/INSTALL_ON_THOR.md","manifest/PROGRAM_GATES.json",
 "manifest/BOOT_6_1_TO_6_8_GATES.json",
 "manifest/OFFLINE_REQUIRED_ASSETS.json","manifest/SUPPLEMENTAL_EVIDENCE.json",
-"manifest/SOURCE_MAP_FILES.tsv","manifest/SOURCE_MAP.json","tools/check_source_map.py"
+"manifest/SOURCE_MAP_FILES.tsv","manifest/SOURCE_MAP.json","tools/check_source_map.py",
+"manifest/DOWNLOAD_LOCK.json","tools/verify_download_lock.py","tools/fetch_public_wheel.py"
 ]
 errors=[]
 for rel in required:
@@ -28,6 +29,12 @@ if boot["policy"].get("preserve_61") is not True:
 persistent=[x for x in boot["modes"] if x["id"]=="P_ADDITIVE_PERSISTENT"]
 if len(persistent)!=1 or persistent[0]["status"]=="PASS_CURRENT_VERIFIED":
     errors.append("dual boot falsely completed")
+license_text=(ROOT/"LICENSE").read_text(encoding="utf-8") if (ROOT/"LICENSE").is_file() else ""
+if not (license_text.startswith("MIT License\n\nCopyright (c) 2026") and "Permission is hereby granted" in license_text and "THE SOFTWARE IS PROVIDED" in license_text):
+    errors.append("missing/malformed MIT license")
+notices=(ROOT/"THIRD_PARTY_NOTICES.md").read_text(encoding="utf-8") if (ROOT/"THIRD_PARTY_NOTICES.md").is_file() else ""
+if "third-party" not in notices.lower() or "Apache-2.0" not in notices or "MIT" not in notices:
+    errors.append("incomplete third-party exceptions notice")
 links=0
 for rel in required:
     if not rel.endswith(".md") or not (ROOT/rel).is_file():continue
@@ -57,9 +64,13 @@ check=subprocess.run([sys.executable,str(ROOT/"tools/verify_manifest.py")],cwd=R
 if check.returncode:errors.append("SHA manifest fail: "+check.stdout[:200])
 map_check=subprocess.run([sys.executable,str(ROOT/"tools/check_source_map.py")],cwd=ROOT,capture_output=True,text=True)
 if map_check.returncode:errors.append("Source-map provenance check fail: "+map_check.stdout[:200])
+download_check=subprocess.run([sys.executable,str(ROOT/"tools/verify_download_lock.py")],cwd=ROOT,capture_output=True,text=True)
+if download_check.returncode:errors.append("Pinned download manifest check fail: "+download_check.stdout[:200])
 result={"result":"STATIC_ARCHIVE_PASS" if not errors else "STATIC_ARCHIVE_FAIL","files_seen":count,
     "docs_links_checked":links,"manifest_integrity":"PASS" if check.returncode==0 else "FAIL",
     "source_map_integrity":"PASS" if map_check.returncode==0 else "FAIL",
+    "download_lock_integrity":"PASS" if download_check.returncode==0 else "FAIL",
+    "license":"MIT for contributor-owned original work; upstream exceptions documented",
     "independent_cold_boot":False,"production_released":False,"errors":errors[:40]}
 print(json.dumps(result,ensure_ascii=False,indent=2))
 sys.exit(0 if not errors else 1)

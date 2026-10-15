@@ -1,5 +1,7 @@
 # Thor-U 全流程安装与部署 Runbook（分模式执行）
 
+**复现资源与许可证：**[官方下载与 SHA256 校验指南](DOWNLOAD_AND_REPRODUCE.md) · [项目 MIT 原创授权](../LICENSE) · [NVIDIA/第三方许可排除](../THIRD_PARTY_NOTICES.md)。先下载/核验，不等于已经取得 OEM 6.8 独立冷启动资格。
+
 **用户诉求：从原厂 6.1 基础上增加 6.8，然后加载 R39/CUDA 并运行 Edge-LLM。** 但不能把“复制 Git 源码”“通过 RAM kexec”“持久双启动安装”混为同一事件。
 
 ## 安装模式总表

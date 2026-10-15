@@ -148,7 +148,14 @@
         "manifest/SHA256SUMS.txt",
         "docs/SOURCE_MAP.md",
         "manifest/SOURCE_MAP.json",
-        "manifest/SOURCE_MAP_FILES.tsv"
+        "manifest/SOURCE_MAP_FILES.tsv",
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md",
+        "AGENTS.md",
+        "docs/DOWNLOAD_AND_REPRODUCE.md",
+        "manifest/DOWNLOAD_LOCK.json",
+        "tools/verify_download_lock.py",
+        "tools/fetch_public_wheel.py"
       ]
     }
   ],
@@ -181,5 +188,11 @@
   "annex": [
     "manifest/BOOT_6_1_TO_6_8_GATES.json",
     "docs/MASTER_IMPLEMENTATION_PLAN.md"
-  ]
+  ],
+  "public_repo_original_license": "MIT for contributor-owned original material; third-party exceptions documented",
+  "third_party_rights": "THIRD_PARTY_NOTICES.md",
+  "download_repro_guide": "docs/DOWNLOAD_AND_REPRODUCE.md",
+  "verified_download_lock": "manifest/DOWNLOAD_LOCK.json",
+  "agent_policy": "AGENTS.md",
+  "external_downloads_installed_by_this_task": false
 }

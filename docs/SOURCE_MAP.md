@@ -6,6 +6,8 @@
 
 **结论：三个 Windows 路径不是可下载的网址，不是分别独立的 GitHub 仓库，也不是完整公开镜像。** 三个目录的根部没有独立 .git/origin；它们只是同一台 Windows 研发电脑的本地工作区。真正公开入口是当前仓库下的 src、docs、patches、evidence 与 manifest。
 
+**新增：**获取官方源代码、三个精确 SHA256 的 Edge-LLM ARM64 wheel、固定版本 NVIDIA 27B 模型及分阶段复现步骤，请阅读 [DOWNLOAD_AND_REPRODUCE.md](DOWNLOAD_AND_REPRODUCE.md)。原创项目部分的 [MIT LICENSE](../LICENSE) 和 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) 为授权边界，第三方素材不自动改为 MIT。
+
 ## 1. 三套本机来源与 GitHub 对应表
 
 | 本机工作区（Windows） | 核心任务 | GitHub 公开位置 | 本机只读目录扫描* | 对应发布文件 |

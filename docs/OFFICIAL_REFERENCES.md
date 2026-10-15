@@ -1,5 +1,7 @@
 # NVIDIA 官方文档 vs 本机实验工程：可靠参考清单
 
+下载入口、PyPI ARM64 wheel、原始 SHA 和完整离线复现流程另见 [DOWNLOAD_AND_REPRODUCE.md](DOWNLOAD_AND_REPRODUCE.md) 及 [DOWNLOAD_LOCK.json](../manifest/DOWNLOAD_LOCK.json)；本工程的原创 MIT 授权不覆盖 NVIDIA/DRIVE/模型第三方许可。
+
 链接及解释复核日期：2026-10-15。外部文档可能更新，应按链接内版本、发布日期和本仓实际制品核对，不把当前 main 文档的新增功能自动追溯到旧 wheel。
 
 ## 0. 三份本机研发项目与上游如何对应？
@@ -35,7 +37,7 @@
 
 ## 3. 需要验证的版本与许可清单
 
-- nvidia/Qwen3.8-27B-NVFP4 模型及 Hugging Face revision 是否公开/可被目标合法使用；本机实测 revision 只作为来源事实。
+- nvidia/Qwen3.8-27B-NVFP4 的 fed99d815f4e8c7c616dd3dd6780076e26d5fb61 固定 revision 已在 NVIDIA Hugging Face 模型树核验为公开可访问，模型卡列 Apache-2.0。仍需遵守模型/基础模型条件，外部使用者自行按 SHA 验证下载权重。
 - TensorRT 10.16.0.72 与 10.16.2.10 两种历史候选不能混写为同一个运行环境。
 - Edge-LLM v0.11.0 source commit 与安装 wheel build revision 不一致，必须为对应 Engine/插件分别冻结。
 - NVIDIA 官方驱动/firmware/DRIVE SDK、模型权重、原厂签名/密钥都不得未经许可再分发；尤其不能因本仓是 Public 就推定已获得再分发许可。
