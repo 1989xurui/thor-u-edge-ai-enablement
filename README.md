@@ -8,6 +8,25 @@ An independent engineering research archive for NVIDIA DRIVE Thor T264 (AArch64,
 
 **Dual-path goal:** retain the original DriveOS 7.0.3 / Linux **6.1.119** Golden and add Linux **6.8.12** for native NVIDIA inference. Only the historical 6.1 -> 6.8 **kexec RAM handoff** has been demonstrated. **An independent persistent 6.8 boot item or boot menu is NOT installed.**
 
+## Complete end-to-end engineering workflow / 全流程总方案
+
+**[Start Here · 全部安装/编译/验收入口](docs/START_HERE.md)** · **[13 阶段执行总控 P00–P12](docs/MASTER_IMPLEMENTATION_PLAN.md)** · **[执行 Checklist](docs/EXECUTION_CHECKLIST.md)**
+
+核心闭环：保留 OEM 6.1 Golden → 6.8.12 精确构建、IVC/vblk/kexec → NVIDIA R39 NvGPU 595.78/CUDA 13.2 U2 → TensorRT Edge-LLM 0.11.0 NVFP4 27B → 完整质量/性能/稳定/恢复验收。
+
+| 专项 | 完整指南 |
+|---|---|
+| 实际 6.1/6.8 启动模式与第二永久启动项阻断 | [Boot + Cold/Recovery Gates](docs/BOOT_6_1_TO_6_8.md) |
+| 完整源码、官方输入和资源锁 | [Assets & Exact Versions](docs/ASSET_AND_VERSION_LOCK.md) |
+| 从 Kernel 6.8 到 NVIDIA GPU/CUDA | [Kernel/GPU/CUDA Build](docs/BUILD_KERNEL_GPU_CUDA.md) |
+| NVFP4 27B Target/Draft + K7/Tree | [Edge-LLM Native 27B](docs/EDGE_LLM_27B.md) |
+| 不同车机/主机部署路线 | [Deployment Runbook](docs/DEPLOYMENT_RUNBOOK.md) |
+| 质量/性能/温度/Release Gate | [Acceptance & Release](docs/ACCEPTANCE_AND_RELEASE.md) |
+| 故障分层、回滚与恢复 | [Recovery & Troubleshooting](docs/RECOVERY_AND_TROUBLESHOOTING.md) |
+| 后续 Codex 协同和资料路径 | [Project Handoff](docs/PROJECT_HANDOFF_AND_PROVENANCE.md) |
+
+Offline-only test: python3 tools/verify_manifest.py && python3 tools/check_repo_release.py. The boot/program readiness tools correctly return **HOLD (code 2)**, so there is **no permanent independent 6.8 boot installation yet**.
+
 ## Boot architecture: current evidence vs proposed second boot
 
 ```mermaid

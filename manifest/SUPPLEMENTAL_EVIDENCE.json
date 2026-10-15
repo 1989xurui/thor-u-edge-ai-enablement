@@ -1,0 +1,88 @@
+{
+  "schema": "THOR_SUPPLEMENTAL_EVIDENCE_V1",
+  "generated_at_utc": "2026-10-15T00:10:31.454254+00:00",
+  "included": [
+    {
+      "relative_path": "docs/evidence_history/GOLDEN_BOARD_READONLY_20260901.md",
+      "source_root": "E:\\Thor64G_Backup\\GoldenBoard_2026-09-01",
+      "source_filename": "GOLDEN_BOARD_REPORT.md",
+      "source_sha256": "075bc9478b6c0105743d91139ffa8c477d68ce76bfe51fe09da554620754371d",
+      "export_sha256": "899b478a577b6bbe8517481a6d02d00e68d3bcc880b97f72a6fd2725c913f635",
+      "bytes": 3301,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4D_COLD_BOOT_PREPARATION.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4D_COLD_BOOT_PREPARATION_REPORT.md",
+      "source_sha256": "d7f8905bc64ea638fb932a15be103f89b6d38d355ee9e014ee4814e22baa5996",
+      "export_sha256": "1957e5d2b9212a1947d9d888f46eea6e911469b505dfa13e2936a51a6457ce3f",
+      "bytes": 6148,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4D1_PUBLIC_RCM_AND_BARRIERS.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4D1_G4D2_G4E_G5_FINAL_REPORT.md",
+      "source_sha256": "f0454132085042eff791c609372fde33741c385e4bc787680b2ade6b17678f22",
+      "export_sha256": "7e2d26c4c4067d802bcff3e08153bb2f1dc25a7e37e623bad5982ff246e78ddf",
+      "bytes": 5823,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4E2_6P8_KEXEC_IVC_VBLK_PASS.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4E2_K68B_SINGLE_VARIABLE_FINAL.md",
+      "source_sha256": "b515c78a86a884410bbd7ad8ef9522265646cd09214ffc815cd8879c204b98bc",
+      "export_sha256": "7ad246940e0ca387e4671d48971a5c615036e5acda6aa7a9bfe814978e77627c",
+      "bytes": 5229,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4E2_HV_IVC_ROOT_CAUSE.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4E2_HV_IVC_REHANDSHAKE_AUDIT.md",
+      "source_sha256": "54b77eea0f3981342bb88a4d963207107fc9c54fc832e8085b6be426d9050c19",
+      "export_sha256": "c2f00ce9d9ed963efedd6318b912cdfa0ce140cd71e5d188bbb65e92cc6733c0",
+      "bytes": 5336,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4D_DU2_OEM_AUTH_BLOCK.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4D_DU2_HARD_GATE_REPORT.md",
+      "source_sha256": "031b1f29732443b0822c7df3467b69b4021b4af1399b3eb1cd6bb1033508c446",
+      "export_sha256": "731891a3dce027465640edf322466db4ecb785ce2062c805233f5576f3189c24",
+      "bytes": 5854,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4D_DU_READ_ONLY.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4D_DU_READ_ONLY_GATE_REPORT.md",
+      "source_sha256": "d76a3236288e627432d6573cbd1e6d161ab425dfe53cd4366d1f9e16322e48e6",
+      "export_sha256": "c4a36cef9561ab50d46806cad6229bdbeed0a3c8908888e09fa55501d6da6b26",
+      "bytes": 5653,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    },
+    {
+      "relative_path": "docs/evidence_history/G4C_PMC_COLD_BOOT_DECISION.md",
+      "source_root": "E:\\Thor64G_AI\\THOR_U_R39_GOS_BOOT_GATE_20261006\\07_reports",
+      "source_filename": "G4C_PMC_COLD_BOOT_DECISION_REPORT.md",
+      "source_sha256": "c393ec604b0ad38a85734de330ca001091fb2be46d677096ac88540f7d3fbb4e",
+      "export_sha256": "ec78a594769f2f1b04773dff924c6a11a6a726a0e23222c352faa625b41939c3",
+      "bytes": 6231,
+      "sanitization": "private IPv4 and MAC redacted; preface added",
+      "execution_authority": "NONE"
+    }
+  ],
+  "excluded": [],
+  "claim_boundary": "Historical reports do not qualify independent 6.8 cold boot or authorize device commands"
+}

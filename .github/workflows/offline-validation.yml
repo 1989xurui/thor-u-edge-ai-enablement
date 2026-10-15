@@ -1,0 +1,36 @@
+name: Offline Repository Validation
+
+# Manual only. Never connect to a vehicle, load a GPU, or use deployment secrets.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-check:
+    name: Verify archive and expected release HOLD
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify SHA and archive security
+        run: |
+          python3 tools/verify_manifest.py
+          python3 tools/check_repo_release.py
+      - name: Assert blocked cold boot is not promoted
+        run: |
+          set +e
+          python3 tools/check_dual_boot_readiness.py
+          status=$?
+          if [ "$status" -ne 2 ]; then
+            echo "Unexpected dual-boot gate result: $status"
+            exit 1
+          fi
+          python3 tools/check_program_readiness.py --summary
+          status=$?
+          if [ "$status" -ne 2 ]; then
+            echo "Unexpected full-program gate result: $status"
+            exit 1
+          fi
+          echo "PASS: experimental boot and production routes correctly remain HOLD"

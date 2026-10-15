@@ -9,7 +9,7 @@ This repository is a **private, source-centric research archive** as of 2026-10-
 - Do not upload source snippets from NVIDIA proprietary SDK materials merely because the destination repository is private.
 - The 6.1 -> 6.8 historical kexec RAM experiment is not an independent permanent boot path. No executable dual boot, cold RAM boot, host slot remap, firmware flashing or image activation is authorized by this repository. See docs/BOOT_6_1_TO_6_8.md for HOLD gates.
 - Read REVIEW_REQUIRED.json before treating the snapshot as comprehensive. Missing files must not be represented as fully backed up.
-- GitHub Actions are disabled in this minimal snapshot. Any future CI must be offline/static by default, must not connect to a vehicle, and must not print secrets or private paths.
+- GitHub Actions include one **manual-only** workflow in .github/workflows/offline-validation.yml. It verifies SHA/static documentation and asserts that cold boot and full program gates still return HOLD. It never connects to a vehicle, runs GPU tests, prints credentials, or deploys models.
 - Each source-evidence item must be tied to a date, code SHA, model SHA, exact software stack and a PASS/FAIL/HOLD decision with its experimental scope.
 - The original R4 llama.cpp and API gateway project are intentionally outside scope.
 - A private source archive is not a replacement for verified offline golden images, proprietary firmware backup or boot-recovery assets.

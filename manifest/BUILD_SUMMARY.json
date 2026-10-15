@@ -1,14 +1,20 @@
 {
-  "status": "PUBLISHED_PRIVATE_VERIFIED",
-  "file_count": 118,
-  "bytes": 1488451,
-  "mebibytes": 1.419,
+  "schema": "THOR_U_REPO_RELEASE_SUMMARY_V2",
+  "status": "FULL_PROGRAM_STAGED_NOT_PUBLISHED",
+  "archive_scope": "Full 6.1 -> 6.8 -> R39/CUDA -> Edge-LLM implementation plan, linked source/evidence, verification; not firmware+weights",
+  "file_count": 145,
+  "bytes": 1619022,
+  "mebibytes": 1.544,
   "max_file_bytes": 219522,
   "large_file_violations": 0,
   "sha_manifest": "manifest/SHA256SUMS.txt",
   "source_index": "manifest/SOURCE_FILES.json",
-  "privacy_review": "manifest/REVIEW_REQUIRED.json",
-  "published": true,
+  "supplemental_history": "manifest/SUPPLEMENTAL_EVIDENCE.json",
+  "boot_contract": "manifest/BOOT_6_1_TO_6_8_GATES.json",
+  "full_program_contract": "manifest/PROGRAM_GATES.json",
+  "assets_contract": "manifest/OFFLINE_REQUIRED_ASSETS.json",
+  "start_here": "docs/START_HERE.md",
+  "master_plan": "docs/MASTER_IMPLEMENTATION_PLAN.md",
   "publication": {
     "repository": "1989xurui/thor-u-edge-ai-enablement",
     "visibility": "private",
@@ -21,20 +27,9 @@
     "device_kernel_installed_by_this_task": false,
     "device_firmware_or_partition_writes": false
   },
-  "documentation_update": {
-    "date": "2026-10-15",
-    "scope": "Preserve original 6.1 Golden; historical 6.8 RAM kexec; future independent 6.8 cold boot blocked",
-    "architecture": "docs/ARCHITECTURE.md",
-    "additive_61_68": "docs/BOOT_6_1_TO_6_8.md",
-    "installation": "docs/INSTALL_ON_THOR.md",
-    "readme_mermaid_count": 1,
-    "architecture_mermaid_count": 3,
-    "installation_mermaid_count": 1,
-    "diagram_syntax_check": "PASS_5",
-    "gates": "manifest/BOOT_6_1_TO_6_8_GATES.json",
-    "readiness_checker": "tools/check_dual_boot_readiness.py",
-    "readiness_exit_code": 2,
-    "current_persistent_boot_gate": "NOT_IMPLEMENTED_NO_GO",
-    "publication_state": "PUBLISHED_AND_FRESH_CLONE_VERIFIED"
-  }
+  "full_program_published": false,
+  "independent_6p8_boot_installed": false,
+  "edge_production_ready": false,
+  "device_mutations_in_this_publish": 0,
+  "updated_at_utc": "2026-10-15T00:25:05.913522+00:00"
 }

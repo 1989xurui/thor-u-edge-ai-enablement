@@ -2,6 +2,8 @@
 
 **状态：安装资料/源码归档已准备；不是可在任何 DriveOS 设备上直接运行的一键刷机包。**
 
+此文件是安装入口；**全工程执行与验收顺序**见 [13 阶段实施总方案](MASTER_IMPLEMENTATION_PLAN.md)、[离线物料和版本锁](ASSET_AND_VERSION_LOCK.md)、[Kernel/GPU/CUDA 构建](BUILD_KERNEL_GPU_CUDA.md)、[Edge-LLM 27B](EDGE_LLM_27B.md)、[部署模式 Runbook](DEPLOYMENT_RUNBOOK.md) 和 [正式发布 Gate](ACCEPTANCE_AND_RELEASE.md)。
+
 必须分清两个目标：
 A. 在已经完成 6.8 A1 RAM 启动和 CUDA 13.2 验证的现有车机上，部署 GitHub 项目资料并只读验收；
 B. **保留原始 6.1，再新增独立 6.8**：真正可选的永久双路径启动仍未实现。要先通过 OEM/Hypervisor 启动入口、签名、回退和实机冷启动 Gate；仓库不提供可直接执行的安装/刷写器。

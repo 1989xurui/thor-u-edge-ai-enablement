@@ -1,0 +1,182 @@
+{
+  "schema": "THOR_U_FULL_PROGRAM_GATES_V1",
+  "frozen_at_utc": "2026-10-15",
+  "release_type": "PRIVATE_RESEARCH_SOURCE_AND_RUNBOOK",
+  "primary_goal": "Preserve original DriveOS 7.0.3 Linux 6.1 and add Linux 6.8 experimental GPU + Edge-LLM stack without touching OEM safety bootchain",
+  "source": "Historical Golden/G4E2/A1/Edge logs plus official compatibility pages; no new live device probes in this Git operation",
+  "protect_original_61": true,
+  "allow_boot_activation_from_this_repo": false,
+  "current_device_boot_not_revalidated": true,
+  "target_hardware": {
+    "board": "NVIDIA DRIVE Thor T264 p3960-0010",
+    "ram_class_gib": 64,
+    "sm_count": 14,
+    "compute_sm": "SM110"
+  },
+  "stages": [
+    {
+      "id": "P00",
+      "title": "Baseline and board identity",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Repeat read-only identification of current target before live actions",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/evidence_history/GOLDEN_BOARD_READONLY_20260901.md"
+      ]
+    },
+    {
+      "id": "P01",
+      "title": "Golden and recovery contract",
+      "status": "PARTIAL",
+      "next": "Requalify physical recovery and original boot assets before kernel actions",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/BOOT_6_1_TO_6_8.md"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Linux 6.8.12 G35 source and kernel build",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Independent clean-host reproducible build from licensed exact sources",
+      "blocking_to_production": true,
+      "evidence": [
+        "evidence/kernel/A1_BUILD_ABI_VERDICT.json"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "IVC HVD IVMK vblk kernel payload",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Reuse historical G4E2 RAM-pass evidence; do not invoke kexec",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/evidence_history/G4E2_6P8_KEXEC_IVC_VBLK_PASS.md"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Independent cold boot and persistent 6.8 add-on",
+      "status": "BLOCKED",
+      "next": "Only read-only OEM host boot slot, signing, board config, physical access/recovery qualification",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/BOOT_6_1_TO_6_8.md",
+        "docs/evidence_history/G4D_DU2_OEM_AUTH_BLOCK.md",
+        "manifest/BOOT_6_1_TO_6_8_GATES.json"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "R39.2.1 NvGPU 595.78 host1x DRM",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Revalidate exact boot/ABI and firmware provenance on permitted RAM 6.8 session",
+      "blocking_to_production": true,
+      "evidence": [
+        "evidence/kernel/A1_BUILD_ABI_VERDICT.json"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "CUDA 13.2 U2 native basic numeric compute",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Historical 65536 CPU-oracle PASS; no repetitive full GPU test until qualified window",
+      "blocking_to_production": true,
+      "evidence": [
+        "evidence/cuda/A1_NATIVE_RUNTIME_RESULT.json"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "TensorRT/Edge-LLM 0.11.0 native binary/plugin",
+      "status": "PARTIAL",
+      "next": "Reconcile installed wheel revision, TensorRT SONAME and plugin ABI",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/edge/TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "NVFP4 27B Target and native MTP",
+      "status": "HISTORICAL_PASS_SCOPED",
+      "next": "Preserve K7 reference; Tree has only scoped cache-bypass quality",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/edge/CURRENT_RELEASE_CARD.md",
+        "evidence/edge/selected/native-tree-bypass8k-result.json"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Complete model quality tool/agent checks",
+      "status": "NO_GO",
+      "next": "Qualified 8K model + tool/JSON/agent/cancel/hot-prefix and same-fixture checks",
+      "blocking_to_production": true,
+      "evidence": [
+        "evidence/edge/CANDIDATE_VERDICT.json"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Performance and memory thermal limits",
+      "status": "PARTIAL",
+      "next": "Same-cache same-model paired short 8K first; 200K only if cost gate justified",
+      "blocking_to_production": true,
+      "evidence": [
+        "evidence/edge/BENCHMARK_RESULTS.csv"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Cold boot stability, Golden rollback and production recovery",
+      "status": "NO_GO",
+      "next": "Requires a lawful boot path, independent cold boot and verified return to 6.1",
+      "blocking_to_production": true,
+      "evidence": [
+        "docs/RECOVERY_AND_TROUBLESHOOTING.md"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "GitHub private source archive and document handoff",
+      "status": "ARCHIVED_PRIVATE_VERIFIED",
+      "next": "After each future edit, repeat local SHA/security/fresh-clone checks; publication is not device deployment",
+      "blocking_to_production": false,
+      "evidence": [
+        "docs/START_HERE.md",
+        "manifest/SHA256SUMS.txt"
+      ]
+    }
+  ],
+  "mandatory_device_release": [
+    "P00",
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11"
+  ],
+  "required_status_for_release": "PASS_CURRENT_VERIFIED",
+  "program_verdict": "HOLD_NO_PRODUCTION_OR_PERSISTENT_DUAL_BOOT",
+  "next_safe_action": "Host-only documentation/build-input/board-slot audit; require verified OEM-compatible independent boot and rollback before target mutations",
+  "never_execute": [
+    "kexec",
+    "tegrareset",
+    "bootburn/flash",
+    "UFS/OEM boot slot write",
+    "firmware overwrite",
+    "protected security bypass",
+    "production R4 interruption"
+  ],
+  "annex": [
+    "manifest/BOOT_6_1_TO_6_8_GATES.json",
+    "docs/MASTER_IMPLEMENTATION_PLAN.md"
+  ]
+}

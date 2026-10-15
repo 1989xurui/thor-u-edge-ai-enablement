@@ -1,0 +1,123 @@
+{
+  "schema": "THOR_U_OFFLINE_INPUT_CONTRACT_V1",
+  "last_audited": "2026-10-15",
+  "notice": "These files are NOT embedded in Git and may be restricted by vendor license/signatures; paths are illustrative placeholders. This is an asset dependency manifest, not a downloadable bundle.",
+  "items": [
+    {
+      "id": "OEM_6P1_GOLDEN",
+      "category": "protected",
+      "source": "OEM authorized recovery source",
+      "expected_sha256": null,
+      "required_for": "recover original system",
+      "included_in_git": false
+    },
+    {
+      "id": "K68_G35_IMAGE",
+      "category": "kernel",
+      "source": "host isolated Linux 6.8.12 G35 build",
+      "expected_sha256": null,
+      "required_for": "6.8 RAM payload",
+      "included_in_git": false,
+      "source_commit": "78272943bba3a47e633b28963b0cda60de503500"
+    },
+    {
+      "id": "P3960_DTB",
+      "category": "device_tree",
+      "source": "G4E/A1 matched board DTB with provenance and OEM policy",
+      "expected_sha256": null,
+      "required_for": "IVC/HV/Kernel",
+      "included_in_git": false
+    },
+    {
+      "id": "K68_INITRD",
+      "category": "initrd",
+      "source": "G4E/A1 frozen RAM initrd",
+      "expected_sha256": null,
+      "required_for": "early userland",
+      "included_in_git": false
+    },
+    {
+      "id": "R39_NVGPU_KO",
+      "category": "driver",
+      "source": "R39.2.1 matched nvgpu.ko build",
+      "expected_sha256": "a09deb9b37b8294c0b2a58239df14832eb15f8ead96aa0baa00543998befdf04",
+      "required_for": "A1 historical module",
+      "included_in_git": false
+    },
+    {
+      "id": "R39_HOST1X_DRM_MODULES",
+      "category": "driver",
+      "source": "matched ABI/version host1x DRM closure",
+      "expected_sha256": null,
+      "required_for": "GPU dependency",
+      "included_in_git": false
+    },
+    {
+      "id": "R39_UMD_FIRMWARE",
+      "category": "vendor",
+      "source": "authorized same-batch UMD/firmware",
+      "expected_sha256": null,
+      "required_for": "GPU init",
+      "included_in_git": false
+    },
+    {
+      "id": "CUDA13_2_U2",
+      "category": "CUDA",
+      "source": "official 13.2.86 aarch64 toolchain and runtime",
+      "expected_sha256": null,
+      "required_for": "basic native compute",
+      "included_in_git": false
+    },
+    {
+      "id": "TENSORRT1016_EDGE011",
+      "category": "runtime",
+      "source": "exact TRT 10.16.x and Edge installed wheel/plugin build",
+      "expected_sha256": null,
+      "required_for": "native 27B",
+      "included_in_git": false
+    },
+    {
+      "id": "NVFP4_27B_SHARD1",
+      "category": "model",
+      "source": "nvidia/Qwen3.8-27B-NVFP4 pinned rev",
+      "bytes": 9965652544,
+      "expected_sha256": "7d0fd155118901373eb0fd13ed3aae68f95be747bc205be72ebc41739c25ee80",
+      "included_in_git": false
+    },
+    {
+      "id": "NVFP4_27B_SHARD2",
+      "category": "model",
+      "source": "nvidia/Qwen3.8-27B-NVFP4 pinned rev",
+      "bytes": 9985757064,
+      "expected_sha256": "98a7e9486baa860c792c9463a770cb9d017696bdd17606300a5b9334149f4c27",
+      "included_in_git": false
+    },
+    {
+      "id": "NVFP4_27B_SHARD3",
+      "category": "model",
+      "source": "nvidia/Qwen3.8-27B-NVFP4 pinned rev",
+      "bytes": 1970287672,
+      "expected_sha256": "0506ad35dc21469708e7813bd76c592cef08bd0317b4a1fe899745ebe2435271",
+      "included_in_git": false
+    },
+    {
+      "id": "TARGET_DRAFT_ENGINE",
+      "category": "engine",
+      "source": "reproducible TRT build under exact profile and plugin versions",
+      "expected_sha256": null,
+      "included_in_git": false
+    }
+  ],
+  "forbidden_to_commit": [
+    "*.safetensors",
+    "*.engine",
+    "*.ko",
+    "*.img",
+    "*.vhdx",
+    "*.key",
+    "*/private/*",
+    "*.pem"
+  ],
+  "all_required_vendor_hashes_supplied": false,
+  "no_auto_download_or_install": true
+}
